@@ -19,7 +19,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     String id;
-
+    
     String firstName;
     String lastName;
     LocalDate dob;

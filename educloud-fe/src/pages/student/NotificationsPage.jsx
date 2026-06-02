@@ -1,52 +1,198 @@
-import { useState } from 'react'
-import { CheckCircle, AlertTriangle, Info } from 'lucide-react'
+import { useMemo, useState } from 'react'
+import {
+  CheckCircle,
+  AlertTriangle,
+  Info,
+  Trash2,
+  CheckCheck,
+  Bell,
+} from 'lucide-react'
 import { mockNotifications } from '@/mocks/notifications'
 import { formatTimeAgo } from '@/utils/formatDate'
 import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 
 const iconMap = {
   upload: { Icon: CheckCircle, className: 'text-emerald-500 bg-emerald-50' },
+  download: { Icon: CheckCircle, className: 'text-indigo-500 bg-indigo-50' },
   admin: { Icon: AlertTriangle, className: 'text-amber-500 bg-amber-50' },
   system: { Icon: Info, className: 'text-blue-500 bg-blue-50' },
 }
 
 export default function NotificationsPage() {
   const [items, setItems] = useState(mockNotifications)
+  const [filter, setFilter] = useState('all')
 
-  const markAllRead = () => setItems((prev) => prev.map((n) => ({ ...n, read: true })))
+  const unreadCount = useMemo(() => {
+    return items.filter((n) => !n.read).length
+  }, [items])
+
+  const filteredItems = useMemo(() => {
+    if (filter === 'unread') return items.filter((n) => !n.read)
+    if (filter === 'read') return items.filter((n) => n.read)
+    return items
+  }, [items, filter])
+
+  const markOneRead = (id) => {
+    setItems((prev) =>
+      prev.map((n) => (n.id === id ? { ...n, read: true } : n))
+    )
+  }
+
+  const markAllRead = () => {
+    setItems((prev) => prev.map((n) => ({ ...n, read: true })))
+  }
+
+  const deleteOne = (id) => {
+    setItems((prev) => prev.filter((n) => n.id !== id))
+  }
+
+  const deleteAll = () => {
+    const ok = window.confirm('Bạn có chắc muốn xoá tất cả thông báo không?')
+    if (ok) setItems([])
+  }
 
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-semibold">Thông báo</h1>
-        <Button variant="outline" onClick={markAllRead}>
-          Đánh dấu tất cả đã đọc
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+        <div>
+          <h1 className="text-2xl font-semibold">Thông báo</h1>
+          <p className="mt-1 text-sm text-slate-500">
+            Bạn có {unreadCount} thông báo chưa đọc
+          </p>
+        </div>
+
+        <div className="flex flex-wrap gap-3">
+          <Button
+            variant="outline"
+            onClick={markAllRead}
+            disabled={unreadCount === 0}
+          >
+            <CheckCheck className="mr-2 h-4 w-4" />
+            Đánh dấu tất cả đã đọc
+          </Button>
+
+          <Button
+            variant="destructive"
+            onClick={deleteAll}
+            disabled={items.length === 0}
+          >
+            <Trash2 className="mr-2 h-4 w-4" />
+            Xoá tất cả
+          </Button>
+        </div>
+      </div>
+
+      <div className="flex flex-wrap gap-3">
+        <Button
+          variant={filter === 'all' ? 'default' : 'outline'}
+          onClick={() => setFilter('all')}
+        >
+          Tất cả
+          <Badge variant="secondary" className="ml-2">
+            {items.length}
+          </Badge>
+        </Button>
+
+        <Button
+          variant={filter === 'unread' ? 'default' : 'outline'}
+          onClick={() => setFilter('unread')}
+        >
+          Chưa đọc
+          <Badge variant="secondary" className="ml-2">
+            {unreadCount}
+          </Badge>
+        </Button>
+
+        <Button
+          variant={filter === 'read' ? 'default' : 'outline'}
+          onClick={() => setFilter('read')}
+        >
+          Đã đọc
+          <Badge variant="secondary" className="ml-2">
+            {items.length - unreadCount}
+          </Badge>
         </Button>
       </div>
-      <div className="space-y-2">
-        {items.map((n) => {
-          const { Icon, className } = iconMap[n.type] || iconMap.system
-          return (
-            <div
-              key={n.id}
-              className={cn(
-                'flex gap-4 rounded-xl border bg-white p-4 transition-colors',
-                !n.read && 'border-l-4 border-l-blue-500 bg-blue-50/50'
-              )}
-            >
-              <div className={cn('flex h-10 w-10 shrink-0 items-center justify-center rounded-full', className)}>
-                <Icon className="h-5 w-5" />
+
+      {filteredItems.length === 0 ? (
+        <div className="flex min-h-[320px] flex-col items-center justify-center rounded-xl border bg-white p-8 text-center">
+          <div className="mb-4 rounded-full bg-slate-100 p-4">
+            <Bell className="h-10 w-10 text-slate-400" />
+          </div>
+
+          <h2 className="text-lg font-semibold text-slate-800">
+            Không có thông báo
+          </h2>
+
+          <p className="mt-2 text-sm text-slate-500">
+            Hiện tại chưa có thông báo nào phù hợp.
+          </p>
+        </div>
+      ) : (
+        <div className="space-y-2">
+          {filteredItems.map((n) => {
+            const { Icon, className } = iconMap[n.type] || iconMap.system
+
+            return (
+              <div
+                key={n.id}
+                onClick={() => markOneRead(n.id)}
+                className={cn(
+                  'group flex cursor-pointer gap-4 rounded-xl border bg-white p-4 transition-colors hover:bg-slate-50',
+                  !n.read && 'border-l-4 border-l-blue-500 bg-blue-50/50'
+                )}
+              >
+                <div
+                  className={cn(
+                    'flex h-10 w-10 shrink-0 items-center justify-center rounded-full',
+                    className
+                  )}
+                >
+                  <Icon className="h-5 w-5" />
+                </div>
+
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <p className={cn('font-medium', !n.read && 'font-semibold')}>
+                          {n.title}
+                        </p>
+
+                        {!n.read && (
+                          <Badge className="bg-blue-600 text-white">Mới</Badge>
+                        )}
+                      </div>
+
+                      <p className="mt-1 line-clamp-2 text-sm text-slate-500">
+                        {n.message}
+                      </p>
+
+                      <p className="mt-2 text-xs text-slate-400">
+                        {formatTimeAgo(n.createdAt)}
+                      </p>
+                    </div>
+
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="opacity-0 transition group-hover:opacity-100"
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        deleteOne(n.id)
+                      }}
+                    >
+                      <Trash2 className="h-4 w-4 text-red-500" />
+                    </Button>
+                  </div>
+                </div>
               </div>
-              <div className="min-w-0 flex-1">
-                <p className={cn('font-medium', !n.read && 'font-semibold')}>{n.title}</p>
-                <p className="mt-1 line-clamp-2 text-sm text-slate-500">{n.message}</p>
-                <p className="mt-2 text-xs text-slate-400">{formatTimeAgo(n.createdAt)}</p>
-              </div>
-            </div>
-          )
-        })}
-      </div>
+            )
+          })}
+        </div>
+      )}
     </div>
   )
 }
