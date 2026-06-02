@@ -1,0 +1,1832 @@
+[
+  {
+    "majorCode": 7140101,
+    "majorName": "Giáo dục học",
+    "description": "Ngành Giáo dục học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực giáo dục học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140114,
+    "majorName": "Quản lý giáo dục",
+    "description": "Ngành Quản lý giáo dục đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý giáo dục, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140201,
+    "majorName": "Giáo dục Mầm non",
+    "description": "Ngành Giáo dục Mầm non đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực giáo dục mầm non, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140202,
+    "majorName": "Giáo dục Tiểu học",
+    "description": "Ngành Giáo dục Tiểu học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực giáo dục tiểu học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140203,
+    "majorName": "Giáo dục Đặc biệt",
+    "description": "Ngành Giáo dục Đặc biệt đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực giáo dục đặc biệt, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140204,
+    "majorName": "Giáo dục Công dân",
+    "description": "Ngành Giáo dục Công dân đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực giáo dục công dân, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140205,
+    "majorName": "Giáo dục Chính trị",
+    "description": "Ngành Giáo dục Chính trị đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực giáo dục chính trị, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140206,
+    "majorName": "Giáo dục Thể chất",
+    "description": "Ngành Giáo dục Thể chất đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực giáo dục thể chất, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140207,
+    "majorName": "Huấn luyện thể thao",
+    "description": "Ngành Huấn luyện thể thao đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực huấn luyện thể thao, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140208,
+    "majorName": "Giáo dục Quốc phòng - An ninh",
+    "description": "Ngành Giáo dục Quốc phòng - An ninh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực giáo dục quốc phòng - an ninh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140209,
+    "majorName": "Sư phạm Toán học",
+    "description": "Ngành Sư phạm Toán học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm toán học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140210,
+    "majorName": "Sư phạm Tin học",
+    "description": "Ngành Sư phạm Tin học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tin học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140211,
+    "majorName": "Sư phạm Vật lý",
+    "description": "Ngành Sư phạm Vật lý đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm vật lý, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140212,
+    "majorName": "Sư phạm Hoá học",
+    "description": "Ngành Sư phạm Hoá học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm hoá học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140213,
+    "majorName": "Sư phạm Sinh học",
+    "description": "Ngành Sư phạm Sinh học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm sinh học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140214,
+    "majorName": "Sư phạm Kỹ thuật công nghiệp",
+    "description": "Ngành Sư phạm Kỹ thuật công nghiệp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm kỹ thuật công nghiệp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140215,
+    "majorName": "Sư phạm Kỹ thuật nông nghiệp",
+    "description": "Ngành Sư phạm Kỹ thuật nông nghiệp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm kỹ thuật nông nghiệp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140217,
+    "majorName": "Sư phạm Ngữ văn",
+    "description": "Ngành Sư phạm Ngữ văn đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm ngữ văn, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140218,
+    "majorName": "Sư phạm Lịch sử",
+    "description": "Ngành Sư phạm Lịch sử đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm lịch sử, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140219,
+    "majorName": "Sư phạm Địa lý",
+    "description": "Ngành Sư phạm Địa lý đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm địa lý, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140221,
+    "majorName": "Sư phạm Âm nhạc",
+    "description": "Ngành Sư phạm Âm nhạc đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm âm nhạc, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140222,
+    "majorName": "Sư phạm Mỹ thuật",
+    "description": "Ngành Sư phạm Mỹ thuật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm mỹ thuật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140223,
+    "majorName": "Sư phạm Tiếng Bana",
+    "description": "Ngành Sư phạm Tiếng Bana đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng bana, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140224,
+    "majorName": "Sư phạm Tiếng Êđê",
+    "description": "Ngành Sư phạm Tiếng Êđê đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng êđê, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140225,
+    "majorName": "Sư phạm Tiếng Jrai",
+    "description": "Ngành Sư phạm Tiếng Jrai đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng jrai, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140226,
+    "majorName": "Sư phạm Tiếng Khmer",
+    "description": "Ngành Sư phạm Tiếng Khmer đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng khmer, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140227,
+    "majorName": "Sư phạm Tiếng H'mong",
+    "description": "Ngành Sư phạm Tiếng H'mong đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng h'mong, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140228,
+    "majorName": "Sư phạm Tiếng Chăm",
+    "description": "Ngành Sư phạm Tiếng Chăm đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng chăm, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140229,
+    "majorName": "Sư phạm Tiếng M'nông",
+    "description": "Ngành Sư phạm Tiếng M'nông đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng m'nông, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140230,
+    "majorName": "Sư phạm Tiếng Xê đăng",
+    "description": "Ngành Sư phạm Tiếng Xê đăng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng xê đăng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140231,
+    "majorName": "Sư phạm Tiếng Anh",
+    "description": "Ngành Sư phạm Tiếng Anh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng anh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140232,
+    "majorName": "Sư phạm Tiếng Nga",
+    "description": "Ngành Sư phạm Tiếng Nga đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng nga, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140233,
+    "majorName": "Sư phạm Tiếng Pháp",
+    "description": "Ngành Sư phạm Tiếng Pháp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng pháp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140234,
+    "majorName": "Sư phạm Tiếng Trung Quốc",
+    "description": "Ngành Sư phạm Tiếng Trung Quốc đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng trung quốc, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140235,
+    "majorName": "Sư phạm Tiếng Đức",
+    "description": "Ngành Sư phạm Tiếng Đức đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng đức, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140236,
+    "majorName": "Sư phạm Tiếng Nhật",
+    "description": "Ngành Sư phạm Tiếng Nhật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng nhật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140237,
+    "majorName": "Sư phạm Tiếng Hàn Quốc",
+    "description": "Ngành Sư phạm Tiếng Hàn Quốc đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm tiếng hàn quốc, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140245,
+    "majorName": "Sư phạm nghệ thuật",
+    "description": "Ngành Sư phạm nghệ thuật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm nghệ thuật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140246,
+    "majorName": "Sư phạm công nghệ",
+    "description": "Ngành Sư phạm công nghệ đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm công nghệ, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140247,
+    "majorName": "Sư phạm khoa học tự nhiên",
+    "description": "Ngành Sư phạm khoa học tự nhiên đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sư phạm khoa học tự nhiên, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7140248,
+    "majorName": "Giáo dục pháp luật",
+    "description": "Ngành Giáo dục pháp luật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực giáo dục pháp luật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210101,
+    "majorName": "Lý luận, lịch sử và phê bình mỹ thuật",
+    "description": "Ngành Lý luận, lịch sử và phê bình mỹ thuật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực lý luận, lịch sử và phê bình mỹ thuật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210103,
+    "majorName": "Hội hoạ",
+    "description": "Ngành Hội hoạ đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực hội hoạ, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210104,
+    "majorName": "Đồ hoạ",
+    "description": "Ngành Đồ hoạ đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực đồ hoạ, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210105,
+    "majorName": "Điêu khắc",
+    "description": "Ngành Điêu khắc đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực điêu khắc, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210107,
+    "majorName": "Gốm",
+    "description": "Ngành Gốm đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực gốm, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210110,
+    "majorName": "Mỹ thuật đô thị",
+    "description": "Ngành Mỹ thuật đô thị đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực mỹ thuật đô thị, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210201,
+    "majorName": "Âm nhạc học",
+    "description": "Ngành Âm nhạc học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực âm nhạc học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210203,
+    "majorName": "Sáng tác âm nhạc",
+    "description": "Ngành Sáng tác âm nhạc đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sáng tác âm nhạc, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210204,
+    "majorName": "Chỉ huy âm nhạc",
+    "description": "Ngành Chỉ huy âm nhạc đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy âm nhạc, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210205,
+    "majorName": "Thanh nhạc",
+    "description": "Ngành Thanh nhạc đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thanh nhạc, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210207,
+    "majorName": "Biểu diễn nhạc cụ phương tây",
+    "description": "Ngành Biểu diễn nhạc cụ phương tây đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực biểu diễn nhạc cụ phương tây, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210208,
+    "majorName": "Piano",
+    "description": "Ngành Piano đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực piano, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210209,
+    "majorName": "Nhạc Jazz",
+    "description": "Ngành Nhạc Jazz đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực nhạc jazz, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210210,
+    "majorName": "Biểu diễn nhạc cụ truyền thống",
+    "description": "Ngành Biểu diễn nhạc cụ truyền thống đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực biểu diễn nhạc cụ truyền thống, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210221,
+    "majorName": "Lý luận, lịch sử và phê bình sân khấu",
+    "description": "Ngành Lý luận, lịch sử và phê bình sân khấu đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực lý luận, lịch sử và phê bình sân khấu, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210225,
+    "majorName": "Biên kịch sân khấu",
+    "description": "Ngành Biên kịch sân khấu đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực biên kịch sân khấu, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210226,
+    "majorName": "Diễn viên sân khấu kịch hát",
+    "description": "Ngành Diễn viên sân khấu kịch hát đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực diễn viên sân khấu kịch hát, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210227,
+    "majorName": "Đạo diễn sân khấu",
+    "description": "Ngành Đạo diễn sân khấu đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực đạo diễn sân khấu, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210231,
+    "majorName": "Lý luận, lịch sử và phê bình điện ảnh, truyền hình",
+    "description": "Ngành Lý luận, lịch sử và phê bình điện ảnh, truyền hình đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực lý luận, lịch sử và phê bình điện ảnh, truyền hình, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210233,
+    "majorName": "Biên kịch điện ảnh, truyền hình",
+    "description": "Ngành Biên kịch điện ảnh, truyền hình đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực biên kịch điện ảnh, truyền hình, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210234,
+    "majorName": "Diễn viên kịch, điện ảnh - truyền hình",
+    "description": "Ngành Diễn viên kịch, điện ảnh - truyền hình đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực diễn viên kịch, điện ảnh - truyền hình, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210235,
+    "majorName": "Đạo diễn điện ảnh, truyền hình",
+    "description": "Ngành Đạo diễn điện ảnh, truyền hình đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực đạo diễn điện ảnh, truyền hình, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210236,
+    "majorName": "Quay phim",
+    "description": "Ngành Quay phim đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quay phim, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210241,
+    "majorName": "Lý luận, lịch sử và phê bình múa",
+    "description": "Ngành Lý luận, lịch sử và phê bình múa đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực lý luận, lịch sử và phê bình múa, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210242,
+    "majorName": "Diễn viên múa",
+    "description": "Ngành Diễn viên múa đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực diễn viên múa, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210243,
+    "majorName": "Biên đạo múa",
+    "description": "Ngành Biên đạo múa đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực biên đạo múa, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210244,
+    "majorName": "Huấn luyện múa",
+    "description": "Ngành Huấn luyện múa đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực huấn luyện múa, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210301,
+    "majorName": "Nhiếp ảnh",
+    "description": "Ngành Nhiếp ảnh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực nhiếp ảnh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210302,
+    "majorName": "Công nghệ điện ảnh, truyền hình",
+    "description": "Ngành Công nghệ điện ảnh, truyền hình đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ điện ảnh, truyền hình, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210303,
+    "majorName": "Thiết kế âm thanh, ánh sáng",
+    "description": "Ngành Thiết kế âm thanh, ánh sáng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thiết kế âm thanh, ánh sáng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210402,
+    "majorName": "Thiết kế công nghiệp",
+    "description": "Ngành Thiết kế công nghiệp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thiết kế công nghiệp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210403,
+    "majorName": "Thiết kế đồ họa",
+    "description": "Ngành Thiết kế đồ họa đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thiết kế đồ họa, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210404,
+    "majorName": "Thiết kế thời trang",
+    "description": "Ngành Thiết kế thời trang đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thiết kế thời trang, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7210406,
+    "majorName": "Thiết kế mỹ thuật sân khấu, điện ảnh",
+    "description": "Ngành Thiết kế mỹ thuật sân khấu, điện ảnh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thiết kế mỹ thuật sân khấu, điện ảnh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220101,
+    "majorName": "Tiếng Việt và văn hoá Việt Nam",
+    "description": "Ngành Tiếng Việt và văn hoá Việt Nam đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực tiếng việt và văn hoá việt nam, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220104,
+    "majorName": "Hán Nôm",
+    "description": "Ngành Hán Nôm đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực hán nôm, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220105,
+    "majorName": "Ngôn ngữ Jrai",
+    "description": "Ngành Ngôn ngữ Jrai đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ jrai, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220106,
+    "majorName": "Ngôn ngữ Khmer",
+    "description": "Ngành Ngôn ngữ Khmer đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ khmer, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220107,
+    "majorName": "Ngôn ngữ H'mong",
+    "description": "Ngành Ngôn ngữ H'mong đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ h'mong, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220108,
+    "majorName": "Ngôn ngữ Chăm",
+    "description": "Ngành Ngôn ngữ Chăm đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ chăm, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220110,
+    "majorName": "Sáng tác văn học",
+    "description": "Ngành Sáng tác văn học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sáng tác văn học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220112,
+    "majorName": "Văn hoá các dân tộc thiểu số Việt Nam",
+    "description": "Ngành Văn hoá các dân tộc thiểu số Việt Nam đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực văn hoá các dân tộc thiểu số việt nam, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220201,
+    "majorName": "Ngôn ngữ Anh",
+    "description": "Ngành Ngôn ngữ Anh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ anh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220202,
+    "majorName": "Ngôn ngữ Nga",
+    "description": "Ngành Ngôn ngữ Nga đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ nga, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220203,
+    "majorName": "Ngôn ngữ Pháp",
+    "description": "Ngành Ngôn ngữ Pháp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ pháp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220204,
+    "majorName": "Ngôn ngữ Trung Quốc",
+    "description": "Ngành Ngôn ngữ Trung Quốc đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ trung quốc, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220205,
+    "majorName": "Ngôn ngữ Đức",
+    "description": "Ngành Ngôn ngữ Đức đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ đức, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220206,
+    "majorName": "Ngôn ngữ Tây Ban Nha",
+    "description": "Ngành Ngôn ngữ Tây Ban Nha đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ tây ban nha, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220207,
+    "majorName": "Ngôn ngữ Bồ Đào Nha",
+    "description": "Ngành Ngôn ngữ Bồ Đào Nha đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ bồ đào nha, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220208,
+    "majorName": "Ngôn ngữ Italia",
+    "description": "Ngành Ngôn ngữ Italia đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ italia, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220209,
+    "majorName": "Ngôn ngữ Nhật",
+    "description": "Ngành Ngôn ngữ Nhật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ nhật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220210,
+    "majorName": "Ngôn ngữ Hàn Quốc",
+    "description": "Ngành Ngôn ngữ Hàn Quốc đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ hàn quốc, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7220211,
+    "majorName": "Ngôn ngữ Ảrập",
+    "description": "Ngành Ngôn ngữ Ảrập đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ ảrập, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7229001,
+    "majorName": "Triết học",
+    "description": "Ngành Triết học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực triết học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7229009,
+    "majorName": "Tôn giáo học",
+    "description": "Ngành Tôn giáo học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực tôn giáo học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7229010,
+    "majorName": "Lịch sử",
+    "description": "Ngành Lịch sử đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực lịch sử, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7229020,
+    "majorName": "Ngôn ngữ học",
+    "description": "Ngành Ngôn ngữ học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực ngôn ngữ học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7229030,
+    "majorName": "Văn học",
+    "description": "Ngành Văn học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực văn học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7229040,
+    "majorName": "Văn hoá học",
+    "description": "Ngành Văn hoá học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực văn hoá học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7229042,
+    "majorName": "Quản lý văn hoá",
+    "description": "Ngành Quản lý văn hoá đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý văn hoá, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7229045,
+    "majorName": "Gia đình học",
+    "description": "Ngành Gia đình học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực gia đình học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310101,
+    "majorName": "Kinh tế",
+    "description": "Ngành Kinh tế đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh tế, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310102,
+    "majorName": "Kinh tế chính trị",
+    "description": "Ngành Kinh tế chính trị đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh tế chính trị, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310104,
+    "majorName": "Kinh tế đầu tư",
+    "description": "Ngành Kinh tế đầu tư đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh tế đầu tư, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310105,
+    "majorName": "Kinh tế phát triển",
+    "description": "Ngành Kinh tế phát triển đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh tế phát triển, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310106,
+    "majorName": "Kinh tế quốc tế",
+    "description": "Ngành Kinh tế quốc tế đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh tế quốc tế, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310107,
+    "majorName": "Thống kê kinh tế",
+    "description": "Ngành Thống kê kinh tế đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thống kê kinh tế, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310108,
+    "majorName": "Toán kinh tế",
+    "description": "Ngành Toán kinh tế đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực toán kinh tế, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310201,
+    "majorName": "Chính trị học",
+    "description": "Ngành Chính trị học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chính trị học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310202,
+    "majorName": "Xây dựng Đảng và chính quyền nhà nước",
+    "description": "Ngành Xây dựng Đảng và chính quyền nhà nước đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực xây dựng đảng và chính quyền nhà nước, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310205,
+    "majorName": "Quản lý nhà nước",
+    "description": "Ngành Quản lý nhà nước đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý nhà nước, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310206,
+    "majorName": "Quan hệ quốc tế",
+    "description": "Ngành Quan hệ quốc tế đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quan hệ quốc tế, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310301,
+    "majorName": "Xã hội học",
+    "description": "Ngành Xã hội học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực xã hội học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310302,
+    "majorName": "Nhân học",
+    "description": "Ngành Nhân học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực nhân học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310401,
+    "majorName": "Tâm lý học",
+    "description": "Ngành Tâm lý học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực tâm lý học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310403,
+    "majorName": "Tâm lý học giáo dục",
+    "description": "Ngành Tâm lý học giáo dục đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực tâm lý học giáo dục, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310501,
+    "majorName": "Địa lý học",
+    "description": "Ngành Địa lý học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực địa lý học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310601,
+    "majorName": "Quốc tế học",
+    "description": "Ngành Quốc tế học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quốc tế học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310602,
+    "majorName": "Châu Á học",
+    "description": "Ngành Châu Á học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực châu á học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310607,
+    "majorName": "Thái Bình Dương học",
+    "description": "Ngành Thái Bình Dương học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thái bình dương học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310608,
+    "majorName": "Đông phương học",
+    "description": "Ngành Đông phương học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực đông phương học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310612,
+    "majorName": "Trung Quốc học",
+    "description": "Ngành Trung Quốc học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực trung quốc học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310613,
+    "majorName": "Nhật Bản học",
+    "description": "Ngành Nhật Bản học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực nhật bản học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310614,
+    "majorName": "Hàn Quốc học",
+    "description": "Ngành Hàn Quốc học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực hàn quốc học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310620,
+    "majorName": "Đông Nam Á học",
+    "description": "Ngành Đông Nam Á học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực đông nam á học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7310630,
+    "majorName": "Việt Nam học",
+    "description": "Ngành Việt Nam học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực việt nam học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7320101,
+    "majorName": "Báo chí",
+    "description": "Ngành Báo chí đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực báo chí, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7320104,
+    "majorName": "Truyền thông đa phương tiện",
+    "description": "Ngành Truyền thông đa phương tiện đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực truyền thông đa phương tiện, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7320105,
+    "majorName": "Truyền thông đại chúng",
+    "description": "Ngành Truyền thông đại chúng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực truyền thông đại chúng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7320106,
+    "majorName": "Công nghệ truyền thông",
+    "description": "Ngành Công nghệ truyền thông đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ truyền thông, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7320107,
+    "majorName": "Truyền thông quốc tế",
+    "description": "Ngành Truyền thông quốc tế đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực truyền thông quốc tế, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7320108,
+    "majorName": "Quan hệ công chúng",
+    "description": "Ngành Quan hệ công chúng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quan hệ công chúng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7320201,
+    "majorName": "Thông tin - thư viện",
+    "description": "Ngành Thông tin - thư viện đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thông tin - thư viện, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7320205,
+    "majorName": "Quản lý thông tin",
+    "description": "Ngành Quản lý thông tin đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý thông tin, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7320303,
+    "majorName": "Lưu trữ học",
+    "description": "Ngành Lưu trữ học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực lưu trữ học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7320305,
+    "majorName": "Bảo tàng học",
+    "description": "Ngành Bảo tàng học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực bảo tàng học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7320401,
+    "majorName": "Xuất bản",
+    "description": "Ngành Xuất bản đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực xuất bản, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7320402,
+    "majorName": "Kinh doanh xuất bản phẩm",
+    "description": "Ngành Kinh doanh xuất bản phẩm đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh doanh xuất bản phẩm, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340101,
+    "majorName": "Quản trị kinh doanh",
+    "description": "Ngành Quản trị kinh doanh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản trị kinh doanh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340115,
+    "majorName": "Marketing",
+    "description": "Ngành Marketing đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực marketing, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340116,
+    "majorName": "Bất động sản",
+    "description": "Ngành Bất động sản đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực bất động sản, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340120,
+    "majorName": "Kinh doanh quốc tế",
+    "description": "Ngành Kinh doanh quốc tế đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh doanh quốc tế, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340121,
+    "majorName": "Kinh doanh thương mại",
+    "description": "Ngành Kinh doanh thương mại đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh doanh thương mại, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340122,
+    "majorName": "Thương mại điện tử",
+    "description": "Ngành Thương mại điện tử đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thương mại điện tử, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340123,
+    "majorName": "Kinh doanh thời trang và dệt may",
+    "description": "Ngành Kinh doanh thời trang và dệt may đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh doanh thời trang và dệt may, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340201,
+    "majorName": "Tài chính – Ngân hàng",
+    "description": "Ngành Tài chính – Ngân hàng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực tài chính – ngân hàng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340204,
+    "majorName": "Bảo hiểm",
+    "description": "Ngành Bảo hiểm đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực bảo hiểm, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340301,
+    "majorName": "Kế toán",
+    "description": "Ngành Kế toán đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kế toán, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340302,
+    "majorName": "Kiểm toán",
+    "description": "Ngành Kiểm toán đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kiểm toán, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340401,
+    "majorName": "Khoa học quản lý",
+    "description": "Ngành Khoa học quản lý đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khoa học quản lý, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340403,
+    "majorName": "Quản lý công",
+    "description": "Ngành Quản lý công đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý công, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340404,
+    "majorName": "Quản trị nhân lực",
+    "description": "Ngành Quản trị nhân lực đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản trị nhân lực, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340405,
+    "majorName": "Hệ thống thông tin quản lý",
+    "description": "Ngành Hệ thống thông tin quản lý đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực hệ thống thông tin quản lý, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340406,
+    "majorName": "Quản trị văn phòng",
+    "description": "Ngành Quản trị văn phòng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản trị văn phòng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340408,
+    "majorName": "Quan hệ lao động",
+    "description": "Ngành Quan hệ lao động đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quan hệ lao động, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7340409,
+    "majorName": "Quản lý dự  án",
+    "description": "Ngành Quản lý dự  án đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý dự  án, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7380101,
+    "majorName": "Luật",
+    "description": "Ngành Luật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực luật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7380102,
+    "majorName": "Luật hiến pháp và luật hành chính",
+    "description": "Ngành Luật hiến pháp và luật hành chính đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực luật hiến pháp và luật hành chính, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7380103,
+    "majorName": "Luật dân sự và tố tụng dân sự",
+    "description": "Ngành Luật dân sự và tố tụng dân sự đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực luật dân sự và tố tụng dân sự, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7380104,
+    "majorName": "Luật hình sự và tố tụng hình sự",
+    "description": "Ngành Luật hình sự và tố tụng hình sự đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực luật hình sự và tố tụng hình sự, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7380107,
+    "majorName": "Luật kinh tế",
+    "description": "Ngành Luật kinh tế đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực luật kinh tế, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7380108,
+    "majorName": "Luật quốc tế",
+    "description": "Ngành Luật quốc tế đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực luật quốc tế, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7420101,
+    "majorName": "Sinh học",
+    "description": "Ngành Sinh học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sinh học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7420201,
+    "majorName": "Công nghệ sinh học",
+    "description": "Ngành Công nghệ sinh học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ sinh học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7420202,
+    "majorName": "Kỹ thuật sinh học",
+    "description": "Ngành Kỹ thuật sinh học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật sinh học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7420203,
+    "majorName": "Sinh học ứng dụng",
+    "description": "Ngành Sinh học ứng dụng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực sinh học ứng dụng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440101,
+    "majorName": "Thiên văn học",
+    "description": "Ngành Thiên văn học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thiên văn học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440102,
+    "majorName": "Vật lý học",
+    "description": "Ngành Vật lý học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực vật lý học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440106,
+    "majorName": "Vật lý nguyên tử và hạt nhân",
+    "description": "Ngành Vật lý nguyên tử và hạt nhân đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực vật lý nguyên tử và hạt nhân, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440110,
+    "majorName": "Cơ học",
+    "description": "Ngành Cơ học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực cơ học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440112,
+    "majorName": "Hoá học",
+    "description": "Ngành Hoá học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực hoá học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440122,
+    "majorName": "Khoa học vật liệu",
+    "description": "Ngành Khoa học vật liệu đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khoa học vật liệu, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440201,
+    "majorName": "Địa chất học",
+    "description": "Ngành Địa chất học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực địa chất học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440212,
+    "majorName": "Bản đồ học",
+    "description": "Ngành Bản đồ học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực bản đồ học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440217,
+    "majorName": "Địa lý tự nhiênkỹ thuật",
+    "description": "Ngành Địa lý tự nhiênkỹ thuật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực địa lý tự nhiênkỹ thuật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440221,
+    "majorName": "Khí tượng và khí hậu học",
+    "description": "Ngành Khí tượng và khí hậu học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khí tượng và khí hậu học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440224,
+    "majorName": "Thuỷ văn học",
+    "description": "Ngành Thuỷ văn học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thuỷ văn học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440228,
+    "majorName": "Hải dương học",
+    "description": "Ngành Hải dương học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực hải dương học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7440301,
+    "majorName": "Khoa học môi trường",
+    "description": "Ngành Khoa học môi trường đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khoa học môi trường, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7460101,
+    "majorName": "Toán học",
+    "description": "Ngành Toán học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực toán học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7460107,
+    "majorName": "Khoa học tính toán",
+    "description": "Ngành Khoa học tính toán đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khoa học tính toán, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7460112,
+    "majorName": "Toán ứng dụng",
+    "description": "Ngành Toán ứng dụng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực toán ứng dụng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7460115,
+    "majorName": "Toán cơ",
+    "description": "Ngành Toán cơ đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực toán cơ, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7460117,
+    "majorName": "Toán tin",
+    "description": "Ngành Toán tin đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực toán tin, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7460201,
+    "majorName": "Thống kê",
+    "description": "Ngành Thống kê đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thống kê, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7480101,
+    "majorName": "Khoa học máy tính",
+    "description": "Ngành Khoa học máy tính đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khoa học máy tính, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7480102,
+    "majorName": "Mạng máy tính và truyền thông dữ liệu",
+    "description": "Ngành Mạng máy tính và truyền thông dữ liệu đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực mạng máy tính và truyền thông dữ liệu, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7480103,
+    "majorName": "Kỹ thuật phần mềm",
+    "description": "Ngành Kỹ thuật phần mềm đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật phần mềm, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7480104,
+    "majorName": "Hệ thống thông tin",
+    "description": "Ngành Hệ thống thông tin đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực hệ thống thông tin, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7480106,
+    "majorName": "Kỹ thuật máy tính",
+    "description": "Ngành Kỹ thuật máy tính đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật máy tính, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7480108,
+    "majorName": "Công nghệ kỹ thuật máy tính",
+    "description": "Ngành Công nghệ kỹ thuật máy tính đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật máy tính, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7480201,
+    "majorName": "Công nghệ thông tin",
+    "description": "Ngành Công nghệ thông tin đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ thông tin, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7480202,
+    "majorName": "An toàn thông tin",
+    "description": "Ngành An toàn thông tin đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực an toàn thông tin, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510101,
+    "majorName": "Công nghệ kỹ thuật kiến trúc",
+    "description": "Ngành Công nghệ kỹ thuật kiến trúc đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật kiến trúc, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510102,
+    "majorName": "Công nghệ kỹ thuật công trình xây dựng",
+    "description": "Ngành Công nghệ kỹ thuật công trình xây dựng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật công trình xây dựng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510103,
+    "majorName": "Công nghệ kỹ thuật xây dựng",
+    "description": "Ngành Công nghệ kỹ thuật xây dựng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật xây dựng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510104,
+    "majorName": "Công nghệ kỹ thuật giao thông",
+    "description": "Ngành Công nghệ kỹ thuật giao thông đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật giao thông, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510105,
+    "majorName": "Công nghệ kỹ thuật vật liệu xây dựng",
+    "description": "Ngành Công nghệ kỹ thuật vật liệu xây dựng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật vật liệu xây dựng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510201,
+    "majorName": "Công nghệ kỹ thuật cơ khí",
+    "description": "Ngành Công nghệ kỹ thuật cơ khí đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật cơ khí, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510202,
+    "majorName": "Công nghệ chế tạo máy",
+    "description": "Ngành Công nghệ chế tạo máy đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ chế tạo máy, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510203,
+    "majorName": "Công nghệ kỹ thuật cơ điện tử",
+    "description": "Ngành Công nghệ kỹ thuật cơ điện tử đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật cơ điện tử, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510205,
+    "majorName": "Công nghệ kỹ thuật ô tô",
+    "description": "Ngành Công nghệ kỹ thuật ô tô đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật ô tô, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510206,
+    "majorName": "Công nghệ kỹ thuật nhiệt",
+    "description": "Ngành Công nghệ kỹ thuật nhiệt đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật nhiệt, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510207,
+    "majorName": "Công nghệ kỹ thuật tàu thủy",
+    "description": "Ngành Công nghệ kỹ thuật tàu thủy đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật tàu thủy, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510211,
+    "majorName": "Bảo dưỡng công nghiệp",
+    "description": "Ngành Bảo dưỡng công nghiệp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực bảo dưỡng công nghiệp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510301,
+    "majorName": "Công nghệ kỹ thuật điện, điện tử",
+    "description": "Ngành Công nghệ kỹ thuật điện, điện tử đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật điện, điện tử, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510302,
+    "majorName": "Công nghệ kỹ thuật điện tử - viễn thông",
+    "description": "Ngành Công nghệ kỹ thuật điện tử - viễn thông đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật điện tử - viễn thông, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510303,
+    "majorName": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "description": "Ngành Công nghệ kỹ thuật điều khiển và tự động hóa đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật điều khiển và tự động hóa, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510401,
+    "majorName": "Công nghệ kỹ thuật hoá học",
+    "description": "Ngành Công nghệ kỹ thuật hoá học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật hoá học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510402,
+    "majorName": "Công nghệ vật liệu",
+    "description": "Ngành Công nghệ vật liệu đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ vật liệu, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510406,
+    "majorName": "Công nghệ kỹ thuật môi trường",
+    "description": "Ngành Công nghệ kỹ thuật môi trường đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật môi trường, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510407,
+    "majorName": "Công nghệ kỹ thuật hạt nhân",
+    "description": "Ngành Công nghệ kỹ thuật hạt nhân đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật hạt nhân, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510601,
+    "majorName": "Quản lý công nghiệp",
+    "description": "Ngành Quản lý công nghiệp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý công nghiệp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510604,
+    "majorName": "Kinh tế công nghiệp",
+    "description": "Ngành Kinh tế công nghiệp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh tế công nghiệp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510605,
+    "majorName": "Logistics và Quản lý chuỗi cung ứng",
+    "description": "Ngành Logistics và Quản lý chuỗi cung ứng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực logistics và quản lý chuỗi cung ứng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510701,
+    "majorName": "Công nghệ dầu khí và khai thác dầu",
+    "description": "Ngành Công nghệ dầu khí và khai thác dầu đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ dầu khí và khai thác dầu, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7510801,
+    "majorName": "Công nghệ kỹ thuật in",
+    "description": "Ngành Công nghệ kỹ thuật in đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ kỹ thuật in, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520101,
+    "majorName": "Cơ kỹ thuật",
+    "description": "Ngành Cơ kỹ thuật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực cơ kỹ thuật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520103,
+    "majorName": "Kỹ thuật cơ khí",
+    "description": "Ngành Kỹ thuật cơ khí đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật cơ khí, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520114,
+    "majorName": "Kỹ thuật cơ điện tử",
+    "description": "Ngành Kỹ thuật cơ điện tử đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật cơ điện tử, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520115,
+    "majorName": "Kỹ thuật nhiệt",
+    "description": "Ngành Kỹ thuật nhiệt đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật nhiệt, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520116,
+    "majorName": "Kỹ thuật cơ khí động lực",
+    "description": "Ngành Kỹ thuật cơ khí động lực đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật cơ khí động lực, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520117,
+    "majorName": "Kỹ thuật công nghiệp",
+    "description": "Ngành Kỹ thuật công nghiệp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật công nghiệp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520118,
+    "majorName": "Kỹ thuật hệ thống công nghiệp",
+    "description": "Ngành Kỹ thuật hệ thống công nghiệp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật hệ thống công nghiệp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520120,
+    "majorName": "Kỹ thuật hàng không",
+    "description": "Ngành Kỹ thuật hàng không đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật hàng không, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520121,
+    "majorName": "Kỹ thuật không gian",
+    "description": "Ngành Kỹ thuật không gian đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật không gian, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520122,
+    "majorName": "Kỹ thuật tàu thuỷ",
+    "description": "Ngành Kỹ thuật tàu thuỷ đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật tàu thuỷ, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520130,
+    "majorName": "Kỹ thuật ô tô",
+    "description": "Ngành Kỹ thuật ô tô đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật ô tô, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520137,
+    "majorName": "Kỹ thuật in",
+    "description": "Ngành Kỹ thuật in đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật in, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520201,
+    "majorName": "Kỹ thuật điện",
+    "description": "Ngành Kỹ thuật điện đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật điện, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520204,
+    "majorName": "Kỹ thuật ra đa- dẫn đường",
+    "description": "Ngành Kỹ thuật ra đa- dẫn đường đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật ra đa- dẫn đường, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520205,
+    "majorName": "Kỹ thuật thuỷ âm",
+    "description": "Ngành Kỹ thuật thuỷ âm đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật thuỷ âm, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520207,
+    "majorName": "Kỹ thuật điện tử -  viễn thông",
+    "description": "Ngành Kỹ thuật điện tử -  viễn thông đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật điện tử -  viễn thông, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520212,
+    "majorName": "Kỹ thuật y sinh",
+    "description": "Ngành Kỹ thuật y sinh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật y sinh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520216,
+    "majorName": "Kỹ thuật điều khiển và tự động hoá",
+    "description": "Ngành Kỹ thuật điều khiển và tự động hoá đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật điều khiển và tự động hoá, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520301,
+    "majorName": "Kỹ thuật hoá học",
+    "description": "Ngành Kỹ thuật hoá học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật hoá học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520309,
+    "majorName": "Kỹ thuật vật liệu",
+    "description": "Ngành Kỹ thuật vật liệu đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật vật liệu, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520310,
+    "majorName": "Kỹ thuật vật liệu kim loại",
+    "description": "Ngành Kỹ thuật vật liệu kim loại đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật vật liệu kim loại, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520312,
+    "majorName": "Kỹ thuật dệt",
+    "description": "Ngành Kỹ thuật dệt đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật dệt, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520320,
+    "majorName": "Kỹ thuật môi trường",
+    "description": "Ngành Kỹ thuật môi trường đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật môi trường, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520401,
+    "majorName": "Vật lý kỹ thuật",
+    "description": "Ngành Vật lý kỹ thuật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực vật lý kỹ thuật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520402,
+    "majorName": "Kỹ thuật hạt nhân",
+    "description": "Ngành Kỹ thuật hạt nhân đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật hạt nhân, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520501,
+    "majorName": "Kỹ thuật địa chất",
+    "description": "Ngành Kỹ thuật địa chất đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật địa chất, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520502,
+    "majorName": "Kỹ thuật địa vật lý",
+    "description": "Ngành Kỹ thuật địa vật lý đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật địa vật lý, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520503,
+    "majorName": "Kỹ thuật trắc địa - bản đồ",
+    "description": "Ngành Kỹ thuật trắc địa - bản đồ đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật trắc địa - bản đồ, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520601,
+    "majorName": "Kỹ thuật mỏ",
+    "description": "Ngành Kỹ thuật mỏ đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật mỏ, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520602,
+    "majorName": "Kỹ thuật thăm dò và khảo sát",
+    "description": "Ngành Kỹ thuật thăm dò và khảo sát đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật thăm dò và khảo sát, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520604,
+    "majorName": "Kỹ thuật dầu khí",
+    "description": "Ngành Kỹ thuật dầu khí đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật dầu khí, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7520607,
+    "majorName": "Kỹ thuật tuyển khoáng",
+    "description": "Ngành Kỹ thuật tuyển khoáng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật tuyển khoáng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7529001,
+    "majorName": "Kỹ thuật biển",
+    "description": "Ngành Kỹ thuật biển đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật biển, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7540101,
+    "majorName": "Công nghệ thực phẩm",
+    "description": "Ngành Công nghệ thực phẩm đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ thực phẩm, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7540102,
+    "majorName": "Kỹ thuật thực phẩm",
+    "description": "Ngành Kỹ thuật thực phẩm đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật thực phẩm, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7540104,
+    "majorName": "Công nghệ sau thu hoạch",
+    "description": "Ngành Công nghệ sau thu hoạch đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ sau thu hoạch, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7540105,
+    "majorName": "Công nghệ chế biến thuỷ sản",
+    "description": "Ngành Công nghệ chế biến thuỷ sản đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ chế biến thuỷ sản, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7540106,
+    "majorName": "Đảm bảo chất lượng và an toàn thực phẩm",
+    "description": "Ngành Đảm bảo chất lượng và an toàn thực phẩm đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực đảm bảo chất lượng và an toàn thực phẩm, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7540202,
+    "majorName": "Công nghệ sợi, dệt",
+    "description": "Ngành Công nghệ sợi, dệt đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ sợi, dệt, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7540203,
+    "majorName": "Công nghệ vật liệu dệt, may",
+    "description": "Ngành Công nghệ vật liệu dệt, may đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ vật liệu dệt, may, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7540204,
+    "majorName": "Công nghệ dệt, may",
+    "description": "Ngành Công nghệ dệt, may đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ dệt, may, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7540206,
+    "majorName": "Công nghệ da giày",
+    "description": "Ngành Công nghệ da giày đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ da giày, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7549001,
+    "majorName": "Công nghệ chế biến lâm sản",
+    "description": "Ngành Công nghệ chế biến lâm sản đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ chế biến lâm sản, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580101,
+    "majorName": "Kiến trúc",
+    "description": "Ngành Kiến trúc đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kiến trúc, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580102,
+    "majorName": "Kiến trúc cảnh quan",
+    "description": "Ngành Kiến trúc cảnh quan đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kiến trúc cảnh quan, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580103,
+    "majorName": "Kiến trúc nội thất",
+    "description": "Ngành Kiến trúc nội thất đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kiến trúc nội thất, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580104,
+    "majorName": "Kiến trúc đô thị",
+    "description": "Ngành Kiến trúc đô thị đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kiến trúc đô thị, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580105,
+    "majorName": "Quy hoạch vùng và đô thị",
+    "description": "Ngành Quy hoạch vùng và đô thị đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quy hoạch vùng và đô thị, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580106,
+    "majorName": "Quản lý đô thị và công trình",
+    "description": "Ngành Quản lý đô thị và công trình đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý đô thị và công trình, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580108,
+    "majorName": "Thiết kế nội thất",
+    "description": "Ngành Thiết kế nội thất đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thiết kế nội thất, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580111,
+    "majorName": "Bảo tồn di sản kiến trúc - đô thị",
+    "description": "Ngành Bảo tồn di sản kiến trúc - đô thị đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực bảo tồn di sản kiến trúc - đô thị, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580112,
+    "majorName": "Đô thị học",
+    "description": "Ngành Đô thị học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực đô thị học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580201,
+    "majorName": "Kỹ thuật xây dựng",
+    "description": "Ngành Kỹ thuật xây dựng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật xây dựng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580202,
+    "majorName": "Kỹ thuật xây dựng công trình thuỷ",
+    "description": "Ngành Kỹ thuật xây dựng công trình thuỷ đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật xây dựng công trình thuỷ, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580203,
+    "majorName": "Kỹ thuật xây dựng công trình biển",
+    "description": "Ngành Kỹ thuật xây dựng công trình biển đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật xây dựng công trình biển, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580205,
+    "majorName": "Kỹ thuật xây dựng công trình giao thông",
+    "description": "Ngành Kỹ thuật xây dựng công trình giao thông đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật xây dựng công trình giao thông, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580210,
+    "majorName": "Kỹ thuật cơ sở hạ tầng",
+    "description": "Ngành Kỹ thuật cơ sở hạ tầng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật cơ sở hạ tầng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580211,
+    "majorName": "Địa kỹ thuật xây dựng",
+    "description": "Ngành Địa kỹ thuật xây dựng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực địa kỹ thuật xây dựng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580212,
+    "majorName": "Kỹ thuật tài nguyên nước",
+    "description": "Ngành Kỹ thuật tài nguyên nước đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật tài nguyên nước, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580213,
+    "majorName": "Kỹ thuật cấp thoát nước",
+    "description": "Ngành Kỹ thuật cấp thoát nước đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật cấp thoát nước, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580301,
+    "majorName": "Kinh tế xây dựng",
+    "description": "Ngành Kinh tế xây dựng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh tế xây dựng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7580302,
+    "majorName": "Quản lý xây dựng",
+    "description": "Ngành Quản lý xây dựng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý xây dựng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620101,
+    "majorName": "Nông nghiệp",
+    "description": "Ngành Nông nghiệp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực nông nghiệp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620102,
+    "majorName": "Khuyến nông",
+    "description": "Ngành Khuyến nông đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khuyến nông, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620103,
+    "majorName": "Khoa học đất",
+    "description": "Ngành Khoa học đất đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khoa học đất, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620105,
+    "majorName": "Chăn nuôi",
+    "description": "Ngành Chăn nuôi đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chăn nuôi, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620109,
+    "majorName": "Nông học",
+    "description": "Ngành Nông học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực nông học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620110,
+    "majorName": "Khoa học cây trồng",
+    "description": "Ngành Khoa học cây trồng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khoa học cây trồng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620112,
+    "majorName": "Bảo vệ thực vật",
+    "description": "Ngành Bảo vệ thực vật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực bảo vệ thực vật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620113,
+    "majorName": "Công nghệ rau hoa quả và cảnh quan",
+    "description": "Ngành Công nghệ rau hoa quả và cảnh quan đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công nghệ rau hoa quả và cảnh quan, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620114,
+    "majorName": "Kinh doanh nông nghiệp",
+    "description": "Ngành Kinh doanh nông nghiệp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh doanh nông nghiệp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620115,
+    "majorName": "Kinh tế nông nghiệp",
+    "description": "Ngành Kinh tế nông nghiệp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh tế nông nghiệp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620116,
+    "majorName": "Phát triển nông thôn",
+    "description": "Ngành Phát triển nông thôn đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực phát triển nông thôn, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620201,
+    "majorName": "Lâm học",
+    "description": "Ngành Lâm học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực lâm học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620202,
+    "majorName": "Lâm nghiệp đô thị",
+    "description": "Ngành Lâm nghiệp đô thị đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực lâm nghiệp đô thị, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620205,
+    "majorName": "Lâm sinh",
+    "description": "Ngành Lâm sinh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực lâm sinh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620211,
+    "majorName": "Quản lý tài nguyên rừng",
+    "description": "Ngành Quản lý tài nguyên rừng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý tài nguyên rừng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620301,
+    "majorName": "Nuôi trồng thuỷ sản",
+    "description": "Ngành Nuôi trồng thuỷ sản đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực nuôi trồng thuỷ sản, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620302,
+    "majorName": "Bệnh học thủy sản",
+    "description": "Ngành Bệnh học thủy sản đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực bệnh học thủy sản, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620303,
+    "majorName": "Khoa học thủy sản",
+    "description": "Ngành Khoa học thủy sản đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khoa học thủy sản, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620304,
+    "majorName": "Khai thác thuỷ sản",
+    "description": "Ngành Khai thác thuỷ sản đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khai thác thuỷ sản, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7620305,
+    "majorName": "Quản lý thủy sản",
+    "description": "Ngành Quản lý thủy sản đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý thủy sản, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7640101,
+    "majorName": "Thú y",
+    "description": "Ngành Thú y đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thú y, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720101,
+    "majorName": "Y khoa",
+    "description": "Ngành Y khoa đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực y khoa, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720110,
+    "majorName": "Y học dự phòng",
+    "description": "Ngành Y học dự phòng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực y học dự phòng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720115,
+    "majorName": "Y học cổ truyền",
+    "description": "Ngành Y học cổ truyền đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực y học cổ truyền, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720201,
+    "majorName": "Dược học",
+    "description": "Ngành Dược học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực dược học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720203,
+    "majorName": "Hoá dược",
+    "description": "Ngành Hoá dược đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực hoá dược, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720301,
+    "majorName": "Điều dưỡng",
+    "description": "Ngành Điều dưỡng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực điều dưỡng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720302,
+    "majorName": "Hộ sinh",
+    "description": "Ngành Hộ sinh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực hộ sinh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720401,
+    "majorName": "Dinh dưỡng",
+    "description": "Ngành Dinh dưỡng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực dinh dưỡng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720501,
+    "majorName": "Răng - Hàm - Mặt",
+    "description": "Ngành Răng - Hàm - Mặt đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực răng - hàm - mặt, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720502,
+    "majorName": "Kỹ thuật phục hình răng",
+    "description": "Ngành Kỹ thuật phục hình răng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật phục hình răng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720601,
+    "majorName": "Kỹ thuật xét nghiệm y học",
+    "description": "Ngành Kỹ thuật xét nghiệm y học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật xét nghiệm y học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720602,
+    "majorName": "Kỹ thuật hình ảnh y học",
+    "description": "Ngành Kỹ thuật hình ảnh y học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật hình ảnh y học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720603,
+    "majorName": "Kỹ thuật phục hồi chức năng",
+    "description": "Ngành Kỹ thuật phục hồi chức năng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật phục hồi chức năng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720701,
+    "majorName": "Y tế công cộng",
+    "description": "Ngành Y tế công cộng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực y tế công cộng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720801,
+    "majorName": "Tổ chức và quản lý y tế",
+    "description": "Ngành Tổ chức và quản lý y tế đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực tổ chức và quản lý y tế, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7720802,
+    "majorName": "Quản lý bệnh viện",
+    "description": "Ngành Quản lý bệnh viện đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý bệnh viện, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7729001,
+    "majorName": "Y sinh học thể dục thể thao",
+    "description": "Ngành Y sinh học thể dục thể thao đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực y sinh học thể dục thể thao, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7760101,
+    "majorName": "Công tác xã hội",
+    "description": "Ngành Công tác xã hội đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công tác xã hội, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7760102,
+    "majorName": "Công tác thanh thiếu niên",
+    "description": "Ngành Công tác thanh thiếu niên đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực công tác thanh thiếu niên, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 8760103,
+    "majorName": "Hỗ trợ giáo dục người khuyết tật",
+    "description": "Ngành Hỗ trợ giáo dục người khuyết tật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực hỗ trợ giáo dục người khuyết tật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7810101,
+    "majorName": "Du lịch",
+    "description": "Ngành Du lịch đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực du lịch, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7810103,
+    "majorName": "Quản trị dịch vụ du lịch và lữ hành",
+    "description": "Ngành Quản trị dịch vụ du lịch và lữ hành đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản trị dịch vụ du lịch và lữ hành, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7810201,
+    "majorName": "Quản trị khách sạn",
+    "description": "Ngành Quản trị khách sạn đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản trị khách sạn, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7810202,
+    "majorName": "Quản trị nhà hàng và dịch vụ ăn uống",
+    "description": "Ngành Quản trị nhà hàng và dịch vụ ăn uống đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản trị nhà hàng và dịch vụ ăn uống, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7810301,
+    "majorName": "Quản lý thể dục thể thao",
+    "description": "Ngành Quản lý thể dục thể thao đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý thể dục thể thao, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7810501,
+    "majorName": "Kinh tế gia đình",
+    "description": "Ngành Kinh tế gia đình đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh tế gia đình, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7840101,
+    "majorName": "Khai thác vận tải",
+    "description": "Ngành Khai thác vận tải đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khai thác vận tải, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7840102,
+    "majorName": "Quản lý hoạt động bay",
+    "description": "Ngành Quản lý hoạt động bay đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý hoạt động bay, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7840104,
+    "majorName": "Kinh tế vận tải",
+    "description": "Ngành Kinh tế vận tải đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh tế vận tải, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7840106,
+    "majorName": "Khoa học hàng hải",
+    "description": "Ngành Khoa học hàng hải đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực khoa học hàng hải, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7850101,
+    "majorName": "Quản lý tài nguyên và môi trường",
+    "description": "Ngành Quản lý tài nguyên và môi trường đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý tài nguyên và môi trường, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7850102,
+    "majorName": "Kinh tế tài nguyên thiên nhiên",
+    "description": "Ngành Kinh tế tài nguyên thiên nhiên đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kinh tế tài nguyên thiên nhiên, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7850103,
+    "majorName": "Quản lý đất đai",
+    "description": "Ngành Quản lý đất đai đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý đất đai, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7850201,
+    "majorName": "Bảo hộ lao động",
+    "description": "Ngành Bảo hộ lao động đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực bảo hộ lao động, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860101,
+    "majorName": "Trinh sát an ninh",
+    "description": "Ngành Trinh sát an ninh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực trinh sát an ninh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860102,
+    "majorName": "Trinh sát cảnh sát",
+    "description": "Ngành Trinh sát cảnh sát đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực trinh sát cảnh sát, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860104,
+    "majorName": "Điều tra hình sự",
+    "description": "Ngành Điều tra hình sự đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực điều tra hình sự, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860108,
+    "majorName": "Kỹ thuật hình sự",
+    "description": "Ngành Kỹ thuật hình sự đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực kỹ thuật hình sự, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860109,
+    "majorName": "Quản lý nhà nước về an ninh trật tự",
+    "description": "Ngành Quản lý nhà nước về an ninh trật tự đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý nhà nước về an ninh trật tự, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860110,
+    "majorName": "Quản lý trật tự an toàn giao thông",
+    "description": "Ngành Quản lý trật tự an toàn giao thông đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quản lý trật tự an toàn giao thông, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860111,
+    "majorName": "Thi hành án hình sự và hỗ trợ tư pháp",
+    "description": "Ngành Thi hành án hình sự và hỗ trợ tư pháp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực thi hành án hình sự và hỗ trợ tư pháp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860112,
+    "majorName": "Tham mưu, chỉ huy công an nhân dân",
+    "description": "Ngành Tham mưu, chỉ huy công an nhân dân đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực tham mưu, chỉ huy công an nhân dân, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860113,
+    "majorName": "Phòng cháy chữa cháy và cứu nạn cứu hộ",
+    "description": "Ngành Phòng cháy chữa cháy và cứu nạn cứu hộ đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực phòng cháy chữa cháy và cứu nạn cứu hộ, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860116,
+    "majorName": "Hậu cần công an nhân dân",
+    "description": "Ngành Hậu cần công an nhân dân đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực hậu cần công an nhân dân, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860117,
+    "majorName": "Tình báo an ninh",
+    "description": "Ngành Tình báo an ninh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực tình báo an ninh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860201,
+    "majorName": "Chỉ huy tham mưu Lục quân",
+    "description": "Ngành Chỉ huy tham mưu Lục quân đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy tham mưu lục quân, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860202,
+    "majorName": "Chỉ huy tham mưu Hải quân",
+    "description": "Ngành Chỉ huy tham mưu Hải quân đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy tham mưu hải quân, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860203,
+    "majorName": "Chỉ huy tham mưu Không quân",
+    "description": "Ngành Chỉ huy tham mưu Không quân đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy tham mưu không quân, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860204,
+    "majorName": "Chỉ huy tham mưu Phòng không",
+    "description": "Ngành Chỉ huy tham mưu Phòng không đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy tham mưu phòng không, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860205,
+    "majorName": "Chỉ huy tham mưu Pháo binh",
+    "description": "Ngành Chỉ huy tham mưu Pháo binh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy tham mưu pháo binh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860206,
+    "majorName": "Chỉ huy tham mưu Tăng - thiết giáp",
+    "description": "Ngành Chỉ huy tham mưu Tăng - thiết giáp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy tham mưu tăng - thiết giáp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860207,
+    "majorName": "Chỉ huy tham mưu Đặc công",
+    "description": "Ngành Chỉ huy tham mưu Đặc công đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy tham mưu đặc công, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860214,
+    "majorName": "Biên phòng",
+    "description": "Ngành Biên phòng đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực biên phòng, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860217,
+    "majorName": "Tình báo quân sự",
+    "description": "Ngành Tình báo quân sự đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực tình báo quân sự, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860218,
+    "majorName": "Hậu cần quân sự",
+    "description": "Ngành Hậu cần quân sự đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực hậu cần quân sự, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860220,
+    "majorName": "Chỉ huy tham mưu thông tin",
+    "description": "Ngành Chỉ huy tham mưu thông tin đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy tham mưu thông tin, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860222,
+    "majorName": "Quân sự cơ sở",
+    "description": "Ngành Quân sự cơ sở đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực quân sự cơ sở, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860220,
+    "majorName": "Chỉ huy, quản lý kỹ thuật",
+    "description": "Ngành Chỉ huy, quản lý kỹ thuật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy, quản lý kỹ thuật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860226,
+    "majorName": "Chỉ huy kỹ thuật Phòng không",
+    "description": "Ngành Chỉ huy kỹ thuật Phòng không đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy kỹ thuật phòng không, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860227,
+    "majorName": "Chỉ huy kỹ thuật Tăng - thiết giáp",
+    "description": "Ngành Chỉ huy kỹ thuật Tăng - thiết giáp đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy kỹ thuật tăng - thiết giáp, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860228,
+    "majorName": "Chỉ huy kỹ thuật Công binh",
+    "description": "Ngành Chỉ huy kỹ thuật Công binh đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy kỹ thuật công binh, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860229,
+    "majorName": "Chỉ huy kỹ thuật Hoá học",
+    "description": "Ngành Chỉ huy kỹ thuật Hoá học đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy kỹ thuật hoá học, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860231,
+    "majorName": "Trinh sát kỹ thuật",
+    "description": "Ngành Trinh sát kỹ thuật đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực trinh sát kỹ thuật, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860232,
+    "majorName": "Chỉ huy kỹ thuật Hải quân",
+    "description": "Ngành Chỉ huy kỹ thuật Hải quân đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy kỹ thuật hải quân, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  },
+  {
+    "majorCode": 7860233,
+    "majorName": "Chỉ huy kỹ thuật tác chiến điện tử",
+    "description": "Ngành Chỉ huy kỹ thuật tác chiến điện tử đào tạo kiến thức nền tảng và chuyên sâu liên quan đến lĩnh vực chỉ huy kỹ thuật tác chiến điện tử, giúp người học phát triển năng lực chuyên môn, kỹ năng thực hành, tư duy phân tích, nghiên cứu và giải quyết các vấn đề thực tiễn. Sau khi tốt nghiệp, sinh viên có thể làm việc tại các cơ quan, tổ chức, doanh nghiệp hoặc tiếp tục học tập và nghiên cứu ở bậc cao hơn."
+  }
+]

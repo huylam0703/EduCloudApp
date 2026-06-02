@@ -27,7 +27,13 @@ public enum ErrorCode {
     //Auth
     AUTH_USERNAME(1101, "username should not be left blank", HttpStatus.BAD_REQUEST),
     AUTH_PASSWORD(1102, "password should not be left blank", HttpStatus.BAD_REQUEST),
+
+
+    //MasterData
+    MAJOR_VIBE_FAILED(1201, "Seed major failed", HttpStatus.EXPECTATION_FAILED),
     ;
+
+    
 
 
     private int code;
