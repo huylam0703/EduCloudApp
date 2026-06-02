@@ -2,8 +2,6 @@ package app.project.EduCloud.configuration;
 
 import app.project.EduCloud.entity.Role;
 import app.project.EduCloud.entity.User;
-import app.project.EduCloud.exception.AppException;
-import app.project.EduCloud.exception.ErrorCode;
 import app.project.EduCloud.repository.RoleRepository;
 import app.project.EduCloud.repository.UserRepository;
 import lombok.AccessLevel;
@@ -29,27 +27,43 @@ public class ApplicationInitConfig {
     @Bean
     ApplicationRunner applicationRunner(UserRepository userRepository) {
         return args -> {
-            if (userRepository.findByUsername("admin").isEmpty()) {
+            // Seed USER role
+            Role userRole = roleRepository.findById("USER")
+                .orElseGet(() -> roleRepository.save(
+                    Role.builder()
+                        .name("USER")
+                        .description("Student role")
+                        .build()
+                ));
 
-                Role adminRole = roleRepository.findById("ADMIN")
-                        .orElseGet(() -> roleRepository.save(
-                                Role.builder()
-                                        .name("ADMIN")
-                                        .build()
-                        ));
+            // Seed ADMIN role
+            Role adminRole = roleRepository.findById("ADMIN")
+                .orElseGet(() -> roleRepository.save(
+                    Role.builder()
+                        .name("ADMIN")
+                        .description("Admin role")
+                        .build()
+                ));
 
+            // Seed admin user
+            var existingAdmin = userRepository.findByUsername("admin");
+            if (existingAdmin.isEmpty()) {
                 HashSet<Role> roles = new HashSet<>();
                 roles.add(adminRole);
 
                 User user = User.builder()
                         .username("admin")
-                        .password(passwordEncoder.encode("admin"))
+                        .password(passwordEncoder.encode("admin123"))
                         .roles(roles)
                         .build();
 
                 userRepository.save(user);
-
-                log.warn("admin user has been created with default password: admin, please change it");
+                log.warn("admin user created with password: admin123");
+            } else {
+                User adminUser = existingAdmin.get();
+                adminUser.setPassword(passwordEncoder.encode("admin123"));
+                userRepository.save(adminUser);
+                log.warn("admin password updated to: admin123");
             }
         };
     }
