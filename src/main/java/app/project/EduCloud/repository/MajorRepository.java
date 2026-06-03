@@ -8,7 +8,9 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import app.project.EduCloud.entity.Major;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface MajorRepository extends JpaRepository<Major, String>{
     Boolean existsByMajorName(String majorName);
 
