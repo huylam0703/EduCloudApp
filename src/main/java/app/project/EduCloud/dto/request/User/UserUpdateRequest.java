@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -30,8 +31,8 @@ public class UserUpdateRequest {
     @Email(message = "EMAIL_UNVALID")
     String email;
 
-    @Min(value = 12, message = "IDENTITY_NUMBER_UNVALID")
-    String identityNumber;
+    @Size(min = 10, max = 15, message = "PHONE_NUMBER_UNVALID")
+    String phoneNumber;
 
     List<String> roles;
 }

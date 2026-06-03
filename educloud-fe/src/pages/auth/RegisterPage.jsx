@@ -43,15 +43,15 @@ export default function RegisterPage() {
         {field('username', 'Tên đăng nhập')}
         {field('email', 'Email', 'email')}
         <div>
-          <Label htmlFor="identityNumber">Số CCCD/CMND</Label>
+          <Label htmlFor="phoneNumber">Số điện thoại</Label>
           <Input
-            id="identityNumber"
+            id="phoneNumber"
             inputMode="numeric"
             className="mt-1.5"
-            {...register('identityNumber')}
+            {...register('phoneNumber')}
           />
-          {errors.identityNumber && (
-            <p className="mt-1 text-xs text-red-500">{errors.identityNumber.message}</p>
+          {errors.phoneNumber && (
+            <p className="mt-1 text-xs text-red-500">{errors.phoneNumber.message}</p>
           )}
         </div>
         <div>

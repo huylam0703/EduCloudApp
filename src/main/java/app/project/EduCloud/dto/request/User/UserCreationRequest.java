@@ -36,6 +36,6 @@ public class UserCreationRequest {
     @Email(message = "EMAIL_UNVALID")
     String email;
 
-    @Min(value = 12, message = "IDENTITY_NUMBER_UNVALID")
-    String identityNumber;
+    @Size(min = 10, max = 15, message = "PHONE_NUMBER_UNVALID")
+    String phoneNumber;
 }

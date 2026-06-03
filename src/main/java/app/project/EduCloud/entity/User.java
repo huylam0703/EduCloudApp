@@ -20,13 +20,16 @@ public class User {
     @GeneratedValue(strategy = GenerationType.UUID)
     String id;
     
+    @Column(columnDefinition = "NVARCHAR(150)")
     String firstName;
+    @Column(columnDefinition = "NVARCHAR(150)")
     String lastName;
+    
     LocalDate dob;
     String username;
     String password;
     String email;
-    String identityNumber;
+    String phoneNumber;
 
     @ManyToMany
     Set<Role> roles;

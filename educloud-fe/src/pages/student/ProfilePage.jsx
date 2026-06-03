@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import { useAuthStore, getDisplayName, isAdmin } from '@/store/authStore'
 import { useDashboardStats } from '@/hooks/useDocuments'
+import { userService } from '@/services/userService'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
@@ -8,42 +10,103 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { formatBytes } from '@/utils/formatBytes'
 import { Skeleton } from '@/components/ui/skeleton'
+import { setWithOptions } from 'date-fns/fp'
 
 export default function ProfilePage() {
   const user = useAuthStore((s) => s.user)
+  const setUser = useAuthStore((s) => s.setUser)
+
   const { data: stats, isLoading } = useDashboardStats()
+
+  const [firstName, setFirstName] = useState(user?.firstName || '')
+  const [lastName, setLastName] = useState(user?.lastName || '')
+  const [email, setEmail] = useState(user?.email || '')
+  const [dob, setDob] = useState(user?.dob || '')
+  const [phoneNumber, setPhoneNumber] = useState(user?.phoneNumber || '')
+  const [saving, setSaving] = useState(false)
+
   const used = stats?.storageUsed || 0
   const total = stats?.storageQuota || 5368709120
   const pct = Math.round((used / total) * 100)
 
   if (!user) return <Skeleton className="h-64" />
 
+  const handleUpdate = async () => {
+    try {
+      setSaving(true)
+
+      const payload = {
+        firstName,
+        lastName,
+        email,
+        dob,
+        phoneNumber,
+        roles: user.roles?.map((r) => r.name || r),
+      }
+
+      const res = await userService.updateUser(user.id, payload)
+
+      setUser(res.result)
+
+      alert('Cập nhật thông tin thành công')
+    } catch (error) {
+      console.error(error)
+      alert(error.response?.data?.message || 'Cập nhật thất bại')
+    } finally {
+      setSaving(false)
+    }
+  }
+
   return (
     <div className="grid gap-6 lg:grid-cols-2">
       <Card>
         <CardContent className="flex flex-col items-center p-8">
-          <div className="group relative">
-            <Avatar className="h-24 w-24">
-              <AvatarFallback className="text-2xl bg-primary text-white">
-                {getDisplayName(user).charAt(0)}
-              </AvatarFallback>
-            </Avatar>
-            <div className="absolute inset-0 flex items-center justify-center rounded-full bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
-              <span className="text-xs text-white">Đổi ảnh</span>
-            </div>
-          </div>
+          <Avatar className="h-24 w-24">
+            <AvatarFallback className="text-2xl bg-primary text-white">
+              {getDisplayName(user).charAt(0)}
+            </AvatarFallback>
+          </Avatar>
+
           <h2 className="mt-4 text-xl font-semibold">{getDisplayName(user)}</h2>
           <p className="text-slate-500">{user.email}</p>
           <Badge className="mt-2">{isAdmin(user) ? 'Admin' : 'Student'}</Badge>
+
           <form className="mt-6 w-full space-y-4">
             <div>
-              <Label>Họ tên</Label>
-              <Input className="mt-1" defaultValue={getDisplayName(user)} />
+              <Label>Họ</Label>
+              <Input value={firstName} onChange={(e) => setFirstName(e.target.value)} />
             </div>
-            <Button type="button">Lưu thay đổi</Button>
+
+            <div>
+              <Label>Tên</Label>
+              <Input value={lastName} onChange={(e) => setLastName(e.target.value)} />
+            </div>
+
+            <div>
+              <Label>Email</Label>
+              <Input value={email} onChange={(e) => setEmail(e.target.value)} />
+            </div>
+
+            <div>
+              <Label>Ngày sinh</Label>
+              <Input type="date" value={dob || ''} onChange={(e) => setDob(e.target.value)} />
+            </div>
+
+            <div>
+              <Label>Số điện thoại</Label>
+              <Input
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
+              />
+            </div>
+
+            <Button type="button" onClick={handleUpdate} disabled={saving}>
+              {saving ? 'Đang lưu...' : 'Lưu thay đổi'}
+            </Button>
           </form>
         </CardContent>
       </Card>
+
       <div className="space-y-6">
         <Card>
           <CardHeader>
@@ -70,16 +133,6 @@ export default function ProfilePage() {
                 <p className="text-sm text-slate-500">{stats?.documentCount ?? 0} files</p>
               </>
             )}
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader>
-            <CardTitle>Hoạt động</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-2 text-sm">
-            <p>Đã upload: {stats?.documentCount ?? 0} files</p>
-            <p>Đã tải: {stats?.totalDownloads ?? 0} lượt</p>
-            <p>Tham gia: —</p>
           </CardContent>
         </Card>
       </div>
