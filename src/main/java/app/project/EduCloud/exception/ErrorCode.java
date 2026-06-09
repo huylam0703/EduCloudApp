@@ -31,6 +31,10 @@ public enum ErrorCode {
 
     //MasterData
     MAJOR_VIBE_FAILED(1201, "Seed major failed", HttpStatus.EXPECTATION_FAILED),
+
+
+    //Semesters
+    SEMESTER_NOT_FOUND(1302, "semester not found", HttpStatus.NOT_FOUND),
     ;
 
     
