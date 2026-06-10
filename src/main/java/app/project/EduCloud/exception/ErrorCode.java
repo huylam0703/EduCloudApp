@@ -41,6 +41,8 @@ public enum ErrorCode {
 
     //SUBJECT
     SUBJECT_NOT_FOUND(1402, "subject not found", HttpStatus.BAD_REQUEST),
+    FOLDER_NAME_REQUIRED(1403, "folder name is required", HttpStatus.BAD_REQUEST),
+    FOLDER_NOT_FOUND(1404, "folder not found", HttpStatus.BAD_REQUEST),
     ;
 
     
