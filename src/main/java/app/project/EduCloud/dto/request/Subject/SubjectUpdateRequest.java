@@ -1,8 +1,7 @@
-package app.project.EduCloud.dto.request.Semesters;
+package app.project.EduCloud.dto.request.Subject;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-
 
 @Getter
 @Setter
@@ -10,9 +9,9 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class SemesterRequest {
-    String semesterName;
+public class SubjectUpdateRequest {
 
-    String academicYear;
+    String subjectName;
+    String description;
 
 }

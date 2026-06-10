@@ -35,6 +35,12 @@ public enum ErrorCode {
 
     //Semesters
     SEMESTER_NOT_FOUND(1302, "semester not found", HttpStatus.NOT_FOUND),
+
+    //Major
+    MAJOR_NOT_FOUND(1401, "major not found", HttpStatus.BAD_REQUEST),
+
+    //SUBJECT
+    SUBJECT_NOT_FOUND(1402, "subject not found", HttpStatus.BAD_REQUEST),
     ;
 
     
