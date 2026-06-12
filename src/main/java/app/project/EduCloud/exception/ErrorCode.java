@@ -9,6 +9,7 @@ public enum ErrorCode {
     UNCATEGORIZED_EXCEPTION(9999, "uncategorized exception", HttpStatus.INTERNAL_SERVER_ERROR),
     INVALID_KEY(9998, "invalid key", HttpStatus.BAD_REQUEST),
     ROLE_NOT_FOUND(9997, "role not found", HttpStatus.NOT_FOUND),
+    ACCESS_DENIED(9996, "access denied", HttpStatus.FORBIDDEN),
 
     //User
     USER_EXISTS(1001, "username already exists", HttpStatus.BAD_REQUEST),
@@ -43,6 +44,16 @@ public enum ErrorCode {
     SUBJECT_NOT_FOUND(1402, "subject not found", HttpStatus.BAD_REQUEST),
     FOLDER_NAME_REQUIRED(1403, "folder name is required", HttpStatus.BAD_REQUEST),
     FOLDER_NOT_FOUND(1404, "folder not found", HttpStatus.BAD_REQUEST),
+
+    //Cloud
+    FILE_NOT_EXISTS(1501, "file not exists", HttpStatus.BAD_REQUEST),
+    FOLDER_ACCESS_DENIED(1501, "folder access denied", HttpStatus.FORBIDDEN),
+    PUBLIC_DOCUMENT_REQUIRED_METADATA(1502, "public document required meta data", HttpStatus.BAD_REQUEST),
+    DOCUMENT_NOT_FOUND(1503, "document not found", HttpStatus.BAD_REQUEST),
+    FILE_KEY_INVALID(1504, "file key is invalid", HttpStatus.BAD_REQUEST),
+    FILE_NOT_FOUND_IN_STORAGE(1505, "file not found in storage", HttpStatus.BAD_REQUEST),
+    FILE_DOWNLOAD_FAILED(1506, "file download failed", HttpStatus.INTERNAL_SERVER_ERROR),
+    FILE_PREVIEW_NOT_SUPPORTED(1507, "file preview not support", HttpStatus.BAD_REQUEST),
     ;
 
     

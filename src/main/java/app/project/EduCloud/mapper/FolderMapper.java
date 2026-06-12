@@ -2,6 +2,7 @@ package app.project.EduCloud.mapper;
 
 import app.project.EduCloud.dto.response.Folder.FolderBaseResponse;
 import app.project.EduCloud.dto.response.Folder.FolderResponse;
+import app.project.EduCloud.dto.response.Folder.FolderTreeResponse;
 import app.project.EduCloud.entity.Folder;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -14,4 +15,6 @@ public interface FolderMapper {
 
     @Mapping(source = "user.id", target = "userId")
     FolderBaseResponse toFolderBaseResponse(Folder folder);
+
+    FolderTreeResponse toFolderTreeResponse(Folder folder);
 }

@@ -5,6 +5,7 @@ import app.project.EduCloud.dto.request.Folder.RenameFolderRequest;
 import app.project.EduCloud.dto.response.Auth.ApiResponse;
 import app.project.EduCloud.dto.response.Folder.FolderBaseResponse;
 import app.project.EduCloud.dto.response.Folder.FolderResponse;
+import app.project.EduCloud.dto.response.Folder.FolderTreeResponse;
 import app.project.EduCloud.service.Folder.FolderService;
 import jakarta.validation.Valid;
 import lombok.AccessLevel;
@@ -61,6 +62,19 @@ public class FolderController {
                         .code(1000)
                         .message("get all folder success")
                         .result(folderService.getAllFolders())
+                        .build());
+    }
+
+    @GetMapping("treeFolder")
+    public ResponseEntity<ApiResponse<List<FolderTreeResponse>>> getMyFolderTree() {
+
+        log.info("get all tree folder");
+
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body(ApiResponse.<List<FolderTreeResponse>>builder()
+                        .code(1000)
+                        .message("get all folder success")
+                        .result(folderService.getMyFolderTree())
                         .build());
     }
 

@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: optional:file:.env[.properties]
   application:
     name: EduCloud
   datasource:
@@ -27,3 +29,13 @@ jwt:
   singerKey: "PC8kxKGhdSmTjsgrnxy6r4qamn8fmrtkexw9EQCa02A="
   valid-duration: 3600 # in second
   refreshable-duration: 360000 # in second
+
+
+cloud:
+  aws:
+    credentials:
+      accessKey: ${AWS_ACCESS_KEY_ID}
+      secretKey: ${AWS_SECRET_ACCESS_KEY}
+    region:
+      static: ${AWS_REGION}
+    bucket-name: ${AWS_S3_BUCKET_NAME}

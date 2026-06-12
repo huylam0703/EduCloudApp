@@ -4,6 +4,7 @@ import app.project.EduCloud.dto.request.Folder.FolderRequest;
 import app.project.EduCloud.dto.request.Folder.RenameFolderRequest;
 import app.project.EduCloud.dto.response.Folder.FolderBaseResponse;
 import app.project.EduCloud.dto.response.Folder.FolderResponse;
+import app.project.EduCloud.dto.response.Folder.FolderTreeResponse;
 
 import java.util.List;
 
@@ -18,4 +19,6 @@ public interface FolderService {
     FolderBaseResponse renameFolder(String folderId, RenameFolderRequest request);
 
     void deleteFolder(String folderId);
+
+    List<FolderTreeResponse> getMyFolderTree();
 }

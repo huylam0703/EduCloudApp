@@ -1,5 +1,6 @@
 package app.project.EduCloud.dto.response.Folder;
 
+import app.project.EduCloud.dto.response.Document.DocumentResponse;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -26,4 +27,6 @@ public class FolderResponse {
     LocalDateTime updatedAt;
 
     List<FolderResponse> children;
+
+    List<DocumentResponse> documents;
 }

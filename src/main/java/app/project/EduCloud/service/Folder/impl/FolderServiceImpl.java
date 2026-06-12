@@ -4,11 +4,14 @@ import app.project.EduCloud.dto.request.Folder.FolderRequest;
 import app.project.EduCloud.dto.request.Folder.RenameFolderRequest;
 import app.project.EduCloud.dto.response.Folder.FolderBaseResponse;
 import app.project.EduCloud.dto.response.Folder.FolderResponse;
+import app.project.EduCloud.dto.response.Folder.FolderTreeResponse;
 import app.project.EduCloud.entity.Folder;
 import app.project.EduCloud.entity.User;
 import app.project.EduCloud.exception.AppException;
 import app.project.EduCloud.exception.ErrorCode;
+import app.project.EduCloud.mapper.DocumentMapper;
 import app.project.EduCloud.mapper.FolderMapper;
+import app.project.EduCloud.repository.DocumentRepository;
 import app.project.EduCloud.repository.FolderRepository;
 import app.project.EduCloud.repository.UserRepository;
 import app.project.EduCloud.service.Folder.FolderService;
@@ -31,6 +34,8 @@ public class FolderServiceImpl implements FolderService {
     FolderRepository folderRepository;
     FolderMapper folderMapper;
     UserRepository userRepository;
+    DocumentRepository documentRepository;
+    DocumentMapper documentMapper;
 
 
     @Override
@@ -66,7 +71,14 @@ public class FolderServiceImpl implements FolderService {
         Folder folder = folderRepository.findById(folderId)
                 .orElseThrow(()-> new AppException(ErrorCode.FOLDER_NOT_FOUND));
 
-        return folderMapper.toFolderResponse(folder);
+        FolderResponse folderResponse = folderMapper.toFolderResponse(folder);
+
+        folderResponse.setDocuments(documentRepository.findByFolder(folder)
+                .stream()
+                .map(documentMapper::toDocumentResponse)
+                .toList());
+
+        return folderResponse;
     }
 
     @Override
@@ -96,6 +108,15 @@ public class FolderServiceImpl implements FolderService {
     @PreAuthorize("hasRole('USER')")
     public void deleteFolder(String folderId) {
         folderRepository.deleteById(folderId);
+    }
+
+    @Override
+    @PreAuthorize("hasRole('USER')")
+    public List<FolderTreeResponse> getMyFolderTree() {
+        return folderRepository.findByUser_IdAndParentFolderIsNull(getCurrentUser().getId())
+                .stream()
+                .map(folderMapper::toFolderTreeResponse)
+                .toList();
     }
 
 
