@@ -1,26 +1,8 @@
 package app.project.EduCloud.service.Document.impl;
 
-import app.project.EduCloud.Utils.FileTypeUtils;
-import app.project.EduCloud.dto.request.Document.DocumentRequest;
-import app.project.EduCloud.dto.response.Document.DocumentResponse;
-import app.project.EduCloud.dto.response.Document.DownloadFileResponse;
-import app.project.EduCloud.dto.response.PageResponse;
-import app.project.EduCloud.dto.response.S3.S3UploadResponse;
-import app.project.EduCloud.entity.*;
-import app.project.EduCloud.enums.DocumentVisibility;
-import app.project.EduCloud.enums.FileType;
-import app.project.EduCloud.exception.AppException;
-import app.project.EduCloud.exception.ErrorCode;
-import app.project.EduCloud.mapper.DocumentMapper;
-import app.project.EduCloud.repository.*;
-import app.project.EduCloud.service.Document.DocumentService;
-import app.project.EduCloud.service.S3.S3Service;
-import jakarta.transaction.Transactional;
-import lombok.AccessLevel;
-import lombok.RequiredArgsConstructor;
-import lombok.experimental.FieldDefaults;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.aot.generate.AccessControl;
+import java.time.LocalDateTime;
+import java.util.List;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -31,8 +13,36 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.time.LocalDateTime;
-import java.util.List;
+import app.project.EduCloud.Utils.FileTypeUtils;
+import app.project.EduCloud.dto.request.Document.DocumentRequest;
+import app.project.EduCloud.dto.response.Document.DocumentResponse;
+import app.project.EduCloud.dto.response.Document.DownloadFileResponse;
+import app.project.EduCloud.dto.response.PageResponse;
+import app.project.EduCloud.dto.response.S3.S3UploadResponse;
+import app.project.EduCloud.entity.Document;
+import app.project.EduCloud.entity.Folder;
+import app.project.EduCloud.entity.Major;
+import app.project.EduCloud.entity.Subject;
+import app.project.EduCloud.entity.User;
+import app.project.EduCloud.enums.DocumentVisibility;
+import app.project.EduCloud.enums.FileType;
+import app.project.EduCloud.enums.NotificationType;
+import app.project.EduCloud.exception.AppException;
+import app.project.EduCloud.exception.ErrorCode;
+import app.project.EduCloud.mapper.DocumentMapper;
+import app.project.EduCloud.repository.DocumentRepository;
+import app.project.EduCloud.repository.FolderRepository;
+import app.project.EduCloud.repository.MajorRepository;
+import app.project.EduCloud.repository.SubjectRepository;
+import app.project.EduCloud.repository.UserRepository;
+import app.project.EduCloud.service.Document.DocumentService;
+import app.project.EduCloud.service.Notification.NotificationService;
+import app.project.EduCloud.service.S3.S3Service;
+import jakarta.transaction.Transactional;
+import lombok.AccessLevel;
+import lombok.RequiredArgsConstructor;
+import lombok.experimental.FieldDefaults;
+import lombok.extern.slf4j.Slf4j;
 
 @Service
 @Slf4j
@@ -46,6 +56,7 @@ public class DocumentServiceImpl implements DocumentService {
     FolderRepository folderRepository;
     MajorRepository majorRepository;
     SubjectRepository subjectRepository;
+    NotificationService notificationService;
 
     @Override
     @PreAuthorize("hasRole('USER')")
@@ -110,6 +121,13 @@ public class DocumentServiceImpl implements DocumentService {
                 .build();
 
         documentRepository.save(document);
+
+        notificationService.createNotification(
+        user,
+        NotificationType.SUCCESS,
+        "Upload thành công",
+        "Tài liệu \"" + document.getDocumentName() + "\" đã được tải lên."
+);
         return documentMapper.toDocumentResponse(document);
     }
 
@@ -273,6 +291,20 @@ public class DocumentServiceImpl implements DocumentService {
         }
 
         byte[] data = s3Service.downloadFile(document.getFileKey());
+
+        document.setDownloadCount(
+        document.getDownloadCount() == null ? 1 : document.getDownloadCount() + 1
+);
+        documentRepository.save(document);
+
+        if (!isOwner) {
+        notificationService.createNotification(
+                document.getUploadedBy(),
+                NotificationType.DOWNLOAD,
+                "Tải xuống",
+                "Tài liệu \"" + document.getDocumentName() + "\" vừa được tải xuống."
+        );
+        }
 
         return DownloadFileResponse.builder()
                 .originalFileName(document.getDocumentName())

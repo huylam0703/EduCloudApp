@@ -1,8 +1,9 @@
 package app.project.EduCloud.exception;
 
-import lombok.Getter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
+
+import lombok.Getter;
 
 @Getter
 public enum ErrorCode {
@@ -54,6 +55,7 @@ public enum ErrorCode {
     FILE_NOT_FOUND_IN_STORAGE(1505, "file not found in storage", HttpStatus.BAD_REQUEST),
     FILE_DOWNLOAD_FAILED(1506, "file download failed", HttpStatus.INTERNAL_SERVER_ERROR),
     FILE_PREVIEW_NOT_SUPPORTED(1507, "file preview not support", HttpStatus.BAD_REQUEST),
+    NOTIFICATION_NOT_FOUND(1601, "Notification not found",HttpStatus.NOT_FOUND),
     ;
 
     
