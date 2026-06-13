@@ -3,6 +3,9 @@ package app.project.EduCloud.service.Notification.impl;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import app.project.EduCloud.dto.request.Notification.NotificationSendTemplateRequest;
+import app.project.EduCloud.dto.response.Notification.NotificationTemplateResponse;
+import app.project.EduCloud.enums.NotificationTemplateCode;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -130,19 +133,6 @@ public class NotificationServiceImpl implements NotificationService {
         notificationRepository.deleteByUser_Id(currentUser.getId());
     }
 
-    @Override
-    @PreAuthorize("hasRole('ADMIN')")
-    public NotificationResponse createForUser(NotificationCreateRequest request) {
-        User user = userRepository.findById(request.getUserId())
-                .orElseThrow(() -> new AppException(ErrorCode.USER_NOT_FOUND));
-
-        return createNotification(
-                user,
-                request.getType(),
-                request.getTitle(),
-                request.getMessage()
-        );
-    }
 
     @Override
     public NotificationResponse createNotification(
@@ -163,6 +153,68 @@ public class NotificationServiceImpl implements NotificationService {
         return notificationMapper.toNotificationResponse(notificationRepository.save(notification));
     }
 
+    @Override
+    @PreAuthorize("hasRole('ADMIN')")
+    public List<NotificationTemplateResponse> getAdminNotificationTemplates() {
+        return List.of(
+                NotificationTemplateResponse.builder()
+                        .code("ADMIN_NOTICE")
+                        .label("Thông báo quản trị")
+                        .title("Thông báo quản trị")
+                        .message("Admin gửi thông báo mới đến bạn. Vui lòng kiểm tra nội dung.")
+                        .type(NotificationType.INFO)
+                        .build(),
+
+                NotificationTemplateResponse.builder()
+                        .code("VIOLATION_WARNING")
+                        .label("Cảnh báo vi phạm")
+                        .title("Cảnh báo vi phạm")
+                        .message("Tài liệu của bạn có nội dung chưa phù hợp với quy định của hệ thống.")
+                        .type(NotificationType.WARNING)
+                        .build(),
+
+                NotificationTemplateResponse.builder()
+                        .code("DOCUMENT_REMOVED")
+                        .label("Tài liệu đã bị gỡ")
+                        .title("Tài liệu đã bị gỡ")
+                        .message("Một tài liệu của bạn đã bị gỡ khỏi hệ thống do không phù hợp với quy định sử dụng.")
+                        .type(NotificationType.WARNING)
+                        .build(),
+
+                NotificationTemplateResponse.builder()
+                        .code("MAINTENANCE")
+                        .label("Bảo trì hệ thống")
+                        .title("Bảo trì hệ thống")
+                        .message("Hệ thống sẽ bảo trì trong thời gian tới. Vui lòng lưu lại công việc trước thời gian bảo trì.")
+                        .type(NotificationType.INFO)
+                        .build(),
+
+                NotificationTemplateResponse.builder()
+                        .code("SYSTEM_UPDATE")
+                        .label("Cập nhật hệ thống")
+                        .title("Cập nhật hệ thống")
+                        .message("Hệ thống vừa cập nhật một số tính năng mới để cải thiện trải nghiệm sử dụng.")
+                        .type(NotificationType.INFO)
+                        .build()
+        );
+    }
+
+    @Override
+    @PreAuthorize("hasRole('ADMIN')")
+    public NotificationResponse sendByTemplate(NotificationSendTemplateRequest request) {
+        User user = userRepository.findById(request.getUserId())
+                .orElseThrow(() -> new AppException(ErrorCode.USER_NOT_FOUND));
+
+        NotificationTemplateResponse template = findTemplateByCode(request.getTemplateCode());
+
+        return createNotification(
+                user,
+                template.getType(),
+                template.getTitle(),
+                template.getMessage()
+        );
+    }
+
     private User getCurrentUser() {
         String username = SecurityContextHolder.getContext()
                 .getAuthentication()
@@ -170,5 +222,13 @@ public class NotificationServiceImpl implements NotificationService {
 
         return userRepository.findByUsername(username)
                 .orElseThrow(() -> new AppException(ErrorCode.USER_NOT_EXISTS));
+    }
+
+    private NotificationTemplateResponse findTemplateByCode(NotificationTemplateCode templateCode) {
+        return getAdminNotificationTemplates()
+                .stream()
+                .filter(template -> template.getCode().equals(templateCode.name()))
+                .findFirst()
+                .orElseThrow(() -> new AppException(ErrorCode.NOTIFICATION_TEMPLATE_NOT_FOUND));
     }
 }
