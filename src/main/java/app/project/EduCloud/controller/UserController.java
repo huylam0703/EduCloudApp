@@ -2,6 +2,7 @@ package app.project.EduCloud.controller;
 
 import java.util.List;
 
+import app.project.EduCloud.dto.response.User.StorageUsageResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -108,6 +109,16 @@ public class UserController {
                         .code(1000)
                         .result(userService.getMyInfo())
                         .message("User get")
+                        .build());
+    }
+
+    @GetMapping("/myStorage")
+    public ResponseEntity<ApiResponse<StorageUsageResponse>> getMyStorageUsage() {
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(ApiResponse.<StorageUsageResponse>builder()
+                        .code(1000)
+                        .message("Get my storage usage success")
+                        .result(userService.getMyStorageUsage())
                         .build());
     }
 }

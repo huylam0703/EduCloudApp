@@ -55,6 +55,10 @@ public enum ErrorCode {
     FILE_NOT_FOUND_IN_STORAGE(1505, "file not found in storage", HttpStatus.BAD_REQUEST),
     FILE_DOWNLOAD_FAILED(1506, "file download failed", HttpStatus.INTERNAL_SERVER_ERROR),
     FILE_PREVIEW_NOT_SUPPORTED(1507, "file preview not support", HttpStatus.BAD_REQUEST),
+
+    STORAGE_LIMIT_EXCEEDED(1508, "storage limit exceeded", HttpStatus.BAD_REQUEST),
+
+
     NOTIFICATION_NOT_FOUND(1601, "Notification not found",HttpStatus.NOT_FOUND),
     ACTIVITY_LOG_NOT_FOUND(1701, "activity log not found", HttpStatus.NOT_FOUND),
     HAVE_NOT_NOTIFICATION(1602, "Have not notification", HttpStatus.BAD_REQUEST),

@@ -2,6 +2,7 @@ package app.project.EduCloud.service.User.impl;
 
 import app.project.EduCloud.dto.request.User.UserCreationRequest;
 import app.project.EduCloud.dto.request.User.UserUpdateRequest;
+import app.project.EduCloud.dto.response.User.StorageUsageResponse;
 import app.project.EduCloud.dto.response.User.UserResponse;
 import app.project.EduCloud.entity.Role;
 import app.project.EduCloud.entity.User;
@@ -32,6 +33,8 @@ public class UserServiceImpl implements UserService {
     RoleRepository roleRepository;
     UserMapper userMapper;
     PasswordEncoder passwordEncoder;
+
+    private static final long DEFAULT_STORAGE_LIMIT = 5L * 1024 * 1024 * 1024;
 
 
     @Override
@@ -99,5 +102,41 @@ public class UserServiceImpl implements UserService {
                 .orElseThrow(()->new AppException(ErrorCode.USER_NOT_EXISTS));
 
         return userMapper.toUserResponse(user);
+    }
+
+    @Override
+    @PreAuthorize("isAuthenticated()")
+    public StorageUsageResponse getMyStorageUsage() {
+        User user = getCurrentUser();
+
+        long used = user.getStorageUsedBytes() == null
+                ? 0L
+                : user.getStorageUsedBytes();
+
+        long limit = user.getStorageLimitBytes() == null
+                ? DEFAULT_STORAGE_LIMIT
+                : user.getStorageLimitBytes();
+
+        long remaining = Math.max(0L, limit - used);
+
+        double usedPercent = limit == 0
+                ? 0D
+                : used * 100.0 / limit;
+
+        return StorageUsageResponse.builder()
+                .usedBytes(used)
+                .limitBytes(limit)
+                .remainingBytes(remaining)
+                .usedPercent(usedPercent)
+                .build();
+    }
+
+    private User getCurrentUser() {
+        var context = SecurityContextHolder.getContext();
+
+        String username = context.getAuthentication().getName();
+
+        return userRepository.findByUsername(username)
+                .orElseThrow(() -> new AppException(ErrorCode.USER_NOT_EXISTS));
     }
 }

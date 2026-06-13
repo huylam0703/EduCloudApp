@@ -62,7 +62,10 @@ public class DocumentServiceImpl implements DocumentService {
     NotificationService notificationService;
     ActivityLogService activityLogService;
 
+    private static final long DEFAULT_STORAGE_LIMIT = 5L * 1024 * 1024 * 1024;
+
     @Override
+    @Transactional
     @PreAuthorize("hasRole('USER')")
     public DocumentResponse uploadDocument(DocumentRequest request) {
         MultipartFile file = request.getFile();
@@ -71,6 +74,20 @@ public class DocumentServiceImpl implements DocumentService {
 
         if (file == null || file.isEmpty()) {
             throw new AppException(ErrorCode.FILE_NOT_EXISTS);
+        }
+
+        long fileSize = file.getSize();
+
+        long usedStorage = user.getStorageUsedBytes() == null
+                ? 0L
+                : user.getStorageUsedBytes();
+
+        long limitStorage = user.getStorageLimitBytes() == null
+                ? DEFAULT_STORAGE_LIMIT
+                : user.getStorageLimitBytes();
+
+        if (usedStorage + fileSize > limitStorage) {
+            throw new AppException(ErrorCode.STORAGE_LIMIT_EXCEEDED);
         }
 
         Folder folder = null;
@@ -117,7 +134,7 @@ public class DocumentServiceImpl implements DocumentService {
                 .fileKey(s3UploadResponse.fileKey())
                 .fileType(fileType.name())
                 .mimeType(file.getContentType())
-                .fileSize(file.getSize())
+                .fileSize(fileSize)
                 .visibility(request.getVisibility() != null
                                 ? request.getVisibility() : DocumentVisibility.PRIVATE)
                 .downloadCount(0)
@@ -125,6 +142,9 @@ public class DocumentServiceImpl implements DocumentService {
                 .build();
 
         documentRepository.save(document);
+
+        user.setStorageUsedBytes(usedStorage + fileSize);
+        userRepository.save(user);
         
         activityLogService.saveLog(
         user,
@@ -247,7 +267,7 @@ public class DocumentServiceImpl implements DocumentService {
 
     @Override
     @Transactional
-    @PreAuthorize("hasRole('USER')")
+    @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
     public void deleteDocument(String documentId) {
         Document document = documentRepository.findById(documentId)
                 .orElseThrow(() -> new AppException(ErrorCode.DOCUMENT_NOT_FOUND));
@@ -267,16 +287,28 @@ public class DocumentServiceImpl implements DocumentService {
             throw new AppException(ErrorCode.UNAUTHORIZED);
         }
 
+        Long fileSize = document.getFileSize() == null ? 0L : document.getFileSize();
+
+        User owner = document.getUploadedBy();
+
+        Long ownerUsedStorage = owner.getStorageUsedBytes() == null
+                ? 0L
+                : owner.getStorageUsedBytes();
+
         s3Service.deleteFile(document.getFileKey());
 
         documentRepository.delete(document);
+
+        owner.setStorageUsedBytes(Math.max(0L, ownerUsedStorage - fileSize));
+        userRepository.save(owner);
+
         activityLogService.saveLog(
         currentUser,
         ActivityAction.DELETE_DOCUMENT,
         ActivityEntityType.DOCUMENT,
         document.getId(),
         "Delete tài liệu \"" + document.getDocumentName() + "\""
-);
+        );
     }
 
     @Override

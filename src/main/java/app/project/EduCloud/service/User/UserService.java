@@ -2,6 +2,7 @@ package app.project.EduCloud.service.User;
 
 import app.project.EduCloud.dto.request.User.UserCreationRequest;
 import app.project.EduCloud.dto.request.User.UserUpdateRequest;
+import app.project.EduCloud.dto.response.User.StorageUsageResponse;
 import app.project.EduCloud.dto.response.User.UserResponse;
 
 import java.util.List;
@@ -18,4 +19,6 @@ public interface UserService {
     void deleteUser(String userId);
 
     public UserResponse getMyInfo();
+
+    StorageUsageResponse getMyStorageUsage();
 }

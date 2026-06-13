@@ -31,6 +31,14 @@ public class User {
     String email;
     String phoneNumber;
 
+    @Builder.Default
+    @Column(name = "storage_used_bytes", nullable = false)
+    Long storageUsedBytes = 0L;
+
+    @Builder.Default
+    @Column(name = "storage_limit_bytes", nullable = false)
+    Long storageLimitBytes = 5L * 1024 * 1024 * 1024;
+
     @ManyToMany
     Set<Role> roles;
 }
