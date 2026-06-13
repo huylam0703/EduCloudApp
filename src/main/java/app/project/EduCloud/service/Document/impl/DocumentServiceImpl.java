@@ -24,6 +24,8 @@ import app.project.EduCloud.entity.Folder;
 import app.project.EduCloud.entity.Major;
 import app.project.EduCloud.entity.Subject;
 import app.project.EduCloud.entity.User;
+import app.project.EduCloud.enums.ActivityAction;
+import app.project.EduCloud.enums.ActivityEntityType;
 import app.project.EduCloud.enums.DocumentVisibility;
 import app.project.EduCloud.enums.FileType;
 import app.project.EduCloud.enums.NotificationType;
@@ -35,6 +37,7 @@ import app.project.EduCloud.repository.FolderRepository;
 import app.project.EduCloud.repository.MajorRepository;
 import app.project.EduCloud.repository.SubjectRepository;
 import app.project.EduCloud.repository.UserRepository;
+import app.project.EduCloud.service.ActivityLog.ActivityLogService;
 import app.project.EduCloud.service.Document.DocumentService;
 import app.project.EduCloud.service.Notification.NotificationService;
 import app.project.EduCloud.service.S3.S3Service;
@@ -57,6 +60,7 @@ public class DocumentServiceImpl implements DocumentService {
     MajorRepository majorRepository;
     SubjectRepository subjectRepository;
     NotificationService notificationService;
+    ActivityLogService activityLogService;
 
     @Override
     @PreAuthorize("hasRole('USER')")
@@ -121,6 +125,14 @@ public class DocumentServiceImpl implements DocumentService {
                 .build();
 
         documentRepository.save(document);
+        
+        activityLogService.saveLog(
+        user,
+        ActivityAction.UPLOAD_DOCUMENT,
+        ActivityEntityType.DOCUMENT,
+        document.getId(),
+        "Upload tài liệu \"" + document.getDocumentName() + "\""
+);
 
         notificationService.createNotification(
         user,
@@ -239,6 +251,7 @@ public class DocumentServiceImpl implements DocumentService {
     public void deleteDocument(String documentId) {
         Document document = documentRepository.findById(documentId)
                 .orElseThrow(() -> new AppException(ErrorCode.DOCUMENT_NOT_FOUND));
+        User currentUser = getCurrentUser();
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
@@ -257,6 +270,13 @@ public class DocumentServiceImpl implements DocumentService {
         s3Service.deleteFile(document.getFileKey());
 
         documentRepository.delete(document);
+        activityLogService.saveLog(
+        currentUser,
+        ActivityAction.DELETE_DOCUMENT,
+        ActivityEntityType.DOCUMENT,
+        document.getId(),
+        "Delete tài liệu \"" + document.getDocumentName() + "\""
+);
     }
 
     @Override
@@ -296,6 +316,14 @@ public class DocumentServiceImpl implements DocumentService {
         document.getDownloadCount() == null ? 1 : document.getDownloadCount() + 1
 );
         documentRepository.save(document);
+
+        activityLogService.saveLog(
+        currentUser,
+        ActivityAction.DOWNLOAD_DOCUMENT,
+        ActivityEntityType.DOCUMENT,
+        document.getId(),
+        "Download tài liệu \"" + document.getDocumentName() + "\""
+);
 
         if (!isOwner) {
         notificationService.createNotification(
