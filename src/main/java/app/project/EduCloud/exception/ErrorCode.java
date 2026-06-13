@@ -56,6 +56,7 @@ public enum ErrorCode {
     FILE_DOWNLOAD_FAILED(1506, "file download failed", HttpStatus.INTERNAL_SERVER_ERROR),
     FILE_PREVIEW_NOT_SUPPORTED(1507, "file preview not support", HttpStatus.BAD_REQUEST),
     NOTIFICATION_NOT_FOUND(1601, "Notification not found",HttpStatus.NOT_FOUND),
+    ACTIVITY_LOG_NOT_FOUND(1701, "activity log not found", HttpStatus.NOT_FOUND),
     HAVE_NOT_NOTIFICATION(1602, "Have not notification", HttpStatus.BAD_REQUEST),
     NOTIFICATION_TEMPLATE_NOT_FOUND(1602, "notification template not found", HttpStatus.NOT_FOUND),
     ;
