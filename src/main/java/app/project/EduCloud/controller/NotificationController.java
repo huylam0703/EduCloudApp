@@ -1,5 +1,7 @@
 package app.project.EduCloud.controller;
 
+import app.project.EduCloud.dto.request.Notification.NotificationSendTemplateRequest;
+import app.project.EduCloud.dto.response.Notification.NotificationTemplateResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -22,6 +24,8 @@ import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -107,15 +111,26 @@ public class NotificationController {
                         .build());
     }
 
-    @PostMapping("/send")
-    public ResponseEntity<ApiResponse<NotificationResponse>> createForUser(
-            @RequestBody @Valid NotificationCreateRequest request
+
+    @GetMapping("/templates")
+    public ResponseEntity<ApiResponse<List<NotificationTemplateResponse>>> getAdminNotificationTemplates() {
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(ApiResponse.<List<NotificationTemplateResponse>>builder()
+                        .code(1000)
+                        .message("Get notification templates success")
+                        .result(notificationService.getAdminNotificationTemplates())
+                        .build());
+    }
+
+    @PostMapping("/send-template")
+    public ResponseEntity<ApiResponse<NotificationResponse>> sendByTemplate(
+            @RequestBody @Valid NotificationSendTemplateRequest request
     ) {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(ApiResponse.<NotificationResponse>builder()
                         .code(1000)
-                        .message("Create notification success")
-                        .result(notificationService.createForUser(request))
+                        .message("Send notification by template success")
+                        .result(notificationService.sendByTemplate(request))
                         .build());
     }
 }

@@ -16,5 +16,6 @@ public interface FolderMapper {
     @Mapping(source = "user.id", target = "userId")
     FolderBaseResponse toFolderBaseResponse(Folder folder);
 
+    @Mapping(source = "parentFolder.id", target = "parentId")
     FolderTreeResponse toFolderTreeResponse(Folder folder);
 }
