@@ -34,4 +34,18 @@ public interface DocumentRepository extends JpaRepository<Document, String> {
     );
 
     List<Document> findByFolder(Folder folder);
+
+    @Query("""
+        SELECT COALESCE(SUM(d.fileSize), 0)
+        FROM Document d
+    """)
+    long sumTotalStorageBytes();
+
+    @Query("""
+        SELECT d.major.majorName, COUNT(d.id)
+        FROM Document d
+        WHERE d.major IS NOT NULL
+        GROUP BY d.major.majorName
+    """)
+    List<Object[]> countDocumentsByMajor();
 }

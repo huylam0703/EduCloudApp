@@ -9,9 +9,25 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 public interface ActivityLogRepository extends JpaRepository<ActivityLog, String> {
 
     Page<ActivityLog> findByUser_Id(String userId, Pageable pageable);
+
+    long countByActionAndEntityType(
+            ActivityAction action,
+            ActivityEntityType entityType
+    );
+
+    List<ActivityLog> findByActionAndEntityTypeAndCreatedAtBetween(
+            ActivityAction action,
+            ActivityEntityType entityType,
+            LocalDateTime start,
+            LocalDateTime end
+    );
+
 
     @Query("""
             SELECT a FROM ActivityLog a
