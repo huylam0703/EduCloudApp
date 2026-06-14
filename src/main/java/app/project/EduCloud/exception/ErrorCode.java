@@ -63,6 +63,9 @@ public enum ErrorCode {
     ACTIVITY_LOG_NOT_FOUND(1701, "activity log not found", HttpStatus.NOT_FOUND),
     HAVE_NOT_NOTIFICATION(1602, "Have not notification", HttpStatus.BAD_REQUEST),
     NOTIFICATION_TEMPLATE_NOT_FOUND(1602, "notification template not found", HttpStatus.NOT_FOUND),
+    CLOUD_STORAGE_PROVIDER_EXISTED(1040, "Cloud storage provider existed", HttpStatus.BAD_REQUEST),
+    CLOUD_STORAGE_PROVIDER_NOT_FOUND(1041, "Cloud storage provider not found", HttpStatus.NOT_FOUND),
+    AWS_S3_BUCKET_SCAN_FAILED(1042, "Cannot get AWS S3 bucket usage", HttpStatus.INTERNAL_SERVER_ERROR),
     ;
 
     
