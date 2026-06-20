@@ -11,6 +11,7 @@ import lombok.experimental.FieldDefaults;
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class MajorResponse {
+    String id;
     String majorName;
     String majorCode;
     String description;

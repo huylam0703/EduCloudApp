@@ -29,7 +29,7 @@ public class Subject {
     @JoinColumn(name = "major_id")
     Major major;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "NVARCHAR(MAX)")
     String description;
 
     @Column(name = "created_at")

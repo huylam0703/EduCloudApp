@@ -130,7 +130,7 @@ export default function Sidebar({ collapsed = false, onNavigate }) {
       )}
 
       <nav className="flex-1 space-y-1 overflow-y-auto p-3">
-        {studentNav.map((item, i) => (
+        {!admin && studentNav.map((item, i) => (
           <motion.div
             key={item.to}
             initial={{ opacity: 0, x: -10 }}
@@ -144,16 +144,16 @@ export default function Sidebar({ collapsed = false, onNavigate }) {
 
         {admin && (
           <>
-            {!collapsed && (
-              <div className="my-3 flex items-center gap-2 px-3 text-xs text-white/40">
-                <span className="flex-1 border-t border-white/10" />
-                <Zap className="h-3 w-3" />
-                Admin
-                <span className="flex-1 border-t border-white/10" />
-              </div>
-            )}
+            {/*{!collapsed && (*/}
+            {/*  <div className="my-3 flex items-center gap-2 px-3 text-xs text-white/40">*/}
+            {/*    <span className="flex-1 border-t border-white/10" />*/}
+            {/*    <Zap className="h-3 w-3" />*/}
+            {/*    Admin*/}
+            {/*    <span className="flex-1 border-t border-white/10" />*/}
+            {/*  </div>*/}
+            {/*)}*/}
 
-            {adminNav.map((item) => (
+            {admin && adminNav.map((item) => (
               <div key={item.to} onClick={onNavigate}>
                 <NavItem {...item} collapsed={collapsed} />
               </div>

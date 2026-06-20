@@ -8,10 +8,11 @@ export function useMyDocuments() {
   })
 }
 
-export function usePublicDocuments(params) {
+export function usePublicDocuments({ search, majorId, type, pageNo = 0, pageSize = 9 } = {}) {
   return useQuery({
-    queryKey: ['publicDocuments', params],
-    queryFn: () => documentService.getPublicDocuments(params),
+    queryKey: ['public-documents', search, majorId, type, pageNo, pageSize],
+    queryFn: () => documentService.getPublicDocuments({ search, majorId, fileType: type, pageNo, pageSize }),
+    keepPreviousData: true,
   })
 }
 

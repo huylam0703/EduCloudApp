@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class SubjectResponse {
+    String id;
     String majorCode;
     String subjectCode;
     String subjectName;

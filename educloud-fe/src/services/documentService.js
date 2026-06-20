@@ -1,4 +1,4 @@
-import api from './api'
+import apiClient from '@/lib/apiClient'
 import { delay, USE_MOCKS } from '@/mocks/delay'
 import { mockDocuments, mockDashboardStats } from '@/mocks/documents'
 
@@ -8,30 +8,27 @@ export const documentService = {
       await delay()
       return [...mockDocuments]
     }
-    const { data } = await api.get('/documents/my-documents')
+    const { data } = await apiClient.get('/documents/my-documents')
     return data
   },
-  getPublicDocuments: async (params = {}) => {
-    if (USE_MOCKS) {
-      await delay()
-      let docs = mockDocuments.filter((d) => d.visibility === 'PUBLIC')
-      if (params.search) {
-        const q = params.search.toLowerCase()
-        docs = docs.filter((d) => d.name.toLowerCase().includes(q))
-      }
-      if (params.major) docs = docs.filter((d) => d.major === params.major)
-      if (params.type) docs = docs.filter((d) => d.type === params.type)
-      return docs
-    }
-    const { data } = await api.get('/documents', { params })
-    return data
+  getPublicDocuments: async ({ search = '', majorId = '', fileType = '', pageNo = 0, pageSize = 9 } = {}) => {
+    const { data } = await api.get('/document/public', {
+      params: {
+        pageNo: params.pageNo ?? 1,
+        pageSize: params.pageSize ?? 9,
+        ...(params.majorId ? { majorId: params.majorId } : {}),
+        ...(params.subjectId ? { subjectId: params.subjectId } : {}),
+        ...(params.type ? { fileType: params.type } : {}),
+      },
+    })
+    return data.result
   },
   getDashboardStats: async () => {
     if (USE_MOCKS) {
       await delay()
       return mockDashboardStats
     }
-    const { data } = await api.get('/documents/stats')
+    const { data } = await apiClient.get('/documents/stats')
     return data
   },
   upload: async (formData, onProgress) => {
@@ -48,7 +45,7 @@ export const documentService = {
         }, 200)
       })
     }
-    const { data } = await api.post('/documents/upload', formData, {
+    const { data } = await apiClient.post('/documents/upload', formData, {
       headers: { 'Content-Type': 'multipart/form-data' },
       onUploadProgress: (e) => onProgress?.(Math.round((e.loaded * 100) / (e.total || 1))),
     })
@@ -59,7 +56,7 @@ export const documentService = {
       await delay(200)
       return { success: true }
     }
-    const { data } = await api.delete(`/documents/${id}`)
+    const { data } = await apiClient.delete(`/documents/${id}`)
     return data
   },
   download: async (id) => {
@@ -67,7 +64,7 @@ export const documentService = {
       await delay(200)
       return { url: '#' }
     }
-    const { data } = await api.get(`/documents/${id}/download`)
+    const { data } = await apiClient.get(`/documents/${id}/download`)
     return data
   },
 }
