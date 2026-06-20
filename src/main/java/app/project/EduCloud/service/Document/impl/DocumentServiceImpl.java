@@ -205,7 +205,6 @@ public class DocumentServiceImpl implements DocumentService {
     }
 
     @Override
-    @PreAuthorize("hasRole('USER')")
     public PageResponse<DocumentResponse> getDocumentPublic(
             int pageNo,
             int pageSize,
@@ -328,7 +327,6 @@ public class DocumentServiceImpl implements DocumentService {
     }
 
     @Override
-    @PreAuthorize("hasRole('USER')")
     public DownloadFileResponse downloadDocument(String documentId) {
         User currentUser = getCurrentUser();
 
@@ -394,7 +392,6 @@ public class DocumentServiceImpl implements DocumentService {
     }
 
     @Override
-    @PreAuthorize("hasRole('USER')")
     public DocumentResponse getDetailResponse(String documentId) {
         User currentUser = getCurrentUser();
         Document document = documentRepository.findById(documentId)

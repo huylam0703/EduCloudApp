@@ -77,7 +77,6 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     @Override
-    @PreAuthorize("hasRole('ADMIN')")
     public List<SubjectResponse> getSubjectsByMajor(String majorId) {
         return subjectRepository.findByMajor_Id(majorId)
                 .stream()

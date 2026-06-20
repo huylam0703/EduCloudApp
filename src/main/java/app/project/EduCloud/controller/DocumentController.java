@@ -175,7 +175,6 @@ public class DocumentController {
     }
 
     @GetMapping("/preview/{documentId}")
-    @PreAuthorize("hasRole('USER')")
     public ResponseEntity<byte[]> previewDocument(@PathVariable String documentId) {
         DownloadFileResponse response = documentService.downloadDocument(documentId);
 
