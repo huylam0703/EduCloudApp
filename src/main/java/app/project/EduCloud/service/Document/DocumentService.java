@@ -16,7 +16,7 @@ public interface DocumentService {
 
     List<DocumentResponse> getAllMyDocuments();
 
-    PageResponse<DocumentResponse> getDocumentPublic(int pageNo, int pageSize, String majorId, String fileType);
+    PageResponse<DocumentResponse> getDocumentPublic(int pageNo, int pageSize, String majorId, String subjectId, String fileType);
 
     DocumentResponse renameDocument(DocumentRequest request, String documentId);
 

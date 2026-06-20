@@ -24,11 +24,13 @@ public interface DocumentRepository extends JpaRepository<Document, String> {
     WHERE d.visibility = :visibility
       AND d.deletedAt IS NULL
       AND (:majorId IS NULL OR d.major.id = :majorId)
+      AND (:subjectId IS NULL OR d.subject.id = :subjectId)
       AND (:fileType IS NULL OR d.fileType = :fileType)
 """)
     Page<Document> findPublicDocuments(
             @Param("visibility") DocumentVisibility visibility,
             @Param("majorId") String majorId,
+            @Param("subjectId") String subjectId,
             @Param("fileType") String fileType,
             Pageable pageable
     );

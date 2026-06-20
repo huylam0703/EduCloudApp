@@ -22,7 +22,13 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     private final String[] PUBLIC_ENDPOINTS = {"/users", "/auth/token", "/auth/introspect", "/auth/logout", "/auth/refesh"};
-    private final String[] PUBLIC_GET_ENDPOINTS = {"/document/**", "/subject/**"};
+    private final String[] PUBLIC_GET_ENDPOINTS = {
+            "/document/public",
+            "/document/download/**",
+            "/document/detail/**",
+            "/subject/**",
+            "/base/majors"
+    };
     @Value("${jwt.singerKey}")
     private String singerKey;
 
@@ -40,7 +46,6 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.POST, PUBLIC_ENDPOINTS).permitAll()
                         .requestMatchers(HttpMethod.GET, PUBLIC_GET_ENDPOINTS).permitAll()
-                        .requestMatchers("/base/majors").permitAll()
                         .anyRequest().authenticated()
                 ).cors(Customizer.withDefaults());
 

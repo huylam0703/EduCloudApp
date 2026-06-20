@@ -209,6 +209,7 @@ public class DocumentServiceImpl implements DocumentService {
             int pageNo,
             int pageSize,
             String majorId,
+            String subjectId,
             String fileType
     ) {
 
@@ -222,6 +223,7 @@ public class DocumentServiceImpl implements DocumentService {
                 documentRepository.findPublicDocuments(
                         DocumentVisibility.PUBLIC,
                         majorId,
+                        subjectId,
                         fileType,
                         pageable
                 );

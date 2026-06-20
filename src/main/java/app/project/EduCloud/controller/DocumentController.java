@@ -74,13 +74,14 @@ public class DocumentController {
     @GetMapping("/public")
     public ResponseEntity<ApiResponse<PageResponse<DocumentResponse>>> getDocumentPublic(@RequestParam(defaultValue = "1") int pageNo,
                                                                          @RequestParam(defaultValue = "10") int pageSize,
+                                                                         @RequestParam(required = false) String subjectId,
                                                                          @RequestParam(required = false) String majorId,
                                                                          @RequestParam(required = false) String fileType) {
         return ResponseEntity.status(HttpStatus.OK)
                 .body(ApiResponse.<PageResponse<DocumentResponse>>builder()
                         .code(1000)
                         .message("Get public Document")
-                        .result(documentService.getDocumentPublic(pageNo, pageSize, majorId, fileType))
+                        .result(documentService.getDocumentPublic(pageNo, pageSize, majorId, subjectId, fileType))
                         .build());
     }
 
