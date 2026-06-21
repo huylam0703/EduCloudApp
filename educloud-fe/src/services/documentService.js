@@ -32,15 +32,6 @@ export const documentService = {
     const { data } = await apiClient.get('/documents/stats')
     return data
   },
-
-  delete: async (id) => {
-    if (USE_MOCKS) {
-      await delay(200)
-      return { success: true }
-    }
-    const { data } = await apiClient.delete(`/documents/${id}`)
-    return data
-  },
   downloadDocument: async (documentId) => {
     const response = await apiClient.get(
         `/document/download/${documentId}`,

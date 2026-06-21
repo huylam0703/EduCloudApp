@@ -178,8 +178,8 @@ export default function Sidebar({ collapsed = false, onNavigate }) {
       <ConfirmDialog
         open={confirmLogout}
         onOpenChange={setConfirmLogout}
-        title="Đăng xuất"
-        message="Bạn có chắc muốn đăng xuất?"
+        title={'Đăng xuất'}
+        description="Bạn có chắc muốn đăng xuất?"
         onConfirm={logout}
         confirmLabel="Đăng xuất"
       />

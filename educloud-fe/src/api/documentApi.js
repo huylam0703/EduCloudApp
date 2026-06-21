@@ -16,6 +16,13 @@ export const documentApi = {
             },
         }),
 
+    changeVisibility: (documentId) =>
+        axiosClient.patch(`/document/change/${documentId}`, {}).then((res) => res.data),
+
+    deleteDocument: (documentId) =>
+        axiosClient.delete(`/document/delete/${documentId}`).then((res) => res.data),
+
+
     handleDownload: async (doc) => {
         try {
             const blob = await documentService.downloadDocument(doc.id)
@@ -34,5 +41,5 @@ export const documentApi = {
         } catch (error) {
             console.error('Download failed:', error)
         }
-    }
+    },
 }

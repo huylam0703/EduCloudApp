@@ -64,14 +64,18 @@ export default function PreviewModal({ open, onOpenChange, doc }) {
                     {kind === 'unsupported' ? (
                         <div className="flex flex-col items-center gap-3 p-8 text-center">
                             <p className="text-slate-600">Không hỗ trợ xem trước, vui lòng tải xuống</p>
-                            <Button onClick={documentApi.handleDownload}><Download className="mr-2 h-4 w-4" /> Tải xuống</Button>
+                            <Button onClick={() => documentApi.handleDownload(doc)}>
+                                <Download className="mr-2 h-4 w-4" /> Tải xuống
+                            </Button>
                         </div>
                     ) : loading ? (
                         <Loader2 className="h-8 w-8 animate-spin text-slate-400" />
                     ) : error ? (
                         <div className="flex flex-col items-center gap-3 p-8 text-center">
                             <p className="text-red-500">{error}</p>
-                            <Button variant="outline" onClick={documentApi.handleDownload}><Download className="mr-2 h-4 w-4" /> Tải xuống</Button>
+                            <Button variant="outline" onClick={() => documentApi.handleDownload(doc)}>
+                                <Download className="mr-2 h-4 w-4" /> Tải xuống
+                            </Button>
                         </div>
                     ) : kind === 'pdf' ? (
                         <iframe src={blobUrl} title={doc.documentName} className="h-[65vh] w-full" />
@@ -87,7 +91,7 @@ export default function PreviewModal({ open, onOpenChange, doc }) {
                 </div>
 
                 <div className="flex justify-end">
-                    <Button variant="outline" size="sm" onClick={documentApi.handleDownload}>
+                    <Button variant="outline" size="sm" onClick={() => documentApi.handleDownload(doc)}>
                         <Download className="mr-2 h-4 w-4" /> Tải xuống bản gốc
                     </Button>
                 </div>

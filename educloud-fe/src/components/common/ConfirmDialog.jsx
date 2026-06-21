@@ -1,44 +1,33 @@
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog'
-import { Button } from '@/components/ui/button'
+  AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent,
+  AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle,
+} from '@/components/ui/alert-dialog'
 
 export default function ConfirmDialog({
-  open,
-  onOpenChange,
-  title,
-  message,
-  onConfirm,
-  confirmLabel = 'Xác nhận',
-  cancelLabel = 'Hủy',
-}) {
+                                        open, onOpenChange, title, description, confirmText = 'Xác nhận',
+                                        cancelText = 'Hủy', onConfirm, variant = 'default', loading = false,
+                                      }) {
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md">
-        <DialogHeader>
-          <DialogTitle>{title}</DialogTitle>
-          <DialogDescription>{message}</DialogDescription>
-        </DialogHeader>
-        <DialogFooter className="mt-4 gap-2 sm:gap-0">
-          <Button variant="outline" onClick={() => onOpenChange(false)}>
-            {cancelLabel}
-          </Button>
-          <Button
-            variant="destructive"
-            onClick={() => {
-              onConfirm?.()
-              onOpenChange(false)
-            }}
-          >
-            {confirmLabel}
-          </Button>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
+      <AlertDialog open={open} onOpenChange={onOpenChange}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>{title}</AlertDialogTitle>
+            <AlertDialogDescription>{description}</AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel disabled={loading}>{cancelText}</AlertDialogCancel>
+            <AlertDialogAction
+                disabled={loading}
+                onClick={(e) => {
+                  e.preventDefault()
+                  onConfirm()
+                }}
+                className={variant === 'destructive' ? 'bg-red-600 hover:bg-red-700' : ''}
+            >
+              {loading ? 'Đang xử lý...' : confirmText}
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
   )
 }

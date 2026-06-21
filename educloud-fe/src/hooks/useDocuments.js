@@ -1,10 +1,12 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { documentService } from '@/services/documentService'
+import {documentApi} from '@/api/documentApi.js'
+import { toast } from 'sonner'
 
 export function useMyDocuments() {
   return useQuery({
     queryKey: ['myDocuments'],
-    queryFn: documentService.getMyDocuments,
+    queryFn: () => documentApi.getMyDocuments().then((res) => res.data.result),
   })
 }
 
@@ -23,13 +25,34 @@ export function useDashboardStats() {
   })
 }
 
+export function useChangeDocumentVisibility() {
+  const queryClient = useQueryClient()
+  return useMutation({
+    mutationFn: (documentId) => documentApi.changeVisibility(documentId),
+    onSuccess: (data) => {
+      queryClient.invalidateQueries({ queryKey: ['folders'] })
+      queryClient.invalidateQueries({ queryKey: ['public-documents'] })
+      toast.success(`Đã chuyển sang ${data.result.visibility}`)
+    },
+    onError: (error) => {
+      console.error('CHANGE VISIBILITY ERROR:', error.response?.status, error.response?.data, error.message)
+      toast.error('Đổi visibility thất bại')
+    },
+  })
+}
+
 export function useDeleteDocument() {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: documentService.delete,
+    mutationFn: (documentId) => documentApi.deleteDocument(documentId),
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['myDocuments'] })
-      queryClient.invalidateQueries({ queryKey: ['dashboardStats'] })
+      queryClient.invalidateQueries({ queryKey: ['folders'] })
+      queryClient.invalidateQueries({ queryKey: ['public-documents'] })
+      toast.success('Đã xóa tài liệu')
+    },
+    onError: (error) => {
+      console.error('DELETE DOCUMENT ERROR:', error.response?.status, error.response?.data, error.message)
+      toast.error('Xóa tài liệu thất bại')
     },
   })
 }
