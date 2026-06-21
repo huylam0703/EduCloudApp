@@ -1,56 +1,64 @@
-import { useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { z } from 'zod'
+import { useState } from 'react'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { Loader2 } from 'lucide-react'
+import { folderApi } from '@/api/folderApi'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog'
-import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { useCreateFolder } from '@/hooks/useFolders'
+import { Button } from '@/components/ui/button'
+import { toast } from 'sonner' // hoặc lib toast bạn đang dùng
 
-const schema = z.object({
-  name: z.string().min(1, 'Nhập tên thư mục'),
-  parentId: z.string().optional(),
-})
+export default function CreateFolderModal({ open, onOpenChange, parentId }) {
+  const [folderName, setFolderName] = useState('')
+  const queryClient = useQueryClient()
 
-export default function CreateFolderModal({ open, onOpenChange, parentId = 'root' }) {
-  const createFolder = useCreateFolder()
-  const { register, handleSubmit, reset, formState: { errors } } = useForm({
-    resolver: zodResolver(schema),
-    defaultValues: { parentId },
+  const { mutate, isPending } = useMutation({
+    mutationFn: () => folderApi.createFolder(folderName.trim(), parentId || null),
+    onSuccess: () => {
+      toast.success('Tạo thư mục thành công')
+      queryClient.invalidateQueries({ queryKey: ['folders', parentId ?? 'root'] })
+      setFolderName('')
+      onOpenChange(false)
+    },
+    onError: (err) => {
+      toast.error(err.response?.data?.message || 'Tạo thư mục thất bại')
+    },
   })
 
-  const onSubmit = (data) => {
-    createFolder.mutate(data, {
-      onSuccess: () => {
-        reset()
-        onOpenChange(false)
-      },
-    })
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (!folderName.trim()) return
+    mutate()
   }
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent>
-        <DialogHeader>
-          <DialogTitle>📁 Tạo thư mục</DialogTitle>
-        </DialogHeader>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-          <div>
-            <Label>Tên thư mục</Label>
-            <Input className="mt-1" {...register('name')} />
-            {errors.name && <p className="text-xs text-red-500">{errors.name.message}</p>}
-          </div>
-          <input type="hidden" {...register('parentId')} />
-          <DialogFooter>
-            <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>
-              Hủy
-            </Button>
-            <Button type="submit" disabled={createFolder.isPending}>
-              Tạo thư mục
-            </Button>
-          </DialogFooter>
-        </form>
-      </DialogContent>
-    </Dialog>
+      <Dialog open={open} onOpenChange={onOpenChange}>
+        <DialogContent className="max-w-sm">
+          <DialogHeader>
+            <DialogTitle>Tạo thư mục mới</DialogTitle>
+          </DialogHeader>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="space-y-2">
+              <Label htmlFor="folderName">Tên thư mục</Label>
+              <Input
+                  id="folderName"
+                  value={folderName}
+                  onChange={(e) => setFolderName(e.target.value)}
+                  placeholder="Nhập tên thư mục..."
+                  autoFocus
+              />
+            </div>
+            <DialogFooter>
+              <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>
+                Hủy
+              </Button>
+              <Button type="submit" disabled={!folderName.trim() || isPending}>
+                {isPending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                Tạo thư mục
+              </Button>
+            </DialogFooter>
+          </form>
+        </DialogContent>
+      </Dialog>
   )
 }

@@ -18,7 +18,10 @@ spring:
       ddl-auto: update
     database-platform: org.hibernate.dialect.SQLServerDialect
     show-sql: false
-
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
 server:
   port: 8080
   servlet:

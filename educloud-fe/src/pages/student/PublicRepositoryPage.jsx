@@ -10,6 +10,8 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
 import { cn } from '@/lib/utils'
 import { useMajors } from '@/hooks/useMajor'
+import PreviewModal from "@/components/modals/PreviewModal.jsx";
+import {documentApi} from "@/api/documentApi.js";
 
 const fileTypes = ['PDF', 'DOCX', 'PPTX', 'XLSX', 'RAR', 'ZIP']
 
@@ -21,14 +23,16 @@ export default function PublicRepositoryPage() {
     const [showMajorSuggest, setShowMajorSuggest] = useState(false)
     const [pageNo, setPageNo] = useState(1)
     const pageSize = 9
+    const [previewDoc, setPreviewDoc] = useState(null)
 
     const { majors: filteredMajors, isLoading: majorsLoading } = useMajors(majorKeyword)
 
     const { data, isLoading } = usePublicDocuments({
+        search,
         majorId,
         type,
-        pageNo,
-        pageSize,
+        pageNo: pageNo || 1,
+        pageSize:pageSize || 9,
     })
 
     const allDocs = data?.content ?? []
@@ -58,9 +62,6 @@ export default function PublicRepositoryPage() {
         setPageNo(0)
     }
 
-    const handleDownload = (doc) => {
-        window.open(doc.fileUrl, '_blank')
-    }
 
     return (
         <div className="space-y-8">
@@ -240,10 +241,25 @@ export default function PublicRepositoryPage() {
                                         {formatDate(doc.createdAt)} · ⬇️ {doc.downloadCount} lượt
                                     </p>
 
-                                    <Button className="mt-3 w-full gap-2" size="sm" onClick={() => handleDownload(doc)}>
-                                        <Download className="h-4 w-4" />
-                                        Tải xuống
-                                    </Button>
+                                    <div className="mt-3 flex gap-2">
+                                        <Button
+                                            variant="outline"
+                                            size="sm"
+                                            className="flex-1"
+                                            onClick={() => setPreviewDoc(doc)}
+                                        >
+                                            Xem trước
+                                        </Button>
+
+                                        <Button
+                                            size="sm"
+                                            className="flex-1"
+                                            onClick={() => documentApi.handleDownload(doc)}
+                                        >
+                                            <Download className="h-4 w-4" />
+                                            Tải xuống
+                                        </Button>
+                                    </div>
                                 </CardContent>
                             </Card>
                         )
@@ -268,6 +284,7 @@ export default function PublicRepositoryPage() {
                     Sau
                 </Button>
             </div>
+            <PreviewModal open={!!previewDoc} onOpenChange={(v) => !v && setPreviewDoc(null)} doc={previewDoc} />
         </div>
     )
 }

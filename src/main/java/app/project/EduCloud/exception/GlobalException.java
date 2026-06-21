@@ -22,10 +22,15 @@ public class GlobalException {
 
     @ExceptionHandler(value = Exception.class)
     ResponseEntity<ApiResponse> exception(Exception e) {
+
+        log.error("Unexpected error", e);
+
         ApiResponse apiResponse = new ApiResponse();
-        apiResponse.setMessage(ErrorCode.UNCATEGORIZED_EXCEPTION.getMessage());
+        apiResponse.setMessage(e.getMessage()); // tạm thời để debug
         apiResponse.setCode(ErrorCode.UNCATEGORIZED_EXCEPTION.getCode());
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(apiResponse);
+
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                .body(apiResponse);
     }
 
     @ExceptionHandler(value = AppException.class)

@@ -3,6 +3,7 @@ package app.project.EduCloud.dto.request.Document;
 import app.project.EduCloud.enums.DocumentVisibility;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+import org.aspectj.apache.bcel.classfile.Module;
 import org.springframework.web.multipart.MultipartFile;
 
 @Getter

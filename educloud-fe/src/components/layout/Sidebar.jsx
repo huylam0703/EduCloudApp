@@ -25,9 +25,8 @@ import { useLogout } from '@/hooks/useAuth'
 
 const studentNav = [
   { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-  { to: '/my-documents', icon: FileText, label: 'Tài liệu của tôi' },
   { to: '/repository', icon: Globe, label: 'Kho tài liệu' },
-  { to: '/folders', icon: FolderOpen, label: 'Thư mục' },
+  { to: '/folders', icon: FolderOpen, label: 'Tài lệu của tôi' },
   { to: '/notifications', icon: Bell, label: 'Thông báo', badge: true },
   { to: '/profile', icon: User, label: 'Hồ sơ' },
 ]

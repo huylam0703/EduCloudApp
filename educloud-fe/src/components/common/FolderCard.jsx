@@ -16,9 +16,9 @@ export default function FolderCard({ folder, onOpen, onContextMenu }) {
       >
         <CardContent className="flex flex-col items-center p-6 text-center">
           <Folder className="h-14 w-14 text-amber-400 fill-amber-100" />
-          <p className="mt-3 font-medium text-slate-900">{folder.name}</p>
+          <p className="mt-3 font-medium text-slate-900">{folder.folderName}</p>
           <p className="mt-1 text-xs text-slate-500">
-            {folder.itemCount} mục · {formatDate(folder.createdAt)}
+            Ngày tạo · {formatDate(folder.createdAt)}
           </p>
         </CardContent>
       </Card>
