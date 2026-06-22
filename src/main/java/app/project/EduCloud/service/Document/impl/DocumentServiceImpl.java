@@ -310,6 +310,12 @@ public class DocumentServiceImpl implements DocumentService {
         document.getId(),
         "Delete tài liệu \"" + document.getDocumentName() + "\""
         );
+
+        notificationService.createNotification(
+                currentUser,
+                NotificationType.WARNING,
+                "Tài liệu đã xóa",
+                "Tài liệu \"" + document.getDocumentName() + "\" đã được " + currentUser.getUsername() +"xóa.");
     }
 
     @Override

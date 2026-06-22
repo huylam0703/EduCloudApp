@@ -36,6 +36,7 @@ const adminNav = [
   { to: '/admin/users', icon: Users, label: 'Người dùng' },
   { to: '/admin/documents', icon: FileStack, label: 'Tài liệu' },
   { to: '/admin/categories', icon: Tags, label: 'Danh mục' },
+  { to: '/admin/notifications', icon: Bell, label: 'Thông báo' },
   { to: '/admin/logs', icon: ScrollText, label: 'Activity Log' },
   { to: '/admin/storage', icon: Cloud, label: 'Cloud Storage' },
 ]

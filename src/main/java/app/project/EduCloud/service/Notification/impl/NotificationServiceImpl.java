@@ -3,6 +3,7 @@ package app.project.EduCloud.service.Notification.impl;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import app.project.EduCloud.dto.request.Notification.NotificationBroadcastTemplateRequest;
 import app.project.EduCloud.dto.request.Notification.NotificationSendTemplateRequest;
 import app.project.EduCloud.dto.response.Notification.NotificationTemplateResponse;
 import app.project.EduCloud.enums.NotificationTemplateCode;
@@ -174,14 +175,6 @@ public class NotificationServiceImpl implements NotificationService {
                         .build(),
 
                 NotificationTemplateResponse.builder()
-                        .code("DOCUMENT_REMOVED")
-                        .label("Tài liệu đã bị gỡ")
-                        .title("Tài liệu đã bị gỡ")
-                        .message("Một tài liệu của bạn đã bị gỡ khỏi hệ thống do không phù hợp với quy định sử dụng.")
-                        .type(NotificationType.WARNING)
-                        .build(),
-
-                NotificationTemplateResponse.builder()
                         .code("MAINTENANCE")
                         .label("Bảo trì hệ thống")
                         .title("Bảo trì hệ thống")
@@ -213,6 +206,30 @@ public class NotificationServiceImpl implements NotificationService {
                 template.getTitle(),
                 template.getMessage()
         );
+    }
+
+    @Override
+    @Transactional
+    @PreAuthorize("hasRole('ADMIN')")
+    public int sendTemplateToAllUsers(NotificationBroadcastTemplateRequest request) {
+        NotificationTemplateResponse template = findTemplateByCode(request.getTemplateCode());
+
+        List<User> users = userRepository.findAll();
+
+        List<Notification> notifications = users.stream()
+                .map(user -> Notification.builder()
+                        .user(user)
+                        .title(template.getTitle())
+                        .message(template.getMessage())
+                        .type(template.getType())
+                        .read(false)
+                        .createdAt(LocalDateTime.now())
+                        .build())
+                .toList();
+
+        notificationRepository.saveAll(notifications);
+
+        return notifications.size();
     }
 
     private User getCurrentUser() {

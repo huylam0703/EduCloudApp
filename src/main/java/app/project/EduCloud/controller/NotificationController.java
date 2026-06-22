@@ -1,5 +1,6 @@
 package app.project.EduCloud.controller;
 
+import app.project.EduCloud.dto.request.Notification.NotificationBroadcastTemplateRequest;
 import app.project.EduCloud.dto.request.Notification.NotificationSendTemplateRequest;
 import app.project.EduCloud.dto.response.Notification.NotificationTemplateResponse;
 import org.springframework.http.HttpStatus;
@@ -131,6 +132,18 @@ public class NotificationController {
                         .code(1000)
                         .message("Send notification by template success")
                         .result(notificationService.sendByTemplate(request))
+                        .build());
+    }
+
+    @PostMapping("/send-template/all")
+    public ResponseEntity<ApiResponse<Integer>> sendTemplateToAllUsers(
+            @RequestBody @Valid NotificationBroadcastTemplateRequest request
+    ) {
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body(ApiResponse.<Integer>builder()
+                        .code(1000)
+                        .message("Send notification template to all users success")
+                        .result(notificationService.sendTemplateToAllUsers(request))
                         .build());
     }
 }

@@ -1,5 +1,6 @@
 package app.project.EduCloud.service.Notification;
 
+import app.project.EduCloud.dto.request.Notification.NotificationBroadcastTemplateRequest;
 import app.project.EduCloud.dto.request.Notification.NotificationCreateRequest;
 import app.project.EduCloud.dto.request.Notification.NotificationSendTemplateRequest;
 import app.project.EduCloud.dto.response.Notification.NotificationResponse;
@@ -27,6 +28,8 @@ public interface NotificationService {
     List<NotificationTemplateResponse> getAdminNotificationTemplates();
 
     NotificationResponse sendByTemplate(NotificationSendTemplateRequest request);
+
+    int sendTemplateToAllUsers(NotificationBroadcastTemplateRequest request);
 
     NotificationResponse createNotification(
             User user,
