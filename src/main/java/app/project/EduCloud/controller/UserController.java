@@ -2,18 +2,12 @@ package app.project.EduCloud.controller;
 
 import java.util.List;
 
+import app.project.EduCloud.dto.response.PageResponse;
 import app.project.EduCloud.dto.response.User.StorageUsageResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import app.project.EduCloud.dto.request.User.UserCreationRequest;
 import app.project.EduCloud.dto.request.User.UserUpdateRequest;
@@ -59,19 +53,14 @@ public class UserController {
     }
 
     @GetMapping
-    public ResponseEntity<ApiResponse<List<UserResponse>>> getAllUser(){
+    public ResponseEntity<ApiResponse<PageResponse<UserResponse>>> getAllUser(@RequestParam(defaultValue = "1") int pageNo,
+                                                                              @RequestParam(defaultValue = "10") int pageSize){
         log.info("Get all users");
 
-         var authentication = SecurityContextHolder.getContext().getAuthentication();
-
-         log.info("username: {}", authentication.getName());
-        authentication.getAuthorities().forEach(g -> log.info(g.getAuthority()));
-
-
         return ResponseEntity.status(HttpStatus.OK)
-                .body(ApiResponse.<List<UserResponse>>builder()
+                .body(ApiResponse.<PageResponse<UserResponse>>builder()
                         .code(1000)
-                        .result(userService.getAllUsers())
+                        .result(userService.getAllUsers(pageNo, pageSize))
                         .message("All users")
                         .build());
     }
