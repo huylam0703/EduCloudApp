@@ -2,6 +2,7 @@ package app.project.EduCloud.service.User.impl;
 
 import app.project.EduCloud.dto.request.User.UserCreationRequest;
 import app.project.EduCloud.dto.request.User.UserUpdateRequest;
+import app.project.EduCloud.dto.response.PageResponse;
 import app.project.EduCloud.dto.response.User.StorageUsageResponse;
 import app.project.EduCloud.dto.response.User.UserResponse;
 import app.project.EduCloud.entity.Role;
@@ -16,6 +17,9 @@ import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -66,9 +70,31 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @PreAuthorize("hasRole('ADMIN')")
-    public List<UserResponse> getAllUsers() {
-        return userRepository.findAll().stream()
-                .map(userMapper::toUserResponse).toList();
+    public PageResponse<UserResponse> getAllUsers(int pageNo, int pageSize) {
+
+        if(pageNo > 0){
+            pageNo = pageNo - 1;
+        }
+
+        Pageable pageable = PageRequest.of(pageNo, pageSize);
+
+        Page<User> users;
+
+        users = userRepository.findAll(pageable);
+
+        List<UserResponse> userResponses = users.getContent()
+                .stream()
+                .map(userMapper::toUserResponse)
+                .toList();
+
+        return PageResponse.<UserResponse>builder()
+                .content(userResponses)
+                .pageNo(pageNo)
+                .pageSize(pageSize)
+                .totalElements(users.getTotalElements())
+                .totalPages(users.getTotalPages())
+                .last(users.isLast())
+                .build();
     }
 
     @Override
