@@ -13,6 +13,8 @@ export function useUpload() {
       const doc = res.data.result
       toast.success('Upload tài liệu thành công')
       queryClient.invalidateQueries({ queryKey: ['folders', doc.folderId ?? 'root'] })
+      queryClient.invalidateQueries({ queryKey: ['myDocuments'] })
+      queryClient.invalidateQueries({ queryKey: ['myStorage'] }) 
       setProgress(0)
     },
     onError: (err) => {
