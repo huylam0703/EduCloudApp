@@ -7,6 +7,8 @@ import FileRow from '@/components/common/FileRow'
 import EmptyState from '@/components/common/EmptyState'
 import UploadModal from '@/components/modals/UploadModal'
 import DocumentDetailModal from '@/components/modals/DocumentDetailModal'
+import RenameDocumentModal from '@/components/modals/RenameDocumentModal'
+import MoveDocumentModal from '@/components/modals/MoveDocumentModal'
 import ConfirmDialog from '@/components/common/ConfirmDialog'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
@@ -22,6 +24,8 @@ export default function MyDocumentsPage() {
   const [uploadOpen, setUploadOpen] = useState(false)
   const [selected, setSelected] = useState(null)
   const [deleteTarget, setDeleteTarget] = useState(null)
+  const [renameTarget, setRenameTarget] = useState(null)
+  const [moveTarget, setMoveTarget] = useState(null)
 
   const filtered = useMemo(() => {
     let list = [...(docs || [])]
@@ -77,7 +81,9 @@ export default function MyDocumentsPage() {
             <FileCard
               key={doc.id}
               doc={doc}
-              onView={setSelected}
+              onPreview={setSelected}
+              onRename={setRenameTarget}
+              onMove={setMoveTarget}
               onDelete={setDeleteTarget}
             />
           ))}
@@ -99,7 +105,14 @@ export default function MyDocumentsPage() {
             </TableHeader>
             <TableBody>
               {filtered.map((doc) => (
-                <FileRow key={doc.id} doc={doc} onView={setSelected} onDelete={setDeleteTarget} />
+                <FileRow
+                  key={doc.id}
+                  doc={doc}
+                  onView={setSelected}
+                  onRename={setRenameTarget}
+                  onMove={setMoveTarget}
+                  onDelete={setDeleteTarget}
+                />
               ))}
             </TableBody>
           </Table>
@@ -110,6 +123,16 @@ export default function MyDocumentsPage() {
       </Button>
       <UploadModal open={uploadOpen} onOpenChange={setUploadOpen} />
       <DocumentDetailModal doc={selected} open={!!selected} onOpenChange={() => setSelected(null)} isOwner onDelete={setDeleteTarget} />
+      <RenameDocumentModal
+        open={!!renameTarget}
+        onOpenChange={(v) => !v && setRenameTarget(null)}
+        doc={renameTarget}
+      />
+      <MoveDocumentModal
+        open={!!moveTarget}
+        onOpenChange={(v) => !v && setMoveTarget(null)}
+        doc={moveTarget}
+      />
       <ConfirmDialog
         open={!!deleteTarget}
         onOpenChange={() => setDeleteTarget(null)}

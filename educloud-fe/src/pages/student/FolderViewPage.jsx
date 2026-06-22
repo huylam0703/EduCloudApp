@@ -1,14 +1,16 @@
 import { useState } from 'react'
-import { useParams, useNavigate, Link } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { FolderOpen, LayoutGrid, List } from 'lucide-react'
 import { useFolders } from '@/hooks/useFolders'
-import { useBreadcrumb } from '@/hooks/useBreadcrumb'
+import FolderBreadcrumb from '@/components/common/FolderBreadcrumb'
 import FolderCard from '@/components/common/FolderCard'
 import FileCard from '@/components/common/FileCard'
 import EmptyState from '@/components/common/EmptyState'
 import CreateFolderModal from '@/components/modals/CreateFolderModal'
 import UploadModal from '@/components/modals/UploadModal'
 import PreviewModal from '@/components/modals/PreviewModal'
+import RenameDocumentModal from '@/components/modals/RenameDocumentModal'
+import MoveDocumentModal from '@/components/modals/MoveDocumentModal'
 import ConfirmDialog from '@/components/common/ConfirmDialog'
 import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
@@ -19,11 +21,12 @@ export default function FolderViewPage() {
     const { folderId } = useParams()
     const navigate = useNavigate()
     const { data, isLoading } = useFolders(folderId)
-    const { data: breadcrumb = [] } = useBreadcrumb(folderId)
     const { viewMode, setViewMode } = useUiStore()
     const [folderOpen, setFolderOpen] = useState(false)
     const [uploadOpen, setUploadOpen] = useState(false)
     const [previewDoc, setPreviewDoc] = useState(null)
+    const [renameDoc, setRenameDoc] = useState(null)
+    const [moveDoc, setMoveDoc] = useState(null)
     const [pendingAction, setPendingAction] = useState(null) // { type: 'delete' | 'visibility', doc }
 
     const folders = data?.folders || []
@@ -46,15 +49,9 @@ export default function FolderViewPage() {
 
     return (
         <div className="space-y-6">
-            <nav className="flex flex-wrap items-center gap-1 text-sm text-slate-500">
-                <Link to="/folders" className="hover:text-primary">Thư mục gốc</Link>
-                {breadcrumb.map((b) => (
-                    <span key={b.id} className="flex items-center gap-1">
-            <span>/</span>
-            <Link to={`/folders/${b.id}`} className="hover:text-primary">{b.name}</Link>
-          </span>
-                ))}
-            </nav>
+            <div className="md:hidden">
+                <FolderBreadcrumb folderId={folderId} />
+            </div>
 
             <div className="flex flex-wrap items-center gap-3">
                 <Button onClick={() => setFolderOpen(true)}>📁 Tạo thư mục</Button>
@@ -94,6 +91,8 @@ export default function FolderViewPage() {
                                         key={doc.id}
                                         doc={doc}
                                         onPreview={setPreviewDoc}
+                                        onRename={setRenameDoc}
+                                        onMove={setMoveDoc}
                                         onToggleVisibility={(d) => setPendingAction({ type: 'visibility', doc: d })}
                                         onDelete={(d) => setPendingAction({ type: 'delete', doc: d })}
                                     />
@@ -107,6 +106,16 @@ export default function FolderViewPage() {
             <CreateFolderModal open={folderOpen} onOpenChange={setFolderOpen} parentId={folderId || null} />
             <UploadModal open={uploadOpen} onOpenChange={setUploadOpen} folderId={folderId || null} />
             <PreviewModal open={!!previewDoc} onOpenChange={(v) => !v && setPreviewDoc(null)} doc={previewDoc} />
+            <RenameDocumentModal
+                open={!!renameDoc}
+                onOpenChange={(v) => !v && setRenameDoc(null)}
+                doc={renameDoc}
+            />
+            <MoveDocumentModal
+                open={!!moveDoc}
+                onOpenChange={(v) => !v && setMoveDoc(null)}
+                doc={moveDoc}
+            />
 
             <ConfirmDialog
                 open={!!pendingAction}

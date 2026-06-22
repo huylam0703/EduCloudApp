@@ -22,6 +22,15 @@ export const documentApi = {
     deleteDocument: (documentId) =>
         axiosClient.delete(`/document/delete/${documentId}`).then((res) => res.data),
 
+    renameDocument: (documentId, documentName) =>
+        axiosClient
+            .patch(`/document/rename/${documentId}`, { documentName })
+            .then((res) => res.data.result),
+
+    moveDocument: (documentId, folderId) =>
+        axiosClient
+            .patch(`/document/move/${documentId}`, {}, { params: { folderId } })
+            .then((res) => res.data.result),
 
     handleDownload: async (doc) => {
         try {

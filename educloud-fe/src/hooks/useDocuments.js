@@ -49,12 +49,59 @@ export function useDeleteDocument() {
       queryClient.invalidateQueries({ queryKey: ['folders'] })
       queryClient.invalidateQueries({ queryKey: ['public-documents'] })
       queryClient.invalidateQueries({ queryKey: ['myDocuments'] })
-      queryClient.invalidateQueries({ queryKey: ['myStorage'] }) 
+      queryClient.invalidateQueries({ queryKey: ['myStorage'] })
       toast.success('Đã xóa tài liệu')
     },
     onError: (error) => {
       console.error('DELETE DOCUMENT ERROR:', error.response?.status, error.response?.data, error.message)
-      toast.error('Xóa tài liệu thất bại')
+      toast.error(error.response?.data?.message || 'Xóa tài liệu thất bại')
     },
   })
+}
+
+function invalidateDocumentQueries(queryClient) {
+  queryClient.invalidateQueries({ queryKey: ['folders'] })
+  queryClient.invalidateQueries({ queryKey: ['myDocuments'] })
+  queryClient.invalidateQueries({ queryKey: ['public-documents'] })
+}
+
+export function useDocumentActions() {
+  const queryClient = useQueryClient()
+
+  const renameMutation = useMutation({
+    mutationFn: ({ documentId, documentName }) =>
+      documentApi.renameDocument(documentId, documentName),
+    onSuccess: () => {
+      invalidateDocumentQueries(queryClient)
+      toast.success('Đã đổi tên tài liệu')
+    },
+    onError: (error) => {
+      toast.error(error.response?.data?.message || 'Đổi tên tài liệu thất bại')
+    },
+  })
+
+  const moveMutation = useMutation({
+    mutationFn: ({ documentId, folderId }) =>
+      documentApi.moveDocument(documentId, folderId),
+    onSuccess: () => {
+      invalidateDocumentQueries(queryClient)
+      toast.success('Đã chuyển tài liệu')
+    },
+    onError: (error) => {
+      toast.error(error.response?.data?.message || 'Chuyển tài liệu thất bại')
+    },
+  })
+
+  const handleRenameDocument = (documentId, documentName) =>
+    renameMutation.mutateAsync({ documentId, documentName })
+
+  const handleMoveDocument = (documentId, folderId) =>
+    moveMutation.mutateAsync({ documentId, folderId })
+
+  return {
+    handleRenameDocument,
+    handleMoveDocument,
+    isRenaming: renameMutation.isPending,
+    isMoving: moveMutation.isPending,
+  }
 }

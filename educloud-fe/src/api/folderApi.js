@@ -8,4 +8,7 @@ export const folderApi = {
             folderName,
             parentFolderId,
         }),
+
+    getTreeFolder: () =>
+        axiosClient.get('/folder/treeFolder').then((res) => res.data.result),
 }

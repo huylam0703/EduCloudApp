@@ -1,7 +1,8 @@
-import { useLocation, Link, useNavigate } from 'react-router-dom'
-import { Menu, Search, Bell, ChevronRight } from 'lucide-react'
+import { useLocation, useNavigate } from 'react-router-dom'
+import { Menu, Search, Bell } from 'lucide-react'
 import { useAuthStore, getDisplayName } from '@/store/authStore'
 import { useUiStore } from '@/store/uiStore'
+import { AppBreadcrumb } from '@/components/common/FolderBreadcrumb'
 import { Input } from '@/components/ui/input'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import {
@@ -38,10 +39,9 @@ export default function Header() {
   const unread = mockNotifications.filter((n) => !n.read).length
 
   const segments = location.pathname.split('/').filter(Boolean)
-  const crumbs = segments.map((s, i) => ({
-    label: routeLabels[s] || s,
-    path: '/' + segments.slice(0, i + 1).join('/'),
-  }))
+
+  const isFolderRoute = segments[0] === 'folders'
+  const activeFolderId = isFolderRoute && segments[1] ? segments[1] : undefined
 
   return (
     <header className="sticky top-0 z-40 flex h-16 items-center gap-4 border-b border-slate-100 bg-white px-4 lg:px-6">
@@ -59,24 +59,14 @@ export default function Header() {
       >
         <Menu className="h-5 w-5" />
       </button>
-      <nav className="hidden items-center gap-1 text-sm text-slate-500 md:flex">
-        <Link to="/dashboard" className="hover:text-slate-900">
-          Home
-        </Link>
-        {crumbs.map((c) => (
-          <span key={c.path} className="flex items-center gap-1">
-            <ChevronRight className="h-4 w-4" />
-            <Link to={c.path} className="hover:text-slate-900">
-              {c.label}
-            </Link>
-          </span>
-        ))}
-      </nav>
+      <div className="hidden md:block">
+        <AppBreadcrumb
+          segments={segments}
+          routeLabels={routeLabels}
+          folderId={activeFolderId}
+        />
+      </div>
       <div className="mx-auto hidden max-w-md flex-1 md:block">
-        <div className="relative">
-          <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-          <Input placeholder="Tìm kiếm... (Ctrl+K)" className="w-full max-w-[400px] pl-9" />
-        </div>
       </div>
       <button
         type="button"

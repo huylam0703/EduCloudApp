@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { MoreVertical, Lock, Globe, Eye } from 'lucide-react'
+import { MoreVertical, Lock, Globe, Eye, Pencil, FolderInput } from 'lucide-react'
 import { getFileTypeConfig } from '@/utils/fileTypeIcon'
 import { formatBytes } from '@/utils/formatBytes'
 import { formatDate } from '@/utils/formatDate'
@@ -11,7 +11,7 @@ import {
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
-export default function FileCard({ doc, onPreview, onDelete, onToggleVisibility }) {
+export default function FileCard({ doc, onPreview, onDelete, onToggleVisibility, onRename, onMove }) {
   const { Icon, color, bg, badge } = getFileTypeConfig(doc.fileType)
 
   return (
@@ -38,6 +38,12 @@ export default function FileCard({ doc, onPreview, onDelete, onToggleVisibility 
                 <DropdownMenuContent align="end" onClick={(e) => e.stopPropagation()}>
                   <DropdownMenuItem onClick={() => onPreview?.(doc)}>
                     <Eye className="mr-2 h-4 w-4" /> Xem trước
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => onRename?.(doc)}>
+                    <Pencil className="mr-2 h-4 w-4" /> Đổi tên
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => onMove?.(doc)}>
+                    <FolderInput className="mr-2 h-4 w-4" /> Chuyển thư mục
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={() => onToggleVisibility?.(doc)}>Đổi visibility</DropdownMenuItem>
                   <DropdownMenuItem className="text-red-600" onClick={() => onDelete?.(doc)}>Xóa</DropdownMenuItem>

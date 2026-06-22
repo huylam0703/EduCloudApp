@@ -45,3 +45,11 @@ export function useCreateFolder() {
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['folders'] }),
   })
 }
+
+export function useTreeFolders(enabled = true) {
+  return useQuery({
+    queryKey: ['folder-tree'],
+    queryFn: folderApi.getTreeFolder,
+    enabled,
+  })
+}
