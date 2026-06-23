@@ -19,11 +19,17 @@ import CategoryManagementPage from '@/pages/admin/CategoryManagementPage'
 import ActivityLogPage from '@/pages/admin/ActivityLogPage'
 import CloudStoragePage from '@/pages/admin/CloudStoragePage'
 import AdminNotificationPage from '@/pages/admin/AdminNotificationPage'
-import { useAuthStore } from '@/store/authStore'
+import { useAuthStore, isAdmin } from '@/store/authStore'
 
 function RootRedirect() {
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated)
-  return <Navigate to={isAuthenticated ? '/dashboard' : '/login'} replace />
+  const user = useAuthStore((s) => s.user)
+
+  if (!isAuthenticated) {
+    return <Navigate to="/login" replace />
+  }
+
+  return <Navigate to={isAdmin(user) ? '/admin' : '/dashboard'} replace />
 }
 
 export const router = createBrowserRouter([

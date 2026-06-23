@@ -212,19 +212,28 @@ public class DocumentServiceImpl implements DocumentService {
             String subjectId,
             String fileType
     ) {
+        int safePageNo = pageNo < 1 ? 1 : pageNo;
+        int safePageSize = pageSize < 1 ? 10 : pageSize;
+
+        String normalizedMajorId = normalizeFilter(majorId);
+        String normalizedSubjectId = normalizeFilter(subjectId);
+        String normalizedFileType = normalizeFilter(fileType);
+        if (normalizedFileType != null) {
+            normalizedFileType = normalizedFileType.toUpperCase();
+        }
 
         Pageable pageable = PageRequest.of(
-                pageNo - 1,
-                pageSize,
+                safePageNo - 1,
+                safePageSize,
                 Sort.by(Sort.Direction.DESC, "createdAt")
         );
 
         Page<Document> documents =
                 documentRepository.findPublicDocuments(
                         DocumentVisibility.PUBLIC,
-                        majorId,
-                        subjectId,
-                        fileType,
+                        normalizedMajorId,
+                        normalizedSubjectId,
+                        normalizedFileType,
                         pageable
                 );
 
@@ -236,12 +245,20 @@ public class DocumentServiceImpl implements DocumentService {
 
         return PageResponse.<DocumentResponse>builder()
                 .content(responses)
-                .pageNo(pageNo)
-                .pageSize(pageSize)
+                .pageNo(safePageNo)
+                .pageSize(safePageSize)
                 .totalElements(documents.getTotalElements())
                 .totalPages(documents.getTotalPages())
                 .last(documents.isLast())
                 .build();
+    }
+
+    private String normalizeFilter(String value) {
+        if (value == null) {
+            return null;
+        }
+        String trimmed = value.trim();
+        return trimmed.isEmpty() ? null : trimmed;
     }
 
     @Override

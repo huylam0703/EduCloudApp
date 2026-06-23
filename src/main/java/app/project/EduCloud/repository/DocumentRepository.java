@@ -3,7 +3,6 @@ package app.project.EduCloud.repository;
 import app.project.EduCloud.entity.Document;
 import app.project.EduCloud.entity.Folder;
 import app.project.EduCloud.enums.DocumentVisibility;
-import app.project.EduCloud.enums.FileType;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -23,9 +22,9 @@ public interface DocumentRepository extends JpaRepository<Document, String> {
     FROM Document d
     WHERE d.visibility = :visibility
       AND d.deletedAt IS NULL
-      AND (:majorId IS NULL OR d.major.id = :majorId)
-      AND (:subjectId IS NULL OR d.subject.id = :subjectId)
-      AND (:fileType IS NULL OR d.fileType = :fileType)
+      AND (:majorId IS NULL OR :majorId = '' OR d.major.id = :majorId)
+      AND (:subjectId IS NULL OR :subjectId = '' OR d.subject.id = :subjectId)
+      AND (:fileType IS NULL OR :fileType = '' OR UPPER(d.fileType) = UPPER(:fileType))
 """)
     Page<Document> findPublicDocuments(
             @Param("visibility") DocumentVisibility visibility,

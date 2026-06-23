@@ -2,7 +2,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'sonner'
 import { authService } from '@/services/authService'
-import { useAuthStore } from '@/store/authStore'
+import { useAuthStore, isAdmin } from '@/store/authStore'
 
 export function useLogin() {
   const navigate = useNavigate()
@@ -18,9 +18,9 @@ export function useLogin() {
       setAuth(user, auth.token)
       return user
     },
-    onSuccess: () => {
+    onSuccess: (user) => {
       toast.success('Đăng nhập thành công')
-      navigate('/dashboard')
+      navigate(isAdmin(user) ? '/admin' : '/dashboard')
     },
     onError: (err) => {
       toast.error(err.response?.data?.message || 'Đăng nhập thất bại')

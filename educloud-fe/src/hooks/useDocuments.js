@@ -10,10 +10,17 @@ export function useMyDocuments() {
   })
 }
 
-export function usePublicDocuments({ search, majorId, type, pageNo = 0, pageSize = 9 } = {}) {
+export function usePublicDocuments({ majorId, subjectId, type, pageNo = 1, pageSize = 9, searchCounter = 0 } = {}) {
   return useQuery({
-    queryKey: ['public-documents', search, majorId, type, pageNo, pageSize],
-    queryFn: () => documentService.getPublicDocuments({ search, majorId, fileType: type, pageNo, pageSize }),
+    queryKey: ['public-documents', majorId, subjectId, type, pageNo, pageSize, searchCounter],
+    queryFn: () =>
+      documentApi.getPublicDocuments({
+        majorId,
+        subjectId,
+        fileType: type,
+        pageNo,
+        pageSize,
+      }),
     keepPreviousData: true,
   })
 }

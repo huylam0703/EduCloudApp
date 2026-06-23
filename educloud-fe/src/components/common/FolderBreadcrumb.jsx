@@ -3,8 +3,11 @@ import { ChevronRight } from 'lucide-react'
 import { useBreadcrumb } from '@/hooks/useBreadcrumb'
 import { cn } from '@/lib/utils'
 
+const BREADCRUMB_NAV_CLASS =
+  'flex flex-wrap items-center gap-1 rounded-md bg-indigo-600 px-3 py-1.5 text-sm shadow-sm'
+
 function CrumbSeparator() {
-  return <ChevronRight className="h-3.5 w-3.5 shrink-0 text-zinc-500" aria-hidden />
+  return <ChevronRight className="h-3.5 w-3.5 shrink-0 text-indigo-200" aria-hidden />
 }
 
 function CrumbLink({ to, children, isLast = false }) {
@@ -19,7 +22,7 @@ function CrumbLink({ to, children, isLast = false }) {
   return (
     <Link
       to={to}
-      className="max-w-[220px] truncate text-zinc-300 transition-colors hover:text-white"
+      className="max-w-[220px] truncate text-indigo-100 transition-colors hover:text-white"
       title={children}
     >
       {children}
@@ -31,13 +34,7 @@ export default function FolderBreadcrumb({ folderId, className }) {
   const { data: chain = [], isLoading } = useBreadcrumb(folderId)
 
   return (
-    <nav
-      className={cn(
-        'flex flex-wrap items-center gap-1 rounded-md bg-indigo-600 px-3 py-1.5 text-sm shadow-inner',
-        className
-      )}
-      aria-label="Breadcrumb"
-    >
+    <nav className={cn(BREADCRUMB_NAV_CLASS, className)} aria-label="Breadcrumb">
       <CrumbLink to="/dashboard">Home</CrumbLink>
       <CrumbSeparator />
       {folderId ? (
@@ -57,7 +54,7 @@ export default function FolderBreadcrumb({ folderId, className }) {
           {isLoading && chain.length === 0 && (
             <>
               <CrumbSeparator />
-              <span className="text-zinc-400">...</span>
+              <span className="text-indigo-200">...</span>
             </>
           )}
         </>
@@ -81,10 +78,7 @@ export function AppBreadcrumb({ segments, routeLabels, folderId }) {
   }))
 
   return (
-    <nav
-      className="flex flex-wrap items-center gap-1 rounded-md bg-[#1c1c1c] px-3 py-1.5 text-sm shadow-inner"
-      aria-label="Breadcrumb"
-    >
+    <nav className={BREADCRUMB_NAV_CLASS} aria-label="Breadcrumb">
       <CrumbLink to="/dashboard">Home</CrumbLink>
       {crumbs.map((c, i) => (
         <span key={c.path} className="flex items-center gap-1">

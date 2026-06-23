@@ -1,29 +1,11 @@
 import apiClient from '@/lib/apiClient'
+import { documentApi } from '@/api/documentApi'
 import { delay, USE_MOCKS } from '@/mocks/delay'
-import { mockDocuments, mockDashboardStats } from '@/mocks/documents'
+import { mockDashboardStats } from '@/mocks/documents'
 
 export const documentService = {
-  getPublicDocuments: async ({
-                               search = '',
-                               majorId = '',
-                               subjectId = '',
-                               fileType = '',
-                               pageNo = 0,
-                               pageSize = 9
-                             } = {}) => {
-    const { data } = await apiClient.get('/document/public', {
-      params: {
-        search,
-        pageNo,
-        pageSize,
-        ...(majorId && { majorId }),
-        ...(subjectId && { subjectId }),
-        ...(fileType && { fileType }),
-      },
-    })
+  getPublicDocuments: (params) => documentApi.getPublicDocuments(params),
 
-    return data.result
-  },
   getDashboardStats: async () => {
     if (USE_MOCKS) {
       await delay()
@@ -32,14 +14,11 @@ export const documentService = {
     const { data } = await apiClient.get('/documents/stats')
     return data
   },
-  downloadDocument: async (documentId) => {
-    const response = await apiClient.get(
-        `/document/download/${documentId}`,
-        {
-          responseType: 'blob',
-        }
-    )
 
+  downloadDocument: async (documentId) => {
+    const response = await apiClient.get(`/document/download/${documentId}`, {
+      responseType: 'blob',
+    })
     return response.data
   },
 }
