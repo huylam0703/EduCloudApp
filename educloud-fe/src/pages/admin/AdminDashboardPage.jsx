@@ -4,7 +4,6 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import { adminService } from '@/services/adminService'
 import StatsCard from '@/components/admin/StatsCard'
 import DataTable from '@/components/admin/DataTable'
-import { formatBytes } from '@/utils/formatBytes'
 import { formatDate } from '@/utils/formatDate'
 import { Skeleton } from '@/components/ui/skeleton'
 
@@ -12,8 +11,8 @@ const COLORS = ['#4F46E5', '#0EA5E9', '#10B981']
 
 export default function AdminDashboardPage() {
   const { data: stats, isLoading } = useQuery({
-    queryKey: ['adminStats'],
-    queryFn: adminService.getStatistics,
+    queryKey: ['adminDashboard'],
+    queryFn: adminService.getDashboard,
   })
   const { data: logs, isLoading: logsLoading } = useQuery({
     queryKey: ['activityLogs'],
@@ -23,9 +22,7 @@ export default function AdminDashboardPage() {
   if (isLoading) {
     return (
       <div className="grid gap-4 md:grid-cols-3">
-        {[1, 2, 3, 4, 5, 6].map((i) => (
-          <Skeleton key={i} className="h-28" />
-        ))}
+        {[1, 2, 3, 4, 5, 6].map((i) => <Skeleton key={i} className="h-28" />)}
       </div>
     )
   }
@@ -42,23 +39,23 @@ export default function AdminDashboardPage() {
     <div className="space-y-6">
       <h1 className="text-2xl font-semibold">Admin Dashboard</h1>
       <div className="grid gap-4 md:grid-cols-3">
-        <StatsCard title="Tổng người dùng" value={stats?.totalUsers?.toLocaleString()} icon={Users} accent="indigo" />
-        <StatsCard title="Tổng tài liệu" value={stats?.totalDocuments?.toLocaleString()} icon={FileText} accent="sky" />
-        <StatsCard title="Tổng dung lượng" value={formatBytes(stats?.totalStorage)} icon={Cloud} accent="emerald" />
-        <StatsCard title="Upload hôm nay" value={stats?.uploadsToday} subtitle="files" icon={Upload} accent="amber" />
-        <StatsCard title="Download hôm nay" value={stats?.downloadsToday} subtitle="lượt" icon={Download} accent="indigo" />
-        <StatsCard title="Tài liệu bị xóa" value={stats?.deletedToday} subtitle="files" icon={Trash2} accent="red" />
+        <StatsCard title="Tổng người dùng"  value={stats?.totalUsers?.toLocaleString()}     icon={Users}     accent="indigo" />
+        <StatsCard title="Tổng tài liệu"    value={stats?.totalDocuments?.toLocaleString()} icon={FileText}  accent="sky" />
+        <StatsCard title="Tổng dung lượng"  value={stats?.totalStorageDisplay}              icon={Cloud}     accent="emerald" />
+        <StatsCard title="Tổng số upload"      value={stats?.totalUploads}    subtitle="files" icon={Upload}    accent="amber" />
+        <StatsCard title="Tổng lượt download"     value={stats?.totalDownloads}  subtitle="lượt"  icon={Download}  accent="indigo" />
+        <StatsCard title="Tài liệu bị xóa"  value={stats?.deletedDocuments} subtitle="files" icon={Trash2}   accent="red" />
       </div>
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="rounded-xl border bg-white p-6">
           <h2 className="mb-4 font-semibold">Upload theo ngày (7 ngày)</h2>
           <ResponsiveContainer width="100%" height={250}>
-            <BarChart data={stats?.uploadByDay || []}>
+            <BarChart data={stats?.uploadLast7Days || []}>
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="day" />
+              <XAxis dataKey="label" />
               <YAxis />
               <Tooltip />
-              <Bar dataKey="count" fill="#4F46E5" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="value" fill="#4F46E5" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>

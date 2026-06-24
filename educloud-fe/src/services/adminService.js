@@ -7,13 +7,21 @@ import { mockDocuments } from '@/mocks/documents'
 
 export const adminService = {
   getStatistics: async () => {
-    if (USE_MOCKS) {
-      await delay()
-      return mockAdminStats
-    }
-    const { data } = await api.get('/admin/statistics')
-    return data
-  },
+  if (USE_MOCKS) {
+    await delay()
+    return mockAdminStats
+  }
+  const { data } = await api.get('/admin/dashboard')
+  return data
+},
+getDashboard: async () => {
+  if (USE_MOCKS) {
+    await delay()
+    return mockAdminStats
+  }
+  const { data } = await api.get('/admin/dashboard')
+  return data
+},
   getUsers: async () => {
     if (USE_MOCKS) {
       await delay()
@@ -59,14 +67,14 @@ export const adminService = {
     const { data } = await api.get('/subjects')
     return data
   },
-  getActivityLogs: async () => {
-    if (USE_MOCKS) {
-      await delay()
-      return mockActivityLogs
-    }
-    const { data } = await api.get('/admin/logs')
-    return data
-  },
+getActivityLogs: async () => {
+  if (USE_MOCKS) {
+    await delay()
+    return mockActivityLogs
+  }
+  const { data } = await api.get('/activity-log/all')
+  return Array.isArray(data) ? data : (data?.content ?? [])
+},
   getStorageProviders: async () => {
     if (USE_MOCKS) {
       await delay()
