@@ -23,7 +23,7 @@ export const adminService = {
   getDashboard: async () => {
     if (USE_MOCKS) {
       await delay()
-      return mockAdminStats
+      return adaptDashboard(mockAdminStats)
     }
     const { data } = await api.get('/admin/dashboard')
     return adaptDashboard(data)
@@ -32,7 +32,7 @@ export const adminService = {
   getStatistics: async () => {
     if (USE_MOCKS) {
       await delay()
-      return mockAdminStats
+      return adaptDashboard(mockAdminStats)
     }
     const { data } = await api.get('/admin/dashboard')
     return adaptDashboard(data)
@@ -89,13 +89,39 @@ export const adminService = {
     return data
   },
 
-  getActivityLogs: async () => {
+  getActivityLogs: async ({ pageNo = 1, pageSize = 10 } = {}) => {
     if (USE_MOCKS) {
       await delay()
-      return mockActivityLogs
+      const totalElements = mockActivityLogs.length
+      const totalPages = Math.max(1, Math.ceil(totalElements / pageSize))
+      const offset = (pageNo - 1) * pageSize
+      const content = mockActivityLogs.slice(offset, offset + pageSize)
+      return {
+        content,
+        pageNo,
+        pageSize,
+        totalElements,
+        totalPages,
+        last: pageNo >= totalPages,
+      }
     }
-    const { data } = await api.get('/activity-log/all')
-    return Array.isArray(data) ? data : (data?.content ?? [])
+
+    const { data } = await api.get('/activity-log/all', {
+      params: { pageNo, pageSize },
+    })
+
+    if (Array.isArray(data)) {
+      return {
+        content: data,
+        pageNo,
+        pageSize,
+        totalElements: data.length,
+        totalPages: 1,
+        last: true,
+      }
+    }
+
+    return data
   },
 
   getStorageProviders: async () => {

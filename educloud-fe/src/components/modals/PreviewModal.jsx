@@ -23,9 +23,10 @@ export default function PreviewModal({ open, onOpenChange, doc }) {
     const [error, setError] = useState(null)
 
     const kind = doc ? getPreviewKind(doc.fileType, doc.mimeType) : 'unsupported'
+    const isUnsupported = kind === 'unsupported'
 
     useEffect(() => {
-        if (!open || !doc || kind === 'unsupported') return
+        if (!open || !doc || isUnsupported) return
 
         let objectUrl = null
         setLoading(true)
@@ -49,7 +50,7 @@ export default function PreviewModal({ open, onOpenChange, doc }) {
             setBlobUrl(null)
             setTextContent('')
         }
-    }, [open, doc?.id, kind])
+    }, [open, doc?.id, isUnsupported, kind])
 
     if (!doc) return null
 
@@ -61,9 +62,9 @@ export default function PreviewModal({ open, onOpenChange, doc }) {
                 </DialogHeader>
 
                 <div className="flex max-h-[65vh] min-h-[300px] items-center justify-center overflow-auto rounded-lg bg-slate-50">
-                    {kind === 'unsupported' ? (
+                    {isUnsupported ? (
                         <div className="flex flex-col items-center gap-3 p-8 text-center">
-                            <p className="text-slate-600">Không hỗ trợ xem trước, vui lòng tải xuống</p>
+                            <p className="text-slate-600 font-medium">Không xem được. Vui lòng tải xuống để xem.</p>
                             <Button onClick={() => documentApi.handleDownload(doc)}>
                                 <Download className="mr-2 h-4 w-4" /> Tải xuống
                             </Button>

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { Users, FileText, Cloud, Upload, Download, Trash2 } from 'lucide-react'
 import {
@@ -8,24 +9,40 @@ import { adminService } from '@/services/adminService'
 import StatsCard from '@/components/admin/StatsCard'
 import DataTable from '@/components/admin/DataTable'
 import { formatDate } from '@/utils/formatDate'
+import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
 
 const COLORS = ['#4F46E5', '#0EA5E9', '#10B981', '#F59E0B', '#EF4444']
 
+function getActionColor(action) {
+  switch (action) {
+    case 'UPLOAD_DOCUMENT':
+      return 'bg-green-100 text-green-700'
+    case 'DOWNLOAD_DOCUMENT':
+      return 'bg-sky-100 text-sky-700'
+    case 'DELETE_DOCUMENT':
+      return 'bg-red-100 text-red-700'
+    case 'CREATE_FOLDER':
+      return 'bg-amber-100 text-amber-700'
+    default:
+      return 'bg-slate-100 text-slate-700'
+  }
+}
+
 const LOG_COLUMNS = [
-  { key: 'user', label: 'User' },
+  { key: 'username', label: 'User' },
   {
     key: 'action',
     label: 'Action',
     render: (r) => (
-      <span className="rounded bg-blue-100 px-2 py-0.5 text-xs text-blue-700">
+      <span className={`rounded px-2 py-0.5 text-xs ${getActionColor(r.action)}`}>
         {r.action}
       </span>
     ),
   },
-  { key: 'detail', label: 'Document' },
-  { key: 'time', label: 'Time', render: (r) => formatDate(r.time, 'dd/MM/yyyy HH:mm') },
-  { key: 'ip', label: 'IP' },
+  { key: 'entityType', label: 'Entity Type' },
+  { key: 'description', label: 'Description' },
+  { key: 'createdAt', label: 'Time', render: (r) => formatDate(r.createdAt, 'dd/MM/yyyy HH:mm') },
 ]
 
 function DashboardSkeleton() {
@@ -55,12 +72,16 @@ export default function AdminDashboardPage() {
     queryFn: adminService.getDashboard,
   })
 
+  const [logPageNo, setLogPageNo] = useState(1)
+  const pageSize = 10
+
   const {
     data: logs,
     isLoading: logsLoading,
   } = useQuery({
-    queryKey: ['activityLogs'],
-    queryFn: adminService.getActivityLogs,
+    queryKey: ['activityLogs', logPageNo, pageSize],
+    queryFn: () => adminService.getActivityLogs({ pageNo: logPageNo, pageSize }),
+    keepPreviousData: true,
   })
 
   if (statsLoading) return <DashboardSkeleton />
@@ -171,10 +192,31 @@ export default function AdminDashboardPage() {
       </div>
 
       <div>
-        <h2 className="mb-4 font-semibold">Hoạt động gần đây</h2>
+        <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <h2 className="font-semibold">Hoạt động gần đây</h2>
+          <div className="flex items-center gap-2 text-sm text-slate-500">
+            <span>Trang {logPageNo} / {logs?.totalPages ?? 1}</span>
+            <Button
+              variant="outline"
+              size="sm"
+              disabled={logPageNo <= 1}
+              onClick={() => setLogPageNo((prev) => Math.max(prev - 1, 1))}
+            >
+              Trước
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              disabled={logs?.last ?? true}
+              onClick={() => setLogPageNo((prev) => prev + 1)}
+            >
+              Sau
+            </Button>
+          </div>
+        </div>
         <DataTable
           columns={LOG_COLUMNS}
-          data={Array.isArray(logs) ? logs.slice(0, 10) : []}
+          data={logs?.content ?? []}
           isLoading={logsLoading}
         />
       </div>
