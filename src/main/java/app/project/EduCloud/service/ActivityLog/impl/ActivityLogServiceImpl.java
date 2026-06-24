@@ -1,14 +1,21 @@
 package app.project.EduCloud.service.ActivityLog.impl;
 
-import app.project.EduCloud.dto.request.ActivityLog.ActivityLogCreateRequest;
+import java.time.LocalDateTime;
+import java.util.List;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.stereotype.Service;
+
 import app.project.EduCloud.dto.response.ActivityLog.ActivityLogResponse;
 import app.project.EduCloud.dto.response.PageResponse;
 import app.project.EduCloud.entity.ActivityLog;
 import app.project.EduCloud.entity.User;
 import app.project.EduCloud.enums.ActivityAction;
 import app.project.EduCloud.enums.ActivityEntityType;
-import app.project.EduCloud.exception.AppException;
-import app.project.EduCloud.exception.ErrorCode;
 import app.project.EduCloud.mapper.ActivityLogMapper;
 import app.project.EduCloud.repository.ActivityLogRepository;
 import app.project.EduCloud.repository.UserRepository;
@@ -16,13 +23,6 @@ import app.project.EduCloud.service.ActivityLog.ActivityLogService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.springframework.data.domain.*;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.stereotype.Service;
-
-import java.time.LocalDateTime;
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -42,13 +42,12 @@ public class ActivityLogServiceImpl implements ActivityLogService {
             ActivityAction action,
             ActivityEntityType entityType
     ) {
-        if (pageNo > 0) {
-            pageNo = pageNo - 1;
-        }
+        int safePageNo = pageNo < 1 ? 1 : pageNo;
+        int safePageSize = pageSize < 1 ? 10 : pageSize;
 
         Pageable pageable = PageRequest.of(
-                pageNo,
-                pageSize,
+                safePageNo - 1,
+                safePageSize,
                 Sort.by(Sort.Direction.DESC, "createdAt")
         );
 
@@ -66,8 +65,8 @@ public class ActivityLogServiceImpl implements ActivityLogService {
 
         return PageResponse.<ActivityLogResponse>builder()
                 .content(responses)
-                .pageNo(pageNo)
-                .pageSize(pageSize)
+                .pageNo(safePageNo)
+                .pageSize(safePageSize)
                 .totalElements(page.getTotalElements())
                 .totalPages(page.getTotalPages())
                 .last(page.isLast())
