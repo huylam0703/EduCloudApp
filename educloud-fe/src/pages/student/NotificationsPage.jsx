@@ -1,4 +1,6 @@
 import { useMemo, useState } from 'react'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
+import { notificationService } from '@/services/notificationService'
 import {
   CheckCircle,
   AlertTriangle,
@@ -7,26 +9,56 @@ import {
   CheckCheck,
   Bell,
 } from 'lucide-react'
-import { mockNotifications } from '@/mocks/notifications'
+
 import { formatTimeAgo } from '@/utils/formatDate'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 
 const iconMap = {
-  upload: { Icon: CheckCircle, className: 'text-emerald-500 bg-emerald-50' },
-  download: { Icon: CheckCircle, className: 'text-indigo-500 bg-indigo-50' },
-  admin: { Icon: AlertTriangle, className: 'text-amber-500 bg-amber-50' },
-  system: { Icon: Info, className: 'text-blue-500 bg-blue-50' },
+  upload: {
+    Icon: CheckCircle,
+    className: 'text-emerald-500 bg-emerald-50',
+  },
+  download: {
+    Icon: CheckCircle,
+    className: 'text-indigo-500 bg-indigo-50',
+  },
+  admin: {
+    Icon: AlertTriangle,
+    className: 'text-amber-500 bg-amber-50',
+  },
+  system: {
+    Icon: Info,
+    className: 'text-blue-500 bg-blue-50',
+  },
 }
 
 export default function NotificationsPage() {
-  const [items, setItems] = useState(mockNotifications)
+  const queryClient = useQueryClient()
   const [filter, setFilter] = useState('all')
 
-  const unreadCount = useMemo(() => {
-    return items.filter((n) => !n.read).length
-  }, [items])
+  const { data: notificationData } = useQuery({
+  queryKey: ['notifications'],
+  queryFn: notificationService.getMyNotifications,
+})
+
+const items = Array.isArray(notificationData)
+  ? notificationData
+  : notificationData?.content || notificationData?.result || []
+
+  const { data: unreadData } = useQuery({
+  queryKey: ['notificationUnreadCount'],
+  queryFn: notificationService.getUnreadCount,
+})
+
+const unreadCount =
+  typeof unreadData === 'number'
+    ? unreadData
+    : unreadData?.count || unreadData?.result || 0
+  console.log('notificationData:', notificationData)
+console.log('items:', items)
+console.log('isArray:', Array.isArray(items))
 
   const filteredItems = useMemo(() => {
     if (filter === 'unread') return items.filter((n) => !n.read)
@@ -34,23 +66,56 @@ export default function NotificationsPage() {
     return items
   }, [items, filter])
 
-  const markOneRead = (id) => {
-    setItems((prev) =>
-      prev.map((n) => (n.id === id ? { ...n, read: true } : n))
+  const refreshNotifications = () => {
+    queryClient.invalidateQueries({
+      queryKey: ['notifications'],
+    })
+
+    queryClient.invalidateQueries({
+      queryKey: ['notificationUnreadCount'],
+    })
+  }
+
+  const markOneRead = async (id) => {
+    try {
+      await notificationService.readNotification(id)
+      refreshNotifications()
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  const markAllRead = async () => {
+    try {
+      await notificationService.readAllNotifications()
+      refreshNotifications()
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  const deleteOne = async (id) => {
+    try {
+      await notificationService.deleteNotification(id)
+      refreshNotifications()
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  const deleteAll = async () => {
+    const ok = window.confirm(
+      'Bạn có chắc muốn xoá tất cả thông báo không?'
     )
-  }
 
-  const markAllRead = () => {
-    setItems((prev) => prev.map((n) => ({ ...n, read: true })))
-  }
+    if (!ok) return
 
-  const deleteOne = (id) => {
-    setItems((prev) => prev.filter((n) => n.id !== id))
-  }
-
-  const deleteAll = () => {
-    const ok = window.confirm('Bạn có chắc muốn xoá tất cả thông báo không?')
-    if (ok) setItems([])
+    try {
+      await notificationService.deleteAllNotifications()
+      refreshNotifications()
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   return (
@@ -133,7 +198,8 @@ export default function NotificationsPage() {
       ) : (
         <div className="space-y-2">
           {filteredItems.map((n) => {
-            const { Icon, className } = iconMap[n.type] || iconMap.system
+            const { Icon, className } =
+              iconMap[n.type?.toLowerCase()] || iconMap.system
 
             return (
               <div
@@ -141,7 +207,8 @@ export default function NotificationsPage() {
                 onClick={() => markOneRead(n.id)}
                 className={cn(
                   'group flex cursor-pointer gap-4 rounded-xl border bg-white p-4 transition-colors hover:bg-slate-50',
-                  !n.read && 'border-l-4 border-l-blue-500 bg-blue-50/50'
+                  !n.read &&
+                    'border-l-4 border-l-blue-500 bg-blue-50/50'
                 )}
               >
                 <div
@@ -157,12 +224,19 @@ export default function NotificationsPage() {
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       <div className="flex items-center gap-2">
-                        <p className={cn('font-medium', !n.read && 'font-semibold')}>
+                        <p
+                          className={cn(
+                            'font-medium',
+                            !n.read && 'font-semibold'
+                          )}
+                        >
                           {n.title}
                         </p>
 
                         {!n.read && (
-                          <Badge className="bg-blue-600 text-white">Mới</Badge>
+                          <Badge className="bg-blue-600 text-white">
+                            Mới
+                          </Badge>
                         )}
                       </div>
 
