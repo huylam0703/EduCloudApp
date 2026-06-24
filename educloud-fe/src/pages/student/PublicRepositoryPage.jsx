@@ -133,9 +133,22 @@ export default function PublicRepositoryPage() {
     setSubjectId('')
     setSubjectKeyword('')
     setSelectedSubjectName('')
+    setSearchMajorId('')
+    setSearchSubjectId('')
     setShowMajorSuggest(false)
     setShowSubjectSuggest(false)
-    resetPage()
+    setPageNo(1)
+    setSearchCounter((prev) => prev + 1)
+  }
+
+  const clearSubject = () => {
+    setSubjectId('')
+    setSubjectKeyword('')
+    setSelectedSubjectName('')
+    setSearchSubjectId('')
+    setShowSubjectSuggest(false)
+    setPageNo(1)
+    setSearchCounter((prev) => prev + 1)
   }
 
   const handleSelectSubject = (item) => {
@@ -147,14 +160,6 @@ export default function PublicRepositoryPage() {
     setSubjectId(item.id)
     setSubjectKeyword(item.subjectName)
     setSelectedSubjectName(item.subjectName)
-    setShowSubjectSuggest(false)
-    resetPage()
-  }
-
-  const clearSubject = () => {
-    setSubjectId('')
-    setSubjectKeyword('')
-    setSelectedSubjectName('')
     setShowSubjectSuggest(false)
     resetPage()
   }
@@ -267,7 +272,8 @@ export default function PublicRepositoryPage() {
 
   const handleTypeFilter = (val) => {
     setType(val)
-    resetPage()
+    setSearchType(val)
+    setPageNo(1)
   }
 
   return (
@@ -498,6 +504,19 @@ export default function PublicRepositoryPage() {
             onClick={handleSearch}
           >
             Tìm kiếm
+          </Button>
+
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            className="h-11"
+            onClick={() => {
+              setPageNo(1)
+              setSearchCounter((prev) => prev + 1)
+            }}
+          >
+            Reload
           </Button>
         </div>
       </div>
