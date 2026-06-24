@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
+import { Button } from '@/components/ui/button'
 import { adminService } from '@/services/adminService'
 import DataTable from '@/components/admin/DataTable'
 import { Input } from '@/components/ui/input'
@@ -12,13 +14,17 @@ const actionColors = {
 }
 
 export default function ActivityLogPage() {
+  const [pageNo, setPageNo] = useState(1)
+  const pageSize = 10
+
   const { data: logs, isLoading } = useQuery({
-    queryKey: ['activityLogs'],
-    queryFn: adminService.getActivityLogs,
+    queryKey: ['activityLogs', pageNo, pageSize],
+    queryFn: () => adminService.getActivityLogs({ pageNo, pageSize }),
+    keepPreviousData: true,
   })
 
   const columns = [
-    { key: 'user', label: 'User' },
+    { key: 'username', label: 'User' },
     {
       key: 'action',
       label: 'Action',
@@ -28,10 +34,9 @@ export default function ActivityLogPage() {
         </span>
       ),
     },
-    { key: 'entity', label: 'Entity' },
-    { key: 'detail', label: 'Detail' },
-    { key: 'ip', label: 'IP' },
-    { key: 'time', label: 'Time', render: (r) => formatDate(r.time, 'dd/MM/yyyy HH:mm') },
+    { key: 'entityType', label: 'Entity Type' },
+    { key: 'description', label: 'Description' },
+    { key: 'createdAt', label: 'Time', render: (r) => formatDate(r.createdAt, 'dd/MM/yyyy HH:mm') },
   ]
 
   return (
@@ -42,7 +47,22 @@ export default function ActivityLogPage() {
         <Input type="date" className="w-[160px]" />
         <Input type="date" className="w-[160px]" />
       </div>
-      <DataTable columns={columns} data={logs} isLoading={isLoading} />
+
+      <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="text-sm text-slate-500">
+          Trang {pageNo} / {logs?.totalPages ?? 1}
+        </div>
+        <div className="flex items-center gap-2">
+          <Button variant="outline" size="sm" disabled={pageNo <= 1} onClick={() => setPageNo((prev) => Math.max(prev - 1, 1))}>
+            Trước
+          </Button>
+          <Button variant="outline" size="sm" disabled={logs?.last ?? true} onClick={() => setPageNo((prev) => prev + 1)}>
+            Sau
+          </Button>
+        </div>
+      </div>
+
+      <DataTable columns={columns} data={logs?.content ?? []} isLoading={isLoading} />
     </div>
   )
 }

@@ -32,6 +32,13 @@ export const documentApi = {
             .patch(`/document/move/${documentId}`, {}, { params: { folderId } })
             .then((res) => res.data.result),
 
+    getAllDocuments: async ({ pageNo = 1, pageSize = 10 } = {}) => {
+        const { data } = await axiosClient.get('/document/allDocument', {
+            params: { pageNo, pageSize },
+        })
+        return data.result
+    },
+
     getPublicDocuments: async ({
         pageNo = 1,
         pageSize = 10,

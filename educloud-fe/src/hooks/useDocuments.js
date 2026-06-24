@@ -56,6 +56,7 @@ export function useDeleteDocument() {
       queryClient.invalidateQueries({ queryKey: ['folders'] })
       queryClient.invalidateQueries({ queryKey: ['public-documents'] })
       queryClient.invalidateQueries({ queryKey: ['myDocuments'] })
+      queryClient.invalidateQueries({ queryKey: ['adminDocuments'] })
       queryClient.invalidateQueries({ queryKey: ['myStorage'] })
       toast.success('Đã xóa tài liệu')
     },
