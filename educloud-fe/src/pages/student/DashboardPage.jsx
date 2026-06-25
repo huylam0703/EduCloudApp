@@ -25,7 +25,8 @@ export default function DashboardPage() {
 
   const used  = storage?.usedBytes  ?? 0
   const total = storage?.limitBytes ?? 5 * 1024 * 1024 * 1024
-  const pct   = Math.round((used / total) * 100)
+const pctRaw = total > 0 ? (used / total) * 100 : 0
+const pct = pctRaw < 1 && pctRaw > 0 ? parseFloat(pctRaw.toFixed(2)) : Math.round(pctRaw)
 
   const now = new Date()
   const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1)

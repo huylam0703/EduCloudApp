@@ -10,9 +10,14 @@ import app.project.EduCloud.entity.User;
 import app.project.EduCloud.exception.AppException;
 import app.project.EduCloud.exception.ErrorCode;
 import app.project.EduCloud.mapper.UserMapper;
+import app.project.EduCloud.repository.ActivityLogRepository;
+import app.project.EduCloud.repository.DocumentRepository;
+import app.project.EduCloud.repository.FolderRepository;
+import app.project.EduCloud.repository.NotificationRepository;
 import app.project.EduCloud.repository.RoleRepository;
 import app.project.EduCloud.repository.UserRepository;
 import app.project.EduCloud.service.User.UserService;
+import jakarta.transaction.Transactional;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -37,6 +42,10 @@ public class UserServiceImpl implements UserService {
     RoleRepository roleRepository;
     UserMapper userMapper;
     PasswordEncoder passwordEncoder;
+    ActivityLogRepository activityLogRepository;
+    NotificationRepository notificationRepository;
+    DocumentRepository documentRepository;
+    FolderRepository folderRepository;
 
     private static final long DEFAULT_STORAGE_LIMIT = 5L * 1024 * 1024 * 1024;
 
@@ -114,7 +123,16 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @PreAuthorize("hasRole('ADMIN')")
+    @Transactional
     public void deleteUser(String userId) {
+        userRepository.findById(userId)
+                .orElseThrow(() -> new AppException(ErrorCode.USER_NOT_FOUND));
+
+        activityLogRepository.deleteByUser_Id(userId);
+        notificationRepository.deleteByUser_Id(userId);
+        documentRepository.deleteByUploadedBy_Id(userId);
+        folderRepository.deleteByUser_Id(userId);
+
         userRepository.deleteById(userId);
     }
 

@@ -3,6 +3,7 @@ package app.project.EduCloud.repository;
 import app.project.EduCloud.entity.ActivityLog;
 import app.project.EduCloud.enums.ActivityAction;
 import app.project.EduCloud.enums.ActivityEntityType;
+import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -28,7 +29,6 @@ public interface ActivityLogRepository extends JpaRepository<ActivityLog, String
             LocalDateTime end
     );
 
-
     @Query("""
             SELECT a FROM ActivityLog a
             WHERE (:userId IS NULL OR a.user.id = :userId)
@@ -41,4 +41,7 @@ public interface ActivityLogRepository extends JpaRepository<ActivityLog, String
             @Param("entityType") ActivityEntityType entityType,
             Pageable pageable
     );
+
+    @Transactional
+    void deleteByUser_Id(String userId);
 }
