@@ -9,4 +9,6 @@ import java.util.List;
 @Repository
 public interface SubjectRepository extends JpaRepository<Subject, String> {
     List<Subject> findByMajor_Id(String majorId);
+
+    boolean existsBySubjectCode(String subjectCode);
 }

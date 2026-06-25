@@ -1,6 +1,6 @@
-import { Pencil, Trash2 } from 'lucide-react'
-import { useState } from 'react'
-import { useQuery } from '@tanstack/react-query'
+import { Pencil, Trash2, Upload } from 'lucide-react'
+import { useCallback, useRef, useState } from 'react'
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { Search, Loader2 } from 'lucide-react'
 import { adminService } from '@/services/adminService'
 import { majorService } from '@/services/majorService'
@@ -14,6 +14,8 @@ import EditSubjectDialog from '@/components/admin/EditSubjectDialog'
 import DeleteSubjectDialog from '@/components/admin/DeleteSubjectDialog'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { Progress } from '@/components/ui/progress'
+import { toast } from 'sonner'
 
 function ScrollPaginatedTable({ columns, data, isLoading, pageSize = 20 }) {
     const { visibleData, sentinelRef, containerRef, hasMore } = useInfiniteScroll(data, pageSize)
@@ -126,6 +128,8 @@ function MajorSelector({ majors, selectedMajor, onSelect }) {
 
 function SubjectsTab() {
     const [selectedMajor, setSelectedMajor] = useState(null)
+    const fileInputRef = useRef(null)
+    const queryClient = useQueryClient()
 
     const { data: majors = [] } = useQuery({
         queryKey: ['majors', ''],
@@ -137,6 +141,40 @@ function SubjectsTab() {
         queryFn: () => subjectService.getSubjectsByMajor(selectedMajor.id),
         enabled: !!selectedMajor,
     })
+
+    const [uploadProgress, setUploadProgress] = useState(0)
+    const [importResult, setImportResult] = useState(null)
+
+    const { mutate: importSubjects, isLoading: isImporting } = useMutation({
+        mutationFn: (file) => subjectService.importSubjects(file, setUploadProgress),
+        onSuccess: (result) => {
+            const text = result || 'Import môn học thành công'
+            setImportResult(text)
+            toast.success(text)
+            setUploadProgress(100)
+            if (selectedMajor?.id) {
+                queryClient.invalidateQueries({ queryKey: ['subjects', selectedMajor.id] })
+            }
+        },
+        onError: (error) => {
+            setImportResult(null)
+            setUploadProgress(0)
+            toast.error(error.response?.data?.message || error.message || 'Import thất bại')
+        },
+    })
+
+    const onSelectFile = useCallback((event) => {
+        const file = event.target.files?.[0]
+        if (!file) return
+        setImportResult(null)
+        setUploadProgress(0)
+        importSubjects(file)
+        event.target.value = ''
+    }, [importSubjects])
+
+    const onUploadClick = () => {
+        fileInputRef.current?.click()
+    }
 
     // ⚠️ dùng subjectId thật để gọi update/delete, subjectCode chỉ để hiển thị
     // Nếu API trả về field tên khác (vd: "id"), đổi s.subjectId -> s.id cho khớp
@@ -167,9 +205,43 @@ function SubjectsTab() {
 
     return (
         <div className="space-y-4">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-3">
                 <h2 className="font-semibold">Môn học</h2>
-                <MajorSelector majors={majors} selectedMajor={selectedMajor} onSelect={setSelectedMajor} />
+                <div className="flex flex-1 items-center justify-end gap-2">
+                    <input
+                        ref={fileInputRef}
+                        type="file"
+                        accept=".xlsx"
+                        className="hidden"
+                        onChange={onSelectFile}
+                    />
+                    <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+                        <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={onUploadClick}
+                            disabled={isImporting}
+                        >
+                            <Upload className="mr-2 h-4 w-4" />
+                            Import XLSX
+                        </Button>
+                        <div className="min-w-60 flex-1">
+                            {isImporting && (
+                                <div className="space-y-2">
+                                    <div className="text-sm text-muted-foreground">Đang upload: {uploadProgress}%</div>
+                                    <Progress value={uploadProgress} className="h-2" />
+                                </div>
+                            )}
+                            {!isImporting && uploadProgress === 100 && importResult && (
+                                <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-900">
+                                    <div className="font-medium">Upload hoàn tất</div>
+                                    <div>{importResult}</div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                    <MajorSelector majors={majors} selectedMajor={selectedMajor} onSelect={setSelectedMajor} />
+                </div>
             </div>
 
             {!selectedMajor ? (

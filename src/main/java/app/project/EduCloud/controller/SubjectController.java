@@ -11,8 +11,10 @@ import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -88,5 +90,23 @@ public class SubjectController {
                         .message("get detail subject success")
                         .result(subjectService.getSubjectsByMajor(majorId))
                         .build());
+    }
+
+    @PostMapping(
+            value = "/import",
+            consumes = MediaType.MULTIPART_FORM_DATA_VALUE
+    )
+    public ResponseEntity<ApiResponse<String>> importSubjects(
+            @RequestParam("file") MultipartFile file
+    ) {
+        String result = subjectService.importSubjects(file);
+
+        return ResponseEntity.ok(
+                ApiResponse.<String>builder()
+                        .code(1000)
+                        .message("Import subjects successfully")
+                        .result(result)
+                        .build()
+        );
     }
 }

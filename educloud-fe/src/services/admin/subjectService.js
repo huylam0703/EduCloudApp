@@ -7,6 +7,22 @@ export const subjectService = {
         return data.result ?? []
     },
 
+    importSubjects: async (file, onUploadProgress) => {
+        const formData = new FormData()
+        formData.append('file', file)
+
+        const { data } = await apiClient.post('/subject/import', formData, {
+            headers: { 'Content-Type': 'multipart/form-data' },
+            onUploadProgress: (event) => {
+                if (!event.total) return
+                const percent = Math.round((event.loaded * 100) / event.total)
+                onUploadProgress?.(percent)
+            },
+        })
+
+        return data.result
+    },
+
     addSubject: async (majorId, { subjectName, description }) => {
         const { data } = await apiClient.post(`/subject/add/${majorId}`, {
             subjectName,
