@@ -34,11 +34,18 @@ jwt:
   refreshable-duration: 360000 # in second
 
 
+#cloud:
+#  aws:
+##    credentials:
+##      accessKey: ${AWS_ACCESS_KEY_ID}
+##      secretKey: ${AWS_SECRET_ACCESS_KEY}
+#    region:
+#      static: ${AWS_REGION}
+#    bucket-name: ${AWS_S3_BUCKET_NAME}
+
 cloud:
   aws:
-    credentials:
-      accessKey: ${AWS_ACCESS_KEY_ID}
-      secretKey: ${AWS_SECRET_ACCESS_KEY}
     region:
-      static: ${AWS_REGION}
-    bucket-name: ${AWS_S3_BUCKET_NAME}
+      static: ${AWS_REGION:us-east-1}
+    s3:
+      bucket-name: ${AWS_S3_BUCKET_NAME:educloud-storage-2026}
