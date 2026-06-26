@@ -42,7 +42,7 @@ services:
       context: ./educloud-fe
       dockerfile: Dockerfile
       args:
-        VITE_API_BASE_URL: "/api"
+        VITE_API_BASE_URL: "/api/v1/eduCloud"
     container_name: educloud-frontend
     depends_on:
       - backend
