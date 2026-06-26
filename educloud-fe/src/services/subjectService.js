@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8080/api/v1/eduCloud'
+const BASE_URL = '/api/v1/eduCloud'
 
 export const subjectService = {
     getSubjectsByMajor: async (majorId) => {

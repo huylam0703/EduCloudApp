@@ -1,0 +1,60 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: educloud-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+      MSSQL_SA_PASSWORD: "${MSSQL_SA_PASSWORD}"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: educloud-backend
+    environment:
+      SPRING_PROFILES_ACTIVE: "prod"
+
+      SPRING_DATASOURCE_URL: "jdbc:sqlserver://sqlserver:1433;databaseName=EduCloud;encrypt=true;trustServerCertificate=true"
+      SPRING_DATASOURCE_USERNAME: "sa"
+      SPRING_DATASOURCE_PASSWORD: "${MSSQL_SA_PASSWORD}"
+
+      SPRING_JPA_HIBERNATE_DDL_AUTO: "update"
+
+      AWS_REGION: "ap-southeast-1"
+      AWS_S3_BUCKET: "educloud-documents-huy"
+
+      JWT_SIGNER_KEY: "${JWT_SIGNER_KEY}"
+
+      SPRING_SERVLET_MULTIPART_MAX_FILE_SIZE: "20MB"
+      SPRING_SERVLET_MULTIPART_MAX_REQUEST_SIZE: "20MB"
+    depends_on:
+      - sqlserver
+    restart: unless-stopped
+    expose:
+      - "8080"
+
+  frontend:
+    build:
+      context: ./educloud-fe
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE_URL: "/api"
+    container_name: educloud-frontend
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+    restart: unless-stopped
+
+volumes:
+  sqlserver_data:
+  caddy_data:
+  caddy_config:

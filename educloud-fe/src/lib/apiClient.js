@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const apiClient = axios.create({
-    baseURL: 'http://localhost:8080/api/v1/eduCloud',
+    baseURL: '/api/v1/eduCloud',
 })
 
 // Tự động gắn token vào MỌI request, không cần làm thủ công nữa
