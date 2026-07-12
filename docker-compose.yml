@@ -37,6 +37,16 @@ services:
     restart: unless-stopped
     expose:
       - "8080"
+    
+    logging:
+      driver: awslogs
+      options:
+        awslogs-region: ap-southeast-1
+        awslogs-group: /educloud/backend
+        awslogs-stream: educloud-backend
+        awslogs-create-group: "true"
+        mode: non-blocking
+        max-buffer-size: 4m
 
   frontend:
     build:
