@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <!-- Lấy tên ứng dụng từ application.properties hoặc application.yml -->
+    <springProperty
+            scope="context"
+            name="applicationName"
+            source="spring.application.name"
+            defaultValue="EduCloud"/>
+
+    <!-- Định dạng log hiển thị trên console -->
+    <property
+            name="LOG_PATTERN"
+            value="%d{yyyy-MM-dd HH:mm:ss.SSS} level=%-5level application=${applicationName} thread=%thread logger=%logger{40} requestId=%X{requestId:-N/A} user=%X{username:-anonymous} message=%msg%n"/>
+
+    <!-- Ghi log ra console -->
+    <appender name="CONSOLE"
+              class="ch.qos.logback.core.ConsoleAppender">
+
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+
+    </appender>
+
+    <!-- Log của code trong project EduCloud -->
+    <logger name="app.project.EduCloud" level="INFO"/>
+
+    <!-- Giảm log SQL và framework không cần thiết -->
+    <logger name="org.springframework" level="INFO"/>
+    <logger name="org.hibernate.SQL" level="WARN"/>
+    <logger name="org.hibernate.orm.jdbc.bind" level="WARN"/>
+
+    <!-- Cấu hình log mặc định -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
